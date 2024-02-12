@@ -53,7 +53,20 @@ const Blog = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-10 mt-20 mb-20">
-      <div className=" w-[90%]  flex overflow-x-scroll  justify-start items-center">
+      <div className="md:hidden bg-primary w-[93%]  px-5">
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="  !bg-primary text-white outline-none py-3 w-full"
+        >
+          {categories.map((category, index) => (
+            <option key={index} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className=" w-[90%] max-w-5xl  md:flex hidden overflow-x-scroll  justify-start items-center">
         {categories.map((category, index) => (
           <div
             key={index}
@@ -90,7 +103,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center overflow-x-scroll w-full px-5 ">
+      <div className="flex items-center sm:justify-center overflow-x-scroll w-full px-5 ">
         {[
           ...Array(Math.ceil(filteredArticles.length / articlesPerPage)).keys(),
         ].map((number) => (

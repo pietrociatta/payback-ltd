@@ -77,3 +77,16 @@ textarea {
   padding: 10px;
   overflow-x: auto;
 }
+
+.animate-menu {
+  animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

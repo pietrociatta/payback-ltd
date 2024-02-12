@@ -137,23 +137,90 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
         <div
-          className={`absolute overflow-hidden  flex flex-col w-full  top-[79px] ${
+          className={`fixed overflow-hidden    flex flex-col w-full  top-[79px] ${
             showMenu ? "animate-menu" : "hidden"
           }`}
         >
-          <div className="bg-white font-rubik text-primary">
-            <ul className="flex flex-col gap-10 p-6">
-              <li>
-                <a href="/">Home</a>
+          <div className="bg-white overflow-y-scroll p-8 max-h-[100dvh] h-[86dvh] font-rubik text-primary">
+            <ul className="flex flex-col justify-center gap-4">
+              <li className="py-2">
+                <Link href="/">Testimonials</Link>
               </li>
-              <li>
-                <a href="#why">Why Trust Cybernetics</a>
+              <li className="relative group py-2">
+                <a href="#why" className="flex gap-2 items-center">
+                  Recovery Services
+                  <ChevronDown
+                    size={20}
+                    className="group-hover:rotate-180 transition-all"
+                  />
+                </a>
+                <ul className="relative w-[220px]    text-primary bg-white  group-hover:flex flex-col hidden duration-300">
+                  <li
+                    onClick={() => router.push("/binary-options")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Binary Options</span>
+                  </li>
+
+                  <li className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary">
+                    <span>Cryptocurrency</span>
+                  </li>
+                  <li
+                    onClick={() => router.push("/forex")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Forex</span>
+                  </li>
+                  <li
+                    onClick={() => router.push("/stock-trading")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Stock trading</span>
+                  </li>
+                  <li
+                    onClick={() => router.push("/credit-card-phishing")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Credit card phishing</span>
+                  </li>
+                  <li
+                    onClick={() => router.push("/property-scams")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Property Scams</span>
+                  </li>
+                  <li
+                    onClick={() => router.push("/romance-scams")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Romance Scams</span>
+                  </li>
+                  <li
+                    onClick={() => router.push("/other-scams")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Other Scams</span>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="#faq">Frequently Asked Questions</a>
+
+              <li className="py-2">
+                <a href="#why" className="flex gap-2 items-center">
+                  Blacklist
+                  <ChevronDown size={20} />
+                </a>
               </li>
-              <li>
-                <a href="/contact-us">Contact Us</a>
+              <Link href="/contact-us" className="py-2">
+                Contact Us
+              </Link>
+              <Link href="/about-us" className="py-2">
+                About Us
+              </Link>
+              <li className="py-2">
+                <Link href="/blogs">Blog </Link>
+              </li>
+              <li className="py-2">
+                <a href="/contact-us">Faq</a>
               </li>
             </ul>
           </div>

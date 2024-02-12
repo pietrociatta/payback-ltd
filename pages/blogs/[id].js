@@ -35,7 +35,7 @@ const BlogPost = () => {
             {article.title}
           </h1>
           <p className="text-black w-max px-4 py-1 bg-gray-200 mt-3">
-            {article?.tags[0]}
+            {article.tags && article?.tags[0] ? article.tags[0] : "No tags"}
           </p>
           <img src={`/content/images/${article.slug}.jpg`} alt="" />
           <div className="w-full h-[1px] bg-gray-600" />

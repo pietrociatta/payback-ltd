@@ -25,6 +25,8 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }) {
   const router = useRouter()
   const [showMenu, setShowMenu] = useState(false)
+  const [showSubMenu, setShowSubMenu] = useState(false)
+  const [showSubMenu2, setShowSubMenu2] = useState(false)
 
   return (
     <div className={`${raleway.variable} ${poppins.variable}`}>
@@ -44,14 +46,25 @@ export default function App({ Component, pageProps }) {
                 <Link href="/">Testimonials</Link>
               </li>
               <li className="relative group py-2">
-                <a href="#why" className="flex gap-2 items-center">
+                <a
+                  href="#why"
+                  className="flex gap-2 items-center"
+                  onClick={() => setShowSubMenu(!showSubMenu)}
+                >
                   Recovery Services
                   <ChevronDown
                     size={20}
-                    className="group-hover:rotate-180 transition-all"
+                    className={`${
+                      showSubMenu ? "rotate-180" : ""
+                    } transition-all`}
                   />
                 </a>
-                <ul className="absolute w-[220px] left-0 top-10   text-primary bg-white invisible group-hover:visible transition-opacity duration-300">
+                <ul
+                  className={`absolute w-[220px] left-0 top-10 text-primary bg-white ${
+                    showSubMenu ? "flex" : "hidden"
+                  } flex-col transition-opacity duration-300`}
+                >
+                  {/* Submenu items */}
                   <li
                     onClick={() => router.push("/binary-options")}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -101,11 +114,37 @@ export default function App({ Component, pageProps }) {
                 </ul>
               </li>
 
-              <li className="py-2">
-                <a href="#why" className="flex gap-2 items-center">
+              <li className="relative group py-2">
+                <a
+                  href="#why"
+                  className="flex gap-2 items-center"
+                  onClick={() => setShowSubMenu2(!showSubMenu2)}
+                >
                   Blacklist
-                  <ChevronDown size={20} />
+                  <ChevronDown
+                    size={20}
+                    className={`${
+                      showSubMenu2 ? "rotate-180" : ""
+                    } transition-all`}
+                  />
                 </a>
+                <ul
+                  className={`absolute w-[240px] left-0 top-10 text-primary bg-white ${
+                    showSubMenu2 ? "flex" : "hidden"
+                  } flex-col transition-opacity duration-300`}
+                >
+                  {/* Submenu items */}
+                  <li
+                    onClick={() => router.push("/scams")}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Scams</span>
+                  </li>
+
+                  <li className="py-2.5 px-5 w-full cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary">
+                    <span>Imposters & Copycats </span>
+                  </li>
+                </ul>
               </li>
               <Link href="/contact-us" className="py-2">
                 Contact Us

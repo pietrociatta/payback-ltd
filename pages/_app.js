@@ -31,14 +31,14 @@ export default function App({ Component, pageProps }) {
       <header
         className={`flex bg-primary sticky top-0 z-10 text-white   flex-col w-full `}
       >
-        <div className="w-full max-w-7xl mx-auto grid lg:grid-cols-5 grid-cols-2  items-center    justify-between  px-5 xl:px-0 py-5">
+        <div className="w-full max-w-7xl mx-auto grid xl:grid-cols-5 grid-cols-2  items-center    justify-between  px-5 xl:px-0 py-5">
           <div
             onClick={() => router.push("/")}
             className=" cursor-pointer max-w-[150px]"
           >
             <img src="logo.svg" alt="" className="w-full" />
           </div>
-          <div className="font-poppins hidden lg:block col-span-3 text-[16px] font-normal">
+          <div className="font-poppins hidden xl:block col-span-3 text-[16px] font-normal">
             <ul className="flex justify-center gap-4">
               <li className="py-2">
                 <Link href="/">Testimonials</Link>
@@ -114,7 +114,7 @@ export default function App({ Component, pageProps }) {
                 About Us
               </Link>
               <li className="py-2">
-                <a href="/contact-us">Blog</a>
+                <Link href="/blog">Blog </Link>
               </li>
               <li className="py-2">
                 <a href="/contact-us">Faq</a>
@@ -137,7 +137,7 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
         <div
-          className={`absolute overflow-hidden  flex flex-col w-full  top-[168px] ${
+          className={`absolute overflow-hidden  flex flex-col w-full  top-[79px] ${
             showMenu ? "animate-menu" : "hidden"
           }`}
         >

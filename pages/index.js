@@ -146,7 +146,7 @@ export default function Home() {
               </button>
             </form>
           </div>
-          <div className="w-full flex-col items-center flex pt-10 justify-center">
+          <div className="w-full flex-col items-center flex px-5 xl:px-0 pt-10 justify-center">
             <h1 className="text-[24px] font-raleway mb-10 text-center font-bold text-primary">
               Scams we helped our clients recover from
             </h1>
@@ -212,7 +212,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full bg-cover bg-primary  overflow-hidden ">
-        <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-20 flex xl:flex-row flex-col">
+        <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
               Money retrieved in 2023
@@ -400,7 +400,7 @@ export default function Home() {
       </div>
 
       <div className="w-full bg-cover bg-primary  overflow-hidden ">
-        <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full  gap-2 xl:py-16 py-20 flex xl:flex-row flex-col">
+        <div className="xl:max-w-5xl max-w-4xl px-5 xl:px-0  mx-auto items-center w-full  gap-2 xl:py-16 py-20 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px] leading-tight   font-extrabold font-raleway  ">
               How we work to get our clients money back{" "}
@@ -429,8 +429,8 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full bg-cover bg-white text-primary   overflow-hidden ">
-        <div className="xl:max-w-6xl px-5 xl:px-0 flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pt-20 xl:pb-20 py-20 flex ">
-          <h1 className="font-raleway font-bold text-[40px] text-center">
+        <div className="xl:max-w-6xl px-5 xl:px-0 flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pt-20 xl:pb-20 py-10 flex ">
+          <h1 className="font-raleway font-bold leading-none text-[40px] text-center">
             The types of scams we can help you with
           </h1>
           <div className="w-full grid xl:grid-cols-4 mt-5  grid-cols-2 ">
@@ -443,7 +443,7 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert "
               />
-              <p className="font-raleway text-[22px] font-bold">
+              <p className="font-raleway text-center text-[22px] font-bold">
                 Binary Options
               </p>
             </div>{" "}
@@ -456,7 +456,7 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert "
               />
-              <p className="font-raleway text-[22px] font-bold">
+              <p className="font-raleway text-center text-[22px] font-bold">
                 Cryptocurrency
               </p>
             </div>
@@ -469,7 +469,9 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert"
               />
-              <p className="font-raleway text-[22px] font-bold">Forex</p>
+              <p className="font-raleway text-[22px] text-center font-bold">
+                Forex
+              </p>
             </div>
             <div
               onClick={() => router.push("/romance")}
@@ -480,7 +482,9 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert"
               />
-              <p className="font-raleway text-[22px] font-bold">Romance</p>
+              <p className="font-raleway text-[22px] text-center font-bold">
+                Romance
+              </p>
             </div>
             <div
               onClick={() => router.push("/binary-options")}
@@ -491,7 +495,7 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert"
               />
-              <p className="font-raleway text-[22px] font-bold">
+              <p className="font-raleway text-[22px] text-center font-bold">
                 Property Scams
               </p>
             </div>
@@ -504,7 +508,7 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert"
               />
-              <p className="font-raleway text-[22px] font-bold">
+              <p className="font-raleway text-[22px] text-center font-bold">
                 Credit card phishing
               </p>
             </di>
@@ -517,7 +521,7 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert"
               />
-              <p className="font-raleway text-[22px] font-bold">
+              <p className="font-raleway text-[22px] text-center font-bold">
                 Stock trading
               </p>
             </div>
@@ -530,14 +534,16 @@ export default function Home() {
                 alt=""
                 className="w-[15%] group-hover:invert"
               />
-              <p className="font-raleway text-[22px] font-bold">Other scams</p>
+              <p className="font-raleway text-[22px] text-center font-bold">
+                Other scams
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div className="w-full bg-cover bg-white text-primary   overflow-hidden ">
-        <div className="xl:max-w-6xl flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pb-20 py-20 flex ">
-          <h1 className="font-raleway max-w-lg font-bold text-[40px] text-center">
+        <div className="xl:max-w-6xl px-5 xl:px-0 flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pb-20 py-10 flex ">
+          <h1 className="font-raleway max-w-lg font-bold text-[40px] leading-none text-center">
             More about Payback and the chargeback industry
           </h1>
           <Accordion type="single" collapsible className="w-full max-w-2xl">

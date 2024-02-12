@@ -40,10 +40,10 @@ export default function App({ Component, pageProps }) {
           </div>
           <div className="font-poppins hidden lg:block col-span-3 text-[16px] font-normal">
             <ul className="flex justify-center gap-4">
-              <li>
+              <li className="py-2">
                 <Link href="/">Testimonials</Link>
               </li>
-              <li className="relative group">
+              <li className="relative group py-2">
                 <a href="#why" className="flex gap-2 items-center">
                   Recovery Services
                   <ChevronDown
@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }) {
                     className="group-hover:rotate-180 transition-all"
                   />
                 </a>
-                <ul className="absolute w-[220px] left-0 top-10  group-hover:block text-primary bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <ul className="absolute w-[220px] left-0 top-10   text-primary bg-white invisible group-hover:visible transition-opacity duration-300">
                   <li
                     onClick={() => router.push("/binary-options")}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -101,18 +101,22 @@ export default function App({ Component, pageProps }) {
                 </ul>
               </li>
 
-              <li>
+              <li className="py-2">
                 <a href="#why" className="flex gap-2 items-center">
                   Blacklist
                   <ChevronDown size={20} />
                 </a>
               </li>
-              <Link href="/contact-us">Contact Us</Link>
-              <Link href="/about-us">About Us</Link>
-              <li>
+              <Link href="/contact-us" className="py-2">
+                Contact Us
+              </Link>
+              <Link href="/about-us" className="py-2">
+                About Us
+              </Link>
+              <li className="py-2">
                 <a href="/contact-us">Blog</a>
               </li>
-              <li>
+              <li className="py-2">
                 <a href="/contact-us">Faq</a>
               </li>
             </ul>

@@ -34,6 +34,7 @@ export const CustomInput = forwardRef(({ value, onChange, ...rest }, ref) => (
 
 export default function Home() {
   const [value, setValue] = useState()
+  const router = useRouter()
 
   return (
     <main
@@ -428,58 +429,108 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full bg-cover bg-white text-primary   overflow-hidden ">
-        <div className="xl:max-w-6xl flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pt-20 xl:pb-20 py-20 flex ">
+        <div className="xl:max-w-6xl px-5 xl:px-0 flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pt-20 xl:pb-20 py-20 flex ">
           <h1 className="font-raleway font-bold text-[40px] text-center">
             The types of scams we can help you with
           </h1>
           <div className="w-full grid xl:grid-cols-4 mt-5  grid-cols-2 ">
-            <div className="flex flex-col border border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/24.svg" alt="" className="w-[15%]" />
+            <div
+              onClick={() => router.push("/binary-options")}
+              className="flex group hover:bg-primary hover:text-white  flex-col border border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/24.svg"
+                alt=""
+                className="w-[15%] group-hover:invert "
+              />
               <p className="font-raleway text-[22px] font-bold">
-                Binary Option
+                Binary Options
               </p>
             </div>{" "}
-            <div className="flex flex-col border border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/25.svg" alt="" className="w-[15%]" />
+            <div
+              onClick={() => router.push("/cryptocurrency")}
+              className="flex flex-col group hover:bg-primary hover:text-white border border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/25.svg"
+                alt=""
+                className="w-[15%] group-hover:invert "
+              />
               <p className="font-raleway text-[22px] font-bold">
-                Binary Option
+                Cryptocurrency
               </p>
             </div>
-            <div className="flex flex-col border  border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/26.svg" alt="" className="w-[15%]" />
+            <div
+              onClick={() => router.push("/forex")}
+              className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/26.svg"
+                alt=""
+                className="w-[15%] group-hover:invert"
+              />
+              <p className="font-raleway text-[22px] font-bold">Forex</p>
+            </div>
+            <div
+              onClick={() => router.push("/romance")}
+              className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/27.svg"
+                alt=""
+                className="w-[15%] group-hover:invert"
+              />
+              <p className="font-raleway text-[22px] font-bold">Romance</p>
+            </div>
+            <div
+              onClick={() => router.push("/binary-options")}
+              className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/28.svg"
+                alt=""
+                className="w-[15%] group-hover:invert"
+              />
               <p className="font-raleway text-[22px] font-bold">
-                Binary Option
+                Property Scams
               </p>
             </div>
-            <div className="flex flex-col border  border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/27.svg" alt="" className="w-[15%]" />
+            <di
+              onClick={() => router.push("/binary-options")}
+              className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/29.svg"
+                alt=""
+                className="w-[15%] group-hover:invert"
+              />
               <p className="font-raleway text-[22px] font-bold">
-                Binary Option
+                Credit card phishing
+              </p>
+            </di>
+            <div
+              onClick={() => router.push("/binary-options")}
+              className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/30.svg"
+                alt=""
+                className="w-[15%] group-hover:invert"
+              />
+              <p className="font-raleway text-[22px] font-bold">
+                Stock trading
               </p>
             </div>
-            <div className="flex flex-col border  border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/28.svg" alt="" className="w-[15%]" />
-              <p className="font-raleway text-[22px] font-bold">
-                Binary Option
-              </p>
-            </div>
-            <div className="flex flex-col border  border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/29.svg" alt="" className="w-[15%]" />
-              <p className="font-raleway text-[22px] font-bold">
-                Binary Option
-              </p>
-            </div>
-            <div className="flex flex-col border  border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/30.svg" alt="" className="w-[15%]" />
-              <p className="font-raleway text-[22px] font-bold">
-                Binary Option
-              </p>
-            </div>
-            <div className="flex flex-col border  border-primary gap-2 items-center justify-center py-6">
-              <img src="/logos/31.svg" alt="" className="w-[15%]" />
-              <p className="font-raleway text-[22px] font-bold">
-                Binary Option
-              </p>
+            <div
+              onClick={() => router.push("/binary-options")}
+              className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
+            >
+              <img
+                src="/logos/31.svg"
+                alt=""
+                className="w-[15%] group-hover:invert"
+              />
+              <p className="font-raleway text-[22px] font-bold">Other scams</p>
             </div>
           </div>
         </div>

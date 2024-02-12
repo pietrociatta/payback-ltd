@@ -499,7 +499,7 @@ export default function Home() {
                 Property Scams
               </p>
             </div>
-            <di
+            <div
               onClick={() => router.push("/binary-options")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
@@ -511,7 +511,7 @@ export default function Home() {
               <p className="font-raleway text-[22px] text-center font-bold">
                 Credit card phishing
               </p>
-            </di>
+            </div>
             <div
               onClick={() => router.push("/binary-options")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"

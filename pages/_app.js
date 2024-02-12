@@ -114,7 +114,7 @@ export default function App({ Component, pageProps }) {
                 About Us
               </Link>
               <li className="py-2">
-                <Link href="/blog">Blog </Link>
+                <Link href="/blogs">Blog </Link>
               </li>
               <li className="py-2">
                 <a href="/contact-us">Faq</a>

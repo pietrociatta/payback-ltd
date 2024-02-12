@@ -5,3 +5,75 @@
 textarea {
   resize: none;
 }
+
+/* blogStyles.css */
+.blog-content h1 {
+  color: #112152;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.blog-content h2 {
+  color: #112152;
+  font-weight: 700;
+  font-size: 1.75em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.blog-content h3 {
+  color: #112152;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.blog-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.blog-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 20px;
+  margin-bottom: 1em;
+}
+
+.blog-content li {
+  margin-bottom: 0.5em;
+}
+
+.blog-content blockquote {
+  padding: 0.5em 1em;
+  margin: 0 0 1em;
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+  background-color: #f8f9fa;
+}
+
+.blog-content code {
+  font-family: monospace;
+  background-color: #f8f9fa;
+  padding: 2px 4px;
+  font-size: 0.9em;
+  border-radius: 4px;
+}
+
+.blog-content pre {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: auto;
+}

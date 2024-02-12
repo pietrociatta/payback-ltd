@@ -24,10 +24,13 @@ const BlogPost = () => {
     <div className="flex flex-col px-5 lg:px-0 w-full">
       <p className="flex max-w-7xl pt-10 font-poppins gap-2 mx-auto w-full">
         <Link href="/">Home</Link>/<Link href="/blogs">Blog</Link>/{" "}
-        <Link href="/">{article.title}</Link>
+        <span className="truncate">
+          <Link href="/">{article.title}</Link>
+        </span>
       </p>
+
       <div className="flex relative w-full lg:flex-row flex-col max-w-5xl gap-10 mx-auto ">
-        <div className="lg:w-[60%] w-full pt-20 flex flex-col gap-5">
+        <div className="lg:w-[60%] w-full md:pt-20 pt-10 flex flex-col gap-5">
           <h1 className="font-bold leading-tight font-raleway text-4xl">
             {article.title}
           </h1>
@@ -39,7 +42,9 @@ const BlogPost = () => {
           <p className="text-gray-600">{article.date}</p>
           <div className="w-full h-[1px] bg-gray-600" />
           <div
-            dangerouslySetInnerHTML={{ __html: article.content }}
+            dangerouslySetInnerHTML={{
+              __html: article.content.replace(/<img[^>]*>/g, ""),
+            }}
             className="blog-content "
           />
         </div>

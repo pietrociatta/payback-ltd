@@ -53,11 +53,11 @@ const Blog = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-10 mt-20 mb-20">
-      <div className="flex w-full justify-center items-center">
+      <div className=" w-[90%]  flex overflow-x-scroll  justify-start items-center">
         {categories.map((category, index) => (
           <div
             key={index}
-            className={`px-10 py-5 border border-primary cursor-pointer ${
+            className={`flex items-center w-full min-w-max px-4 justify-center py-5   border  border-primary cursor-pointer ${
               selectedCategory === category
                 ? "bg-primary text-white"
                 : "bg-transparent"
@@ -68,7 +68,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-3 max-w-7xl mx-auto gap-10">
+      <div className="grid md:grid-cols-2 px-5 xl:px-0 xl:grid-cols-3 grid-cols-1 max-w-7xl mx-auto gap-10">
         {paginatedArticles.map((article, index) => (
           <div
             key={index}
@@ -90,7 +90,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center ">
+      <div className="flex items-center overflow-x-scroll w-full px-5 ">
         {[
           ...Array(Math.ceil(filteredArticles.length / articlesPerPage)).keys(),
         ].map((number) => (

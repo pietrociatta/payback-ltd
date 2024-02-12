@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }) {
             onClick={() => router.push("/")}
             className=" cursor-pointer max-w-[150px]"
           >
-            <img src="logo.svg" alt="" className="w-full" />
+            <img src="/logo.svg" alt="" className="w-full" />
           </div>
           <div className="font-poppins hidden xl:block col-span-3 text-[16px] font-normal">
             <ul className="flex justify-center gap-4">

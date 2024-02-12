@@ -42,7 +42,7 @@ const Testimonial = () => {
         opts={{
           align: "center",
           duration: 10,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           loop: true,
         }}
         className=" relative w-full "

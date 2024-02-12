@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useMemo, useState } from "react"
 import Carousel from "@/components/Carousel"
-import { File } from "lucide-react"
+import { File, RotateCcw, RotateCw, Shield, TextSearch } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import {
   Accordion,
@@ -8,55 +8,59 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import Testimonial from "@/components/Tesitmonial"
 
 const BinaryOptions = () => {
   const [headings, setHeadings] = useState([])
 
   // Define custom components with Tailwind CSS for markdown elements
-  const markdownComponents = {
-    h1: ({ node, ...props }) => {
-      // Extract or generate a unique ID for this heading
-      const id = props.id || generateId(props.children)
-      // Add the heading to the list
-      useEffect(() => {
-        setHeadings((prevHeadings) => [
-          ...prevHeadings,
-          { id, title: props.children },
-        ])
-        // Cleanup function to remove the heading when the component unmounts
-        return () => {
-          setHeadings((prevHeadings) => prevHeadings.filter((h) => h.id !== id))
-        }
-      }, [id, props.children])
+  const markdownComponents = useMemo(
+    () => ({
+      h1: React.memo(({ node, ...props }) => {
+        const id = props.id || generateId(props.children.toString())
+        useEffect(() => {
+          setHeadings((prevHeadings) => [
+            ...prevHeadings,
+            { id, title: props.children },
+          ])
+          return () => {
+            setHeadings((prevHeadings) =>
+              prevHeadings.filter((h) => h.id !== id)
+            )
+          }
+        }, [id, props.children, setHeadings])
+        return <h1 id={id} className="text-3xl font-bold my-4" {...props} />
+      }),
+      h2: React.memo(({ ...props }) => (
+        <h2 className="text-2xl font-semibold my-3" {...props} />
+      )),
+      p: React.memo(({ ...props }) => (
+        <p className="my-1 text-base" {...props} />
+      )),
+      ul: React.memo(({ ...props }) => (
+        <ul className="list-disc list-inside my-4" {...props} />
+      )),
+      li: React.memo(({ ...props }) => <li className="ml-4" {...props} />),
+      // Define more custom components as needed
+    }),
+    []
+  )
 
-      return <h1 id={id} className="text-3xl font-bold my-4" {...props} />
-    },
-    h2: ({ node, ...props }) => (
-      <h2 className="text-2xl font-semibold my-3" {...props} />
-    ),
-    p: ({ node, ...props }) => <p className="my-1 text-base" {...props} />,
-    ul: ({ node, ...props }) => (
-      <ul className="list-disc list-inside my-4" {...props} />
-    ),
-    li: ({ node, ...props }) => <li className="ml-4" {...props} />,
-    // Add more custom components as needed for other markdown elements
-  }
-
-  function generateId(text) {
+  const generateId = useCallback((text) => {
     return String(text)
       .toLowerCase()
       .replace(/\s+/g, "-")
       .replace(/[^\w-]+/g, "")
-  }
+  }, [])
 
   return (
     <main
       className={`flex relative  min-h-screen text-white  flex-col items-center bg-cover bg-center  font-poppins`}
     >
-      <div className="w-full  bg-primary  ">
-        <div className="xl:max-w-7xl max-w-2xl  mx-auto items-center w-full  gap-2 xl:py-20  flex xl:flex-row flex-col">
+      <div className="w-full relative  bg-primary  ">
+        <div className="xl:max-w-7xl max-w-2xl  mx-auto items-center w-full px-5 md:px-0  gap-2 xl:py-20 pt-10 pb-14  flex xl:flex-row flex-col">
           <div className="items-center  w-full gap-4 flex flex-col  ">
-            <h1 className="text-center  xl:text-[72px] text-[64px]   font-extrabold font-raleway xl:leading-[80px] leading-tight">
+            <h1 className="text-center  xl:text-[72px] md:text-[64px] text-[45px]  font-extrabold font-raleway xl:leading-[80px] leading-tight">
               <span className="text-secondary ">
                 Get your money back <br className="hidden xl:flex" />
               </span>{" "}
@@ -78,11 +82,13 @@ const BinaryOptions = () => {
                 <option value="" disabled selected hidden>
                   Choose a scam type
                 </option>
-                <option value="1000">$1000</option>
-                <option value="2000">$2000</option>
-                <option value="3000">$3000</option>
-                <option value="4000">$4000</option>
-                <option value="5000">$5000</option>
+                <option value="Binary options">Binary options</option>
+                <option value="Cryptocurrency">Cryptocurrency</option>
+                <option value="Forex">Forex</option>
+                <option value="Stock Trading">Stock Trading</option>
+                <option value="Property scam">Property scam</option>
+                <option value="Romance Scam">Romance Scam</option>
+                <option value="ther scam">Other scam</option>
               </select>
             </div>
             <button
@@ -93,8 +99,17 @@ const BinaryOptions = () => {
             </button>
           </div>
         </div>
+        <img
+          src="/logos/9.svg"
+          alt=""
+          className="w-[150px] xl:flex xl:absolute hidden right-20 -bottom-16"
+        />
       </div>
-      <div className="w-full bg-white  py-20">
+      <div className="bg-[#f4f4f4] xl:hidden  text-primary flex items-center justify-center font-bold text-lg py-3 gap-2 w-full">
+        <img src="/logos/8.svg" alt="" />
+        <p>Money back guarantee</p>
+      </div>
+      <div className="w-full bg-white  xl:py-20 px-5 xl:px-0  py-10">
         <div className="w-full flex-col items-center flex pt-10 justify-center">
           <h1 className="text-[24px] font-raleway mb-10 text-center font-bold text-primary">
             Scams we helped our clients recover from
@@ -103,66 +118,62 @@ const BinaryOptions = () => {
             <Carousel />
           </div>
         </div>
-        <div className="xl:max-w-5xl max-w-4xl relative text-primary  mx-auto items-center justify-center w-full  gap-2   py-20 flex  flex-col">
+        <div className="xl:max-w-5xl max-w-4xl relative text-primary  mx-auto items-center justify-center w-full  gap-2   xl:py-20 pt-20 pb-10 flex  flex-col">
           <h1 className="font-raleway text-[40px] font-bold ">How it works</h1>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8">
             <div className="flex flex-col gap-3 items-start justify-center p-6 shadow-lg">
               <h1 className="flex gap-2 items-center">
-                <File size={30} />
+                <TextSearch size={30} />
                 <span className="font-raleway text-[20px] font-bold">
-                  Title
+                  Review your case
                 </span>
               </h1>
               <p className="text-[16px] text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                quia, voluptate, quae nesciunt, doloribus quod consequuntur
-                tempora quos quas quidem.
+                Performing preliminary checks to assess whether the case can
+                result in a substantial recovery, based on our experience.
               </p>
             </div>
             <div className="flex flex-col gap-3 items-start justify-center p-6 shadow-lg">
               <h1 className="flex gap-2 items-center">
                 <File size={30} />
                 <span className="font-raleway text-[20px] font-bold">
-                  Title
+                  Gather the evidence
                 </span>
               </h1>
               <p className="text-[16px] text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                quia, voluptate, quae nesciunt, doloribus quod consequuntur
-                tempora quos quas quidem.
+                Collecting all the information and documentation required to
+                successfully pursue your case[*]
               </p>
             </div>
             <div className="flex flex-col gap-3 items-start justify-center p-6 shadow-lg">
               <h1 className="flex gap-2 items-center">
-                <File size={30} />
+                <Shield size={30} />
                 <span className="font-raleway text-[20px] font-bold">
-                  Title
+                  Confront the entities
                 </span>
               </h1>
               <p className="text-[16px] text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                quia, voluptate, quae nesciunt, doloribus quod consequuntur
-                tempora quos quas quidem.
+                Systematically confronting the relevant entities that have
+                facilitated the illicit transfer of your wealth.
               </p>
             </div>
             <div className="flex flex-col gap-3 items-start justify-center p-6 shadow-lg">
               <h1 className="flex gap-2 items-center">
-                <File size={30} />
+                <RotateCw size={30} />
                 <span className="font-raleway text-[20px] font-bold">
-                  Title
+                  Get your money back
                 </span>
               </h1>
               <p className="text-[16px] text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                quia, voluptate, quae nesciunt, doloribus quod consequuntur
-                tempora quos quas quidem.
+                We take pride in our track record and assure you that we’ll go
+                to great lengths to get your money back.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="w-full bg-cover bg-primary  overflow-hidden ">
-        <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full  gap-2 xl:py-16 py-20 flex xl:flex-row flex-col">
+        <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
               Binary Options Scams: Recover Your Lost Funds
@@ -188,7 +199,7 @@ const BinaryOptions = () => {
           </div>
         </div>
       </div>
-      <div className="xl:max-w-5xl max-w-4xl   mx-auto items-center w-full  gap-2 xl:py-28 py-10 flex xl:flex-row flex-col-reverse">
+      <div className="xl:max-w-5xl max-w-4xl px-5 xl:px-0  mx-auto items-center w-full  gap-2 xl:py-28 py-10 flex xl:flex-row flex-col-reverse">
         <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[55%] ">
           <h1 className="text-center text-primary flex flex-col leading-tight xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
             Your money back guarantee
@@ -349,7 +360,7 @@ Some of the methods we utilize and have success with are chargebacks – working
         </div>
       </div>
       <div className="w-full bg-cover bg-primary my-20  overflow-hidden ">
-        <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full  gap-2 xl:py-16 py-20 flex xl:flex-row flex-col">
+        <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-center w-full gap-4 flex flex-col xl:w-full ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
               Let's get your money back!
@@ -369,11 +380,13 @@ Some of the methods we utilize and have success with are chargebacks – working
                 <option value="" disabled selected hidden>
                   Choose a scam type
                 </option>
-                <option value="1000">$1000</option>
-                <option value="2000">$2000</option>
-                <option value="3000">$3000</option>
-                <option value="4000">$4000</option>
-                <option value="5000">$5000</option>
+                <option value="Binary options">Binary options</option>
+                <option value="Cryptocurrency">Cryptocurrency</option>
+                <option value="Forex">Forex</option>
+                <option value="Stock Trading">Stock Trading</option>
+                <option value="Property scam">Property scam</option>
+                <option value="Romance Scam">Romance Scam</option>
+                <option value="ther scam">Other scam</option>
               </select>
             </div>
             <button
@@ -383,6 +396,14 @@ Some of the methods we utilize and have success with are chargebacks – working
               Get a free consultation
             </button>
           </div>
+        </div>
+      </div>
+      <div className="w-full text-primary flex items-center justify-center xl:pb-32 pb-28 flex-col">
+        <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
+          Testimonials
+        </h1>
+        <div className=" flex items-center justify-center w-full">
+          <Testimonial />
         </div>
       </div>
     </main>

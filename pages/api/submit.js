@@ -19,76 +19,78 @@ const credentials = {
   universe_domain: "googleapis.com",
 }
 
-const writeToSheet = async (data) => {
-  const SPREADSHEET_ID = "19sur6zLUHoysnQtEqL5G4KtvXfVdgusas0eAJmOMF-E"
-  const client = new google.auth.JWT(
-    credentials.client_email,
-    null,
-    credentials.private_key,
-    ["https://www.googleapis.com/auth/spreadsheets"]
-  )
-  const sheets = google.sheets({ version: "v4", auth: client })
-  const range = "Sheet1!A:B" // Adjust based on your needs
-
-  try {
-    await client.authorize()
-    const response = sheets.spreadsheets.values.append({
-      spreadsheetId: SPREADSHEET_ID,
-      range,
-      valueInputOption: "RAW",
-      insertDataOption: "INSERT_ROWS",
-      resource: {
-        values: [
-          [
-            data.name,
-            data.email,
-            data.phone_number,
-            data.scam_type,
-            data.amount_invested,
-            data.message,
-          ],
-        ],
-      },
-    })
-
-    console.log(response.data)
-  } catch (err) {
-    console.error(err)
-  }
-}
-
-const formSchema = z.object({
-  name: z
-    .string()
-    .trim()
-    .min(1, "Name must be between 1 and 32 characters")
-    .max(32)
-    .regex(/^[A-Za-z\s]+$/, "Name must contain only characters"),
-  last_name: z
-    .string()
-    .trim()
-    .min(1, "Last name must be between 1 and 32 characters")
-    .max(32)
-    .regex(/^[A-Za-z\s]+$/, "Last name must contain only characters"),
-  phone_number: z.string().min(5, "Invalid phone number"),
-  email: z.string().email("Invalid email address"),
-  scam_type: z.enum(
-    [
-      "binary_options",
-      "cryptocurrency",
-      "forex",
-      "stock_trading",
-      "property_scam",
-      "romance_scam",
-      "other",
-    ],
-    "Invalid scam type"
-  ),
-  amount_invested: z.string(),
-  message: z.string().trim().max(256, "Message must not exceed 256 characters"),
-})
-
 export default async function handler(req, res) {
+  const writeToSheet = async (data) => {
+    const SPREADSHEET_ID = "19sur6zLUHoysnQtEqL5G4KtvXfVdgusas0eAJmOMF-E"
+    const client = new google.auth.JWT(
+      credentials.client_email,
+      null,
+      credentials.private_key,
+      ["https://www.googleapis.com/auth/spreadsheets"]
+    )
+    const sheets = google.sheets({ version: "v4", auth: client })
+    const range = "Sheet1!A:B" // Adjust based on your needs
+
+    try {
+      await client.authorize()
+      const response = sheets.spreadsheets.values.append({
+        spreadsheetId: SPREADSHEET_ID,
+        range,
+        valueInputOption: "RAW",
+        insertDataOption: "INSERT_ROWS",
+        resource: {
+          values: [
+            [
+              data.name,
+              data.email,
+              data.phone_number,
+              data.scam_type,
+              data.amount_invested,
+              data.message,
+            ],
+          ],
+        },
+      })
+
+      console.log(response.data)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  const formSchema = z.object({
+    name: z
+      .string()
+      .trim()
+      .min(1, "Name must be between 1 and 32 characters")
+      .max(32)
+      .regex(/^[A-Za-z\s]+$/, "Name must contain only characters"),
+    last_name: z
+      .string()
+      .trim()
+      .min(1, "Last name must be between 1 and 32 characters")
+      .max(32)
+      .regex(/^[A-Za-z\s]+$/, "Last name must contain only characters"),
+    phone_number: z.string().min(5, "Invalid phone number"),
+    email: z.string().email("Invalid email address"),
+    scam_type: z.enum(
+      [
+        "binary_options",
+        "cryptocurrency",
+        "forex",
+        "stock_trading",
+        "property_scam",
+        "romance_scam",
+        "other",
+      ],
+      "Invalid scam type"
+    ),
+    amount_invested: z.string(),
+    message: z
+      .string()
+      .trim()
+      .max(256, "Message must not exceed 256 characters"),
+  })
   if (req.method === "POST") {
     try {
       console.log(req.body)

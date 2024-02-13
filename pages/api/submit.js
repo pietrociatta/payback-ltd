@@ -51,7 +51,7 @@ export default async function handler(req, res) {
         },
       })
 
-      console.log(response.data)
+      console.log(response)
     } catch (err) {
       console.error(err)
     }

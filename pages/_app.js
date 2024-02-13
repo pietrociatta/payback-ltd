@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
           <div className="font-poppins hidden xl:block col-span-3 text-[16px] font-normal">
             <ul className="flex justify-center gap-4">
               <li className="py-2">
-                <Link href="/">Testimonials</Link>
+                <Link href="/testimonials">Testimonials</Link>
               </li>
               <li className="relative group py-2">
                 <a
@@ -141,7 +141,10 @@ export default function App({ Component, pageProps }) {
                     <span>Scams</span>
                   </li>
 
-                  <li className="py-2.5 px-5 w-full cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary">
+                  <li
+                    onClick={() => router.push("/imposters-copycats")}
+                    className="py-2.5 px-5 w-full cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
                     <span>Imposters & Copycats </span>
                   </li>
                 </ul>
@@ -180,22 +183,43 @@ export default function App({ Component, pageProps }) {
             showMenu ? "animate-menu" : "hidden"
           }`}
         >
-          <div className="bg-white overflow-y-scroll p-8 max-h-[100dvh] h-[86dvh] font-rubik text-primary">
+          <div className="bg-white overflow-y-scroll p-8 max-h-[100dvh] h-[90dvh] font-rubik text-primary">
             <ul className="flex flex-col justify-center gap-4">
-              <li className="py-2">
-                <Link href="/">Testimonials</Link>
+              <li
+                onClick={() => {
+                  router.push("/testimonials")
+                  setShowMenu(false)
+                  setShowSubMenu2(false)
+                }}
+                className="py-2"
+              >
+                <span>Testimonials </span>
               </li>
               <li className="relative group py-2">
-                <a href="#why" className="flex gap-2 items-center">
+                <a
+                  href="#why"
+                  className="flex gap-2 items-center"
+                  onClick={() => setShowSubMenu(!showSubMenu)}
+                >
                   Recovery Services
                   <ChevronDown
                     size={20}
-                    className="group-hover:rotate-180 transition-all"
+                    className={`${
+                      showSubMenu ? "rotate-180" : ""
+                    } transition-all`}
                   />
                 </a>
-                <ul className="relative w-[220px]    text-primary bg-white  group-hover:flex flex-col hidden duration-300">
+                <ul
+                  className={` w-[220px] left-0 top-10 text-primary bg-white ${
+                    showSubMenu ? "flex" : "hidden"
+                  } flex-col transition-opacity duration-300`}
+                >
                   <li
-                    onClick={() => router.push("/binary-options")}
+                    onClick={() => {
+                      router.push("/binary-options")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Binary Options</span>
@@ -244,19 +268,77 @@ export default function App({ Component, pageProps }) {
               </li>
 
               <li className="py-2">
-                <a href="#why" className="flex gap-2 items-center">
+                <a
+                  href="#why"
+                  className="flex gap-2 items-center"
+                  onClick={() => setShowSubMenu2(!showSubMenu2)}
+                >
                   Blacklist
-                  <ChevronDown size={20} />
+                  <ChevronDown
+                    size={20}
+                    className={`${
+                      showSubMenu2 ? "rotate-180" : ""
+                    } transition-all`}
+                  />
                 </a>
+                <ul
+                  className={` w-[240px] left-0 top-10 text-primary bg-white ${
+                    showSubMenu2 ? "flex" : "hidden"
+                  } flex-col transition-opacity duration-300`}
+                >
+                  {/* Submenu items */}
+                  <li
+                    onClick={() => {
+                      router.push("/scams")
+                      setShowMenu(false)
+                      setShowSubMenu2(false)
+                    }}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Scams</span>
+                  </li>
+
+                  <li
+                    onClick={() => {
+                      router.push("/imposters-copycats")
+                      setShowMenu(false)
+                      setShowSubMenu2(false)
+                    }}
+                    className="py-2.5 px-5 w-full cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
+                    <span>Imposters & Copycats </span>
+                  </li>
+                </ul>
               </li>
-              <Link href="/contact-us" className="py-2">
-                Contact Us
-              </Link>
-              <Link href="/about-us" className="py-2">
-                About Us
-              </Link>
-              <li className="py-2">
-                <Link href="/blogs">Blog </Link>
+              <li
+                onClick={() => {
+                  router.push("/contact-us")
+                  setShowMenu(false)
+                  setShowSubMenu2(false)
+                }}
+                className="py-2"
+              >
+                <span>Contact Us </span>
+              </li>
+              <li
+                onClick={() => {
+                  router.push("/about-us")
+                  setShowMenu(false)
+                  setShowSubMenu2(false)
+                }}
+                className="py-2"
+              >
+                <span>About us </span>
+              </li>
+              <li
+                onClick={() => {
+                  router.push("/blogs")
+                  setShowMenu(false)
+                  setShowSubMenu2(false)
+                }}
+                className="py-2"
+              >
+                <span>Blog </span>
               </li>
               <li className="py-2">
                 <a href="/contact-us">Faq</a>

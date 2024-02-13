@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { useRouter } from "next/router"
 import Link from "next/link"
 
-const Scams = () => {
+const Imposters = () => {
   const router = useRouter()
   // State to hold the current page's data
   const [data, setData] = useState([])
@@ -16,7 +16,9 @@ const Scams = () => {
     const fetchData = async () => {
       try {
         // Dynamically import the JSON file based on the current page
-        const result = await import(`../public/content/scam/page_${page}.json`)
+        const result = await import(
+          `../public/content/imposters/page_${page}.json`
+        )
         setData((prevData) => [...prevData, ...result.data]) // Merge the new data with existing data
       } catch (error) {
         console.error("Failed to fetch data", error)
@@ -60,29 +62,27 @@ const Scams = () => {
           <div className="items-center  w-full gap-4 pt-10 pb-5  px-5 xl:px-0 flex flex-col  ">
             <h1 className="text-center  xl:text-[72px] md:text-[64px] text-[52px]   font-extrabold font-raleway xl:leading-[80px] leading-tight">
               <span className="text-[#e22020] ">
-                Black listed companies
+                Black listed imposters
                 <br className="hidden xl:flex" />
               </span>{" "}
-              & websites
+              & copycats
             </h1>
             <p
               className={`text-center  sm:text-[20px] text-[16px] max-w-xl  font-normal font-rubik`}
             >
-              In front of you is a list of companies & websites that have been
-              flagged as a scam/fraud by us or official regulatory bodies of
-              various countries. Search this database and check if you were
-              exposed to one of these scammers.
+              Beware. In front of you is a list of companies & websites that are
+              Payback Ltd imposters or copycats. Search this database and check
+              if you were exposed to one of these.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col items-center px-5 xl:px-0 justify-center gap-10 mt-20 mb-20">
-        {/* Your content rendering logic here */}
+      <div className="flex flex-col w-full items-center overflow-x-hidden px-5 xl:px-0 justify-center gap-10 mt-20 mb-20">
         {data.map((article, index) => (
           <div
             key={index}
-            className="flex md:flex-row flex-col   border shadow-lg max-w-6xl"
+            className="flex md:flex-row flex-col w-full   border shadow-lg max-w-6xl"
           >
             {/* Render your article data here */}
             <div className="md:min-w-[15%] md:w-[15%] flex items-center justify-center w-full">
@@ -99,7 +99,7 @@ const Scams = () => {
                 </div>
               )}
             </div>
-            <div className="flex flex-col items-start justify-center md:px-6 p-6">
+            <div className="flex flex-1 flex-col items-start justify-center md:px-6 p-6">
               <h2 className="flex md:flex-row flex-col gap-3 font-bold font-raleway text-xl">
                 <span>{article.name}</span>
                 <span>{article.website}</span>
@@ -123,4 +123,4 @@ const Scams = () => {
   )
 }
 
-export default Scams
+export default Imposters

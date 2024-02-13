@@ -15,7 +15,7 @@ import { forwardRef } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import Carousel from "@/components/Carousel"
-import Testimonial from "@/components/Tesitmonial"
+import Testimonial from "@/components/Testimonial"
 import {
   Accordion,
   AccordionContent,
@@ -566,7 +566,7 @@ export default function Home() {
           </Accordion>
         </div>
       </div>
-      <div className="w-full bg-cover bg-primary my-20  overflow-hidden ">
+      <div className="w-full bg-cover bg-primary mt-20  overflow-hidden ">
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-center w-full gap-4 flex flex-col xl:w-full ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
@@ -603,13 +603,6 @@ export default function Home() {
               Get a free consultation
             </button>
           </div>
-        </div>
-      </div>
-      <div className="w-full bg-cover bg-white text-primary   overflow-hidden ">
-        <div className="xl:max-w-6xl flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pb-20 py-20 flex ">
-          <h1 className="font-raleway max-w-lg font-bold text-[40px] text-center">
-            Latest Articles
-          </h1>
         </div>
       </div>
     </main>

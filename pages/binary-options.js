@@ -8,7 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import Testimonial from "@/components/Tesitmonial"
+import Testimonial from "@/components/Testimonial"
 
 const BinaryOptions = () => {
   const [headings, setHeadings] = useState([])

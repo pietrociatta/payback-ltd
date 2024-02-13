@@ -91,12 +91,12 @@ const Cryptocurrency = () => {
                 <option value="ther scam">Other scam</option>
               </select>
             </div>
-            <button
-              type="submit"
-              className="bg-secondary w-full max-w-md font-semibold text-primary px-14 py-3"
+            <a
+              href="/contact-us"
+              className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
-            </button>
+            </a>
           </div>
         </div>
         <img
@@ -345,12 +345,12 @@ Learn how to get bitcoin back from a scammer`}
               If you’ve lost money to scammers, contact us now and we’ll work
               with you to get your money back!
             </p>
-            <button
-              type="submit"
-              className="bg-secondary w-full max-w-md font-semibold text-primary px-14 py-3"
+            <a
+              href="/contact-us"
+              className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -384,12 +384,12 @@ Learn how to get bitcoin back from a scammer`}
                 <option value="ther scam">Other scam</option>
               </select>
             </div>
-            <button
-              type="submit"
-              className="bg-secondary w-full max-w-md font-semibold text-primary px-14 py-3"
+            <a
+              href="/contact-us"
+              className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>

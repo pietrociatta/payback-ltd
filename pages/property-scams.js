@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion"
 import Testimonial from "@/components/Testimonial"
 
-const BinaryOptions = () => {
+const Stock = () => {
   const [headings, setHeadings] = useState([])
 
   // Define custom components with Tailwind CSS for markdown elements
@@ -64,7 +64,7 @@ const BinaryOptions = () => {
               <span className="text-secondary ">
                 Get your money back <br className="hidden xl:flex" />
               </span>{" "}
-              from Binary options scam
+              from Property Fraud & Scams
             </h1>
             <p
               className={`text-center   sm:text-[20px] text-[16px]  font-normal font-rubik`}
@@ -176,16 +176,22 @@ const BinaryOptions = () => {
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-              Binary Options Scams: Recover Your Lost Funds
+              Property Fraud: Recover Your Lost Funds
             </h1>
 
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              Thousands of fraudulent binary options brokers appear every year
-              and it’s our mission to fight back. If you’ve been scammed by your
-              Broker, please contact us as soon as possible. The sooner we
-              confront them, the sooner we will be able to get your money back.
+              From rental property scams to property buying scams, every year
+              more complex types of property fraud emerge that you need to be
+              aware of. At Payback LTD it’s our goal to fight back against
+              rental, real estate, and property scammers. If you think you’ve
+              fallen victim to one of the many property scams out there, don’t
+              hesitate to contact us today. We will assign a fund recovery
+              specialist to your case to get started right away. The sooner we
+              start reviewing the evidence and determine the best course of
+              action for your unique case, the faster we will be able to get
+              your money back.
             </p>
             <button
               type="submit"
@@ -229,83 +235,112 @@ const BinaryOptions = () => {
         <div className="md:w-[60%]">
           <div className=" bg-primary w-full h-[1px] flex  my-5" />
           <p className="text-left text-gray-600 font-poppins">
-            At Payback Ltd we fight hard to assist our clients who have become
-            victims of binary options scams. Our recovery experts will endeavor
-            to recover your losses and right the wrongs you've experienced at
-            the hands of nefarious individuals and companies who have acted in a
-            fraudulent fashion. In addition, our informative guides will help
-            you to avoid such scams, therefore preparing you for possible future
-            attacks.
+            Our team of compassionate fund recovery specialists at Payback LTD
+            fights hard for each and every one of our clients. We know how
+            devastating it can be to fall victim to a property scam, and we will
+            do everything in our power to get your money back and right the
+            wrongs that were done to you by individuals or companies who have
+            acted in a fraudulent manner. We also aim to provide constantly
+            updated, informative guides and articles to help prepare you for and
+            avoid future scams.
           </p>
           <div className=" bg-primary  w-full h-[1px] flex  mt-5 mb-10" />
           <ReactMarkdown components={markdownComponents}>
-            {`
-# What are binary options?
+            {`# How Does Property Fraud Work?
 
-Binary options are a type of financial product classified as an exotic option. Binary options trading may seem like a new speculative market, but they’ve existed since 1974. They were created by one of the largest derivatives markets globally, CBOE (Chicago Board Options Exchange). It wasn’t until 2008 that binary options became primarily available to the public, and many entities copied the original CBOE asset type listing.
+Property fraud encompasses various schemes aimed at duping individuals interested in renting, buying, or leasing property, with the ultimate goal of swindling money or sensitive information. Fraudsters impersonate property owners, landlords, real estate agencies, or related businesses to deceive victims into providing funds or personal financial details for illicit purposes.
 
-Binary options are a type of option that allows you to guess whether the option expires in the money – that’s it. Some unregulated binary options brokers allow for guessing on out of the money outcomes. A simple yes or no bet is made, hence the name binary. Contemporary binary options have expiration times between a week to a few minutes, with the majority of modern binary options platforms specializing in under one-day expirations.
+### Key Points
 
-# Common binary option types
+- **Avoid Upfront Payments**: Refrain from paying anything before having a written, lawyer-approved contract.
+- **Protect Personal Information**: Don't share sensitive data like social security or bank account numbers until a deal is confirmed.
+- **Verify Properties**: Always inspect properties in person to ensure they match the listing's description.
+- **Research**: Conduct due diligence to authenticate rental or property sale companies.
+- **Beware of High-Pressure Tactics**: Steer clear of aggressive sales strategies, especially regarding mortgage refinancing or foreclosure relief services.
 
-There are three primary binary call/put options:
+# Common Property Buying Scams
 
-1. **High/Low Binary Option**
-   - You bet whether the price will close above a specific price or below a certain price.
+#### Escrow Wire Fraud
 
-2. **Touch/no-Touch**
-   - You bet whether the price will reach or not reach a defined price level at least once before the option expires. It does not matter if it closes above or below the price, only that it reached that price level before expiration.
+Fraudsters compromise email accounts associated with real estate transactions and deceive buyers into wiring funds to a fraudulent bank account under the guise of legitimate escrow instructions.
 
-3. **Boundary**
-   - You bet that price will not reach a certain level above or below the current traded price. For example, you want to make a bet that over a certain period of time, XYZ won’t trade above $2.00 and won’t trade below $1.00 – if prices stay between these two values, you win.
+#### Loan Flipping Scam
 
-## Key points
+Ill-intentioned lenders persuade homeowners to repeatedly refinance mortgages, resulting in excessive loans and increased fees for the lender.
 
-- Binary options are an extremely volatile and questionable speculative market with both the EU and UK banning binary options in the past three years.
-- Very few regulated binary options brokers exist, increasing risk to your money.
-- Companies like Payback can help recover money for binary options fraud victims.
-- Do your own due diligence and research each binary options trading platform as well as find reviews from various users.
-- Never risk more than you can afford to lose.
+#### Foreclosure Relief Scam
 
-# Are binary options a scam or legit?
+Scammers exploit individuals facing foreclosure by offering relief services for a fee but fail to deliver promised assistance.
 
-Binary options are overwhelmingly a scam and an illegitimate market. When you consider the various legal differences between the US, UK, and EU financial regulations, you may be surprised to find out that binary options markets are legal in the US but are now illegal in the EU and UK. In fact, the bans imposed on binary options markets in the EU and UK are very recent – 2018 for the former and 2019 for the latter.
+#### Moving Scams
 
-A large reason for the banning of binary options in the EU was due to the dubious nature of CySEC (Cyprus Securities and Exchange Commission) broad granting of national regulatory approval to a large number of unethical binary options brokers.
+Moving companies demand upfront payments, provide inflated estimates, or hold belongings hostage for additional payments.
 
-The US’s high regulatory environment makes participation in binary options marginally safer from a compliance standpoint, but it does not remove the inherent too high-risk nature of binary options. There is perhaps no market in the realm of financial markets that professional speculators and investors more deride than the binary options market. Know that binary options are more akin to gambling than speculation and that it is a true zero-sum instrument.
+#### Commercial Real Estate Scam
 
-## Binary options robot scams
+Fraudulent property owners misrepresent properties or forge documents to extract funds or identities from unsuspecting buyers or renters.
 
-If you are a day trader or an aspiring day trader, familiar with some of the largest speculative and high-frequency trading markets in the world like forex or futures, you are probably familiar with the prevalence of robots (commonly known as ‘bots’). Binary options robots are often sold as a way to manage your account. This involves sharing your account information or an API to allow an individual or automated system to execute trades on your behalf. Binary option robot scams include many high-pressure sales tactics, false statements on the return on investment and success rates, along with graphics depicting a wealthy lifestyle as a result of using their system.
+#### Home Inspection Scam
 
-## Binary options software scams
+Collusion between scammers and home inspectors results in fraudulent assessments, leading to inflated property values and unnecessary expenses for buyers.
 
-Software scams in the binary options space are common and fall right into the same realm as robots. Depending on the software used for binary options (most are often done via web browser), some software is touted as ‘advanced artificial intelligence (AI)’ or ‘machine learning software,’ leading you to believe that it is an extremely sophisticated algorithm that will generate substantial gains. Many software providers report high returns - the returns the software provider is making is from selling his/her software to others, not on the success of the software in the binary options market. As with robot scams, be wary of the sales tactics and false lifestyle imagery.
+#### Title or Deed Scam
 
-## Binary options trading scams
+Scammers unlawfully transfer property ownership using forged documents, enabling them to sell or borrow against the property without the owner's knowledge.
 
-The number of trading scams in the binary options space is substantial. Because some of the largest regulatory agencies around the world have banned binary options, many former (and new) brokers have had to reestablish their businesses in nations where there is little to no real regulation. The broad bans of binary options have resulted in thousands of unregistered brokers all around the globe. Brokers within the binary options space have questionable to outright fraudulent data feeds. It’s not uncommon to see bids and ask fluctuate violently within the final micro-seconds resulting in significant losses, sometimes on both sides of the trade! You can avoid some of the trading scams by using only regulated brokers, although very few are legitimate.
+# Common Rental Property Scams
 
-## Binary options signal scams
+#### Fake Property Listings
 
-Signal scams are hands down the most prevalent form of financial fraud and scams in today’s markets. For the binary options market, signal scams involve an individual or company that offers to sell you trade ideas (signals) in exchange for a monthly fee. The signals are provided via text, email, or via their website. The most popular version of providing signals in most markets is through the chat platform Telegram. As with any financial instrument, it is best to avoid signal providers – they are only interested in making money from you as a subscriber.
+Scammers post fictitious property listings online, enticing renters to pay deposits for non-existent properties.
 
-# Scammed and lost money in Binary Options? Here’s what you can do next!
+#### Fake Letting Agents and Landlords
 
-If you’ve found yourself to be the unfortunate victim of a binary options scam, it may seem like you have no recourse except to just take the loss and move on. Don’t let bad actors get away with stealing your money! There are ways to go after individuals and entities that have taken your money. We at Payback are experienced in the recovery of funds from bad actors like binary options fraudsters.
+Impostors pose as legitimate agents or landlords, collecting upfront payments for unauthorized rental properties.
 
-Some of the methods we utilize and have success with are chargebacks – working with you and your card company to make an authentic and valid report of fraud. Payback works closely with you, and you will work with the same caseworker throughout the process. Fill out our Success Calculator to get started and check the testimonial and reviews for yourself!
+#### Fake Overseas Landlords
 
-## How to avoid Binary Options trading scams
+Scammers claim to be overseas landlords, requesting holding deposits for fabricated properties or cloned listings.
 
-- Only use regulated brokers – for the US, the regulatory agency(s) for binary options fall under the CFTC (Commodity Futures Trading Commission) and the SEC (Securities and Exchange Commission). Legitimate brokers will openly disclose their license number and cite the national regulatory agency and website.
-- Do your due diligence – read user reviews across various sources. Be wary of sites that are specific to reviewing only binary options brokers – they are more than likely just shell sites meant to push you to a particular broker or a few select brokers.
-- If the broker is unregulated, check where the broker is based – it’s good to know what nation the business is headquartered in.
-- If you do want to risk your capital in the binary options markets, test the broker’s data yourself. Vet the broker and ensure that data feeds are authentic and that there are no
+#### Phishing Scams
 
- abnormal price changes near expiry.
-`}
+Fraudsters send mass emails impersonating rental agencies, prompting recipients to provide payments through fake online portals or credit card details.
+
+#### Fake Printed Listings
+
+Scammers distribute counterfeit property listings via newspapers or flyers, deceiving victims into making upfront payments.
+
+# Property Scams Online
+
+Fraudsters utilize platforms like Facebook and Craigslist to post fake property listings or create elaborate fake websites to deceive prospective buyers or renters.
+
+# How To Spot Property Scams
+
+- Verify property appearances and documentation.
+- Insist on in-person meetings with landlords or sellers.
+- Avoid upfront payments before confirming property legitimacy.
+- Conduct thorough research on property companies and individuals.
+- Seek legal review of contracts before signing.
+- Hire certified property inspectors for assessments.
+- Obtain written estimates and contracts from movers.
+- Refuse high-pressure tactics regarding mortgage refinancing.
+
+# Victim of a Property Scam?
+
+If you've fallen victim to property fraud, contact fund recovery specialists, such as Payback LTD, to explore options for retrieving stolen funds.
+
+# How To Avoid Property Scams
+
+- Refrain from upfront payments without verifying property legitimacy.
+- Review contracts with legal professionals before committing.
+- Be wary of deals that sound too good to be true.
+- Safeguard personal and financial information.
+- Conduct transactions in person whenever possible.
+- Research property companies and individuals thoroughly.
+- Inspect properties in person before making commitments.
+- Hire certified property inspectors for assessments.
+- Obtain written estimates and contracts from movers.
+- Resist pressure to refinance mortgages unnecessarily.`}
           </ReactMarkdown>{" "}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
@@ -410,4 +445,4 @@ Some of the methods we utilize and have success with are chargebacks – working
   )
 }
 
-export default BinaryOptions
+export default Stock

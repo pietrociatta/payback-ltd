@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion"
 import Testimonial from "@/components/Testimonial"
 
-const BinaryOptions = () => {
+const Stock = () => {
   const [headings, setHeadings] = useState([])
 
   // Define custom components with Tailwind CSS for markdown elements
@@ -64,7 +64,7 @@ const BinaryOptions = () => {
               <span className="text-secondary ">
                 Get your money back <br className="hidden xl:flex" />
               </span>{" "}
-              from Binary options scam
+              from Stock Market Scams
             </h1>
             <p
               className={`text-center   sm:text-[20px] text-[16px]  font-normal font-rubik`}
@@ -176,16 +176,20 @@ const BinaryOptions = () => {
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-              Binary Options Scams: Recover Your Lost Funds
+              Stock Trading Scams: Recover Your Lost Funds
             </h1>
 
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              Thousands of fraudulent binary options brokers appear every year
-              and it’s our mission to fight back. If you’ve been scammed by your
-              Broker, please contact us as soon as possible. The sooner we
-              confront them, the sooner we will be able to get your money back.
+              We all dream of becoming the next Warren Buffett. Who wouldn’t
+              want to be one of the richest men in the world. We would all like
+              to make the right investment each and every time, but that’s next
+              to impossble to achieve. Scammers prey on those seeking to make a
+              quick buck and they will look to lure us in with shady investment
+              opportunities that have no basis in reality. If you suspect you’ve
+              lost money due to a fraudulent stock trading scam then contact us
+              now and we’ll work to get your money back.
             </p>
             <button
               type="submit"
@@ -229,83 +233,73 @@ const BinaryOptions = () => {
         <div className="md:w-[60%]">
           <div className=" bg-primary w-full h-[1px] flex  my-5" />
           <p className="text-left text-gray-600 font-poppins">
-            At Payback Ltd we fight hard to assist our clients who have become
-            victims of binary options scams. Our recovery experts will endeavor
-            to recover your losses and right the wrongs you've experienced at
-            the hands of nefarious individuals and companies who have acted in a
-            fraudulent fashion. In addition, our informative guides will help
-            you to avoid such scams, therefore preparing you for possible future
-            attacks.
+            Our experts at Payback Ltd make it a top priority to help our
+            clients recover funds after they have been a victim to stock market
+            scams. We want to raise awareness of the various types of stock
+            fraud and how to best protect yourself. Armed with knowledge you can
+            project your stock investments from fraud and scam.
           </p>
           <div className=" bg-primary  w-full h-[1px] flex  mt-5 mb-10" />
           <ReactMarkdown components={markdownComponents}>
-            {`
-# What are binary options?
+            {`# How does the stock market work?
+Stock markets are a form of centralized exchange where investors buy and sell ownership (stocks) of various companies. Most stock markets worldwide are highly regulated and involve legal, nationally registered, and regulated brokers to facilitate the transfer of stock from a seller to a buyer.
 
-Binary options are a type of financial product classified as an exotic option. Binary options trading may seem like a new speculative market, but they’ve existed since 1974. They were created by one of the largest derivatives markets globally, CBOE (Chicago Board Options Exchange). It wasn’t until 2008 that binary options became primarily available to the public, and many entities copied the original CBOE asset type listing.
+Examples of regulated stock exchanges are the US-based NYSE (New York Stock Exchange) and the NASDAQ (National Association of Securities Dealers Automated Quotations). Our ability to access the stock market has never been more effortless, and the barriers to entry continue to fall every year.
 
-Binary options are a type of option that allows you to guess whether the option expires in the money – that’s it. Some unregulated binary options brokers allow for guessing on out of the money outcomes. A simple yes or no bet is made, hence the name binary. Contemporary binary options have expiration times between a week to a few minutes, with the majority of modern binary options platforms specializing in under one-day expirations.
+But this ease of access is not without its dangers. We are all susceptible to different types of investment scams in the investment and stock world, so it is incumbent on us to do our due diligence and protect ourselves and our money from becoming victims of stock fraud and stock scams.
 
-# Common binary option types
+# Is the stock market rigged?
+One of the biggest questions and, for many, beliefs about the stock market is that it is rigged. Is it? The US’s stock markets are regulated by various government and non-government entities such as the SEC (Securities and Exchange Commission) and FINRA (Financial Industry Regulatory Authority). Both the SEC and FINRA have overlapping legal responsibilities that monitor the stock exchanges and the various brokers that facilitate the buying and selling of stocks. However, that doesn’t mean we can avoid all fraud and scams.
 
-There are three primary binary call/put options:
+Current and past companies intentionally deceive individual investors and/or participate in illegal accounting and business practices, such as ENRON and Valeant Pharmaceuticals. Some fraudulent individuals create ‘too good to be true’ advertisements that result in Ponzi schemes – the worst actor in history being Bernie Madoff.
 
-1. **High/Low Binary Option**
-   - You bet whether the price will close above a specific price or below a certain price.
+You even have regulated online stock brokers that do not practice their fiduciary responsibilities on behalf of their clients – a most recent example would be Robinhood during the early 2022 GameStop debacle. While there are obvious risks in the stock market and plenty of people looking to take advantage of you, the overwhelming and vast majority of brokers and exchanges operate in a legitimate, ethical and legal way.
 
-2. **Touch/no-Touch**
-   - You bet whether the price will reach or not reach a defined price level at least once before the option expires. It does not matter if it closes above or below the price, only that it reached that price level before expiration.
+### Key points
+- Avoid persons or entities that approach you with phrases like ‘investment opportunity,’ ‘guaranteed return’ or anything else that sounds too good to be true.
+- Avoid high-pressure sales tactics and advertisements – if you didn’t look for the company on your own, best to avoid.
+- Do your own due diligence – trust yourself, avoid listening to others for advice on what to buy and sell. Speak with a registered financial advisor.
+- Learn the basics – Learn Dow Theory 101 and identify what a bear market is and what a bull market is. Learn about conservative and traditional investing. Learn about investing in leaders and proven successful stocks like those in the conventional basket of blue-chip stocks.
 
-3. **Boundary**
-   - You bet that price will not reach a certain level above or below the current traded price. For example, you want to make a bet that over a certain period of time, XYZ won’t trade above $2.00 and won’t trade below $1.00 – if prices stay between these two values, you win.
+# Types of Securities fraud
+#### Ponzi Schemes
+Perhaps the most well-known version of a stock fraud scheme in history is a Ponzi scheme. A Ponzi scheme involves paying investment profits to old investors with the deposits of new investors. When a new investor joins the system, it is most often at the advice of another investor unknowingly part of the Ponzi scheme. What makes Ponzi schemes so successful is the perceived legitimacy and history of returns. Ponzi schemes can exist for years or even decades.
 
-## Key points
+In the case of Bernie Madoff, his Ponzi scheme and fraud empire lasted for over 20 years. He was so successful at this fraud that his firm even became one of the leading market makers of the stock market, and he was a former chairman of the NASDAQ! Ponzi schemes eventually fail because there is never enough new investor money to keep paying off old investors. Some of the keywords or phrases with a Ponzi scheme are ‘guaranteed income,’ ‘offshore investment,’ ‘small, private hedge fund,’ ‘secret invite-only fund,’ or any other form of ‘too good to be true’ sales pitch.
 
-- Binary options are an extremely volatile and questionable speculative market with both the EU and UK banning binary options in the past three years.
-- Very few regulated binary options brokers exist, increasing risk to your money.
-- Companies like Payback can help recover money for binary options fraud victims.
-- Do your own due diligence and research each binary options trading platform as well as find reviews from various users.
-- Never risk more than you can afford to lose.
+#### Pump and Dump
+Pump and Dump (sometimes referred to as P&Ds) scams are perhaps one of the classic and persistent forms of stock fraud that exist. What makes pump and dump scams challenging to detect is that they can often be done in a legitimate fashion. A pump and dump is essentially an event where you are targeted to buy a stock. The stock is sometimes referred to as a ‘multi-bagger,’ indicating a massive return on investment. You may also read about how the stock is an emerging leader in its sector/industry, how it could be the next Apple or Amazon.
 
-# Are binary options a scam or legit?
+The stocks used in pump and dump are often publicly traded and listed on a regulated exchange like the NASDAQ and bought through a regulated stockbroker. The stock price is almost always between $1.00 to $10.00; how a pump and dump works is straightforward. The scammers purchase the cheap stock early then begins to campaign on its behalf and drum up support and enthusiasm. As new investors buy, the price starts to spike up and accelerate – it is at that point the originators of the scam sell and exit their positions at a significant profit and at the expense of yourself and everyone else who bought too late.
 
-Binary options are overwhelmingly a scam and an illegitimate market. When you consider the various legal differences between the US, UK, and EU financial regulations, you may be surprised to find out that binary options markets are legal in the US but are now illegal in the EU and UK. In fact, the bans imposed on binary options markets in the EU and UK are very recent – 2018 for the former and 2019 for the latter.
+#### Penny Stock Scams
+Along with pump and dump scams, penny stock scams are among the oldest and most well-known forms of stock fraud. Penny scams and pump and dumps often work hand in hand with pump and dump scams utilizing penny stocks. Penny stock scams are often touted as ways to invest in new companies via their stock at very low-priced shares with the promise of massive returns in the future – the definition of a get rich quick scheme. The phrase ‘Penny Stock’ doesn’t necessarily mean that the stock is worth pennies – today, it generally means a very low-value stock.
 
-A large reason for the banning of binary options in the EU was due to the dubious nature of CySEC (Cyprus Securities and Exchange Commission) broad granting of national regulatory approval to a large number of unethical binary options brokers.
+However, modern penny stock scams have increasingly used stocks that are not available from the major regulated exchanges like the NYSE. Instead, these penny stocks are found on the ‘Pink Sheets’ or OTC markets (Over The Counter). OTC securities are not always available from regulated stockbrokers as the securities themselves must be exchanged between the company selling their stock to you directly or through another non-centralized broker/exchange.
 
-The US’s high regulatory environment makes participation in binary options marginally safer from a compliance standpoint, but it does not remove the inherent too high-risk nature of binary options. There is perhaps no market in the realm of financial markets that professional speculators and investors more deride than the binary options market. Know that binary options are more akin to gambling than speculation and that it is a true zero-sum instrument.
+#### Stock Broker Fraud
+Stock broker fraud is, thankfully, one of the forms of fraud that has decreased as stock markets have become more regulated. However, that doesn’t mean it doesn’t happen. The days of a stockbroker taking the old physical paper securities or deposited cash and running away are long gone. Stockbrokers who wish to do wrong by the clients today now have to resort to more shady methods.
 
-## Binary options robot scams
+One of the most prevalent (and, sometimes legal) forms of stockbroker fraud is an activity known as ‘front-running.’ Let’s say you were to call your brokerage firm and you wanted to buy 100 shares of XYZ. Your broker, knowing that this would likely move the market, instead places an order himself before executing your order. The broker essentially enters the market early, for himself, before completing your order and allows your order to drive up the value of his earlier entry.
 
-If you are a day trader or an aspiring day trader, familiar with some of the largest speculative and high-frequency trading markets in the world like forex or futures, you are probably familiar with the prevalence of robots (commonly known as ‘bots’). Binary options robots are often sold as a way to manage your account. This involves sharing your account information or an API to allow an individual or automated system to execute trades on your behalf. Binary option robot scams include many high-pressure sales tactics, false statements on the return on investment and success rates, along with graphics depicting a wealthy lifestyle as a result of using their system.
+The major problem with front-running is it is nearly impossible to detect. With the amount of high-frequency-trading (HFT) that occurs every second, front-running is a type of fraud that only diligent and active regulators can determine. There are other tactics that stockbrokers will employ that are not necessarily fraudulent but unethical. Some types of behavior are encouraging high-frequency day trading by new investors, undisclosed appropriation of dividends, and unclear rules or fees associated with shorting.
 
-## Binary options software scams
+#### Boiler Room Scams
+If you have seen the movie ‘The Wolf of Wallstreet’ then you have seen what a boiler room is
 
-Software scams in the binary options space are common and fall right into the same realm as robots. Depending on the software used for binary options (most are often done via web browser), some software is touted as ‘advanced artificial intelligence (AI)’ or ‘machine learning software,’ leading you to believe that it is an extremely sophisticated algorithm that will generate substantial gains. Many software providers report high returns - the returns the software provider is making is from selling his/her software to others, not on the success of the software in the binary options market. As with robot scams, be wary of the sales tactics and false lifestyle imagery.
+. Jordan Belfort’s (Wolf of Wallstreet) company employed hundreds of ‘brokers’ who called prospective investors to buy stock in individual companies – often overvalued but cheap companies. The ‘broker’ used high energy sale tactics that made the potential investor fear they would be missing out on an opportunity of a lifetime (FOMO = Fear Of Missing Out).
 
-## Binary options trading scams
+While the days of call-center type boiler rooms like those in The Wolf of Wall Street no longer exist, that doesn’t mean the concept has gone away. It has evolved. Instead of boiler rooms, we now have subreddits (the website Reddit), private/public forums and message boards, emails, text alerts, fraudulent websites, fake webinars, automated social media generators on Twitter, Facebook, and StockTwits (Twitter version for stock traders). Modern boiler room operations are now more prevalent than their old counterparts, and they continue to grow and become more sophisticated.
 
-The number of trading scams in the binary options space is substantial. Because some of the largest regulatory agencies around the world have banned binary options, many former (and new) brokers have had to reestablish their businesses in nations where there is little to no real regulation. The broad bans of binary options have resulted in thousands of unregistered brokers all around the globe. Brokers within the binary options space have questionable to outright fraudulent data feeds. It’s not uncommon to see bids and ask fluctuate violently within the final micro-seconds resulting in significant losses, sometimes on both sides of the trade! You can avoid some of the trading scams by using only regulated brokers, although very few are legitimate.
+#### Signal Providers
+Signal providers are companies or individuals which want you to subscribe to their frequent notifications which will give you a stock to buy or short, what the stock price entry is, where to take profit and where to place a stop loss or trailing stop. While this kind of service sounds fantastic and appears like a good deal, signal providers are only after one thing: your subscription, and is another one of the potential stock scams.
 
-## Binary options signal scams
+Almost all signal providers are just nicer versions of scammers and fraudsters who are able to operate and peddle their service in a legal way. You may also come across signal providers who offer their services for free. Signal providers who provide a free service are almost always involved in Pump and Dump schemes. They entice new traders and investors into thinking that they’re getting a great deal by getting free information – when all you are really doing is acting as a liquidity tool to pump up a stock that the provider has every intention of dumping as soon as its price spikes higher.
 
-Signal scams are hands down the most prevalent form of financial fraud and scams in today’s markets. For the binary options market, signal scams involve an individual or company that offers to sell you trade ideas (signals) in exchange for a monthly fee. The signals are provided via text, email, or via their website. The most popular version of providing signals in most markets is through the chat platform Telegram. As with any financial instrument, it is best to avoid signal providers – they are only interested in making money from you as a subscriber.
+# Can you get your money back from after a stock scam?
+If you have lost money due to a scam or fraud in the stock market, you have options. With the stock market so regulated and scrutinized, thankfully, there are ways for you to recover money. But the process is exhaustive and prohibitively challenging that many become frustrated and decide not to pursue monetary recovery.
 
-# Scammed and lost money in Binary Options? Here’s what you can do next!
-
-If you’ve found yourself to be the unfortunate victim of a binary options scam, it may seem like you have no recourse except to just take the loss and move on. Don’t let bad actors get away with stealing your money! There are ways to go after individuals and entities that have taken your money. We at Payback are experienced in the recovery of funds from bad actors like binary options fraudsters.
-
-Some of the methods we utilize and have success with are chargebacks – working with you and your card company to make an authentic and valid report of fraud. Payback works closely with you, and you will work with the same caseworker throughout the process. Fill out our Success Calculator to get started and check the testimonial and reviews for yourself!
-
-## How to avoid Binary Options trading scams
-
-- Only use regulated brokers – for the US, the regulatory agency(s) for binary options fall under the CFTC (Commodity Futures Trading Commission) and the SEC (Securities and Exchange Commission). Legitimate brokers will openly disclose their license number and cite the national regulatory agency and website.
-- Do your due diligence – read user reviews across various sources. Be wary of sites that are specific to reviewing only binary options brokers – they are more than likely just shell sites meant to push you to a particular broker or a few select brokers.
-- If the broker is unregulated, check where the broker is based – it’s good to know what nation the business is headquartered in.
-- If you do want to risk your capital in the binary options markets, test the broker’s data yourself. Vet the broker and ensure that data feeds are authentic and that there are no
-
- abnormal price changes near expiry.
-`}
+At Payback, we specialize in the recovery of funds due to fraudulent activity and stock market scams. We have experience in working with regulators and litigating against bad actors in the stock market space. Our representatives create an exhaustive and detailed analysis of what happened to you to determine the best way to get your money back. Then we assign a caseworker that focuses on your case throughout the process. We have a myriad of positive reviews and an extremely high positive expectancy rate in the field.`}
           </ReactMarkdown>{" "}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
@@ -410,4 +404,4 @@ Some of the methods we utilize and have success with are chargebacks – working
   )
 }
 
-export default BinaryOptions
+export default Stock

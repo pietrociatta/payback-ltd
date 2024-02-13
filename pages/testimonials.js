@@ -134,7 +134,22 @@ const Testimonials = () => {
 
   const videos = [
     {
-      url: "https://www.youtube.com/embed/aolI_Rz0ZqY?si=o26MMfYelB5tHvj5&amp;controls=0&amp;rel=0",
+      url: "https://www.youtube.com/embed/qRfOakNl-uA?si=o26MMfYelB5tHvj5&amp;controls=0&amp;rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/lRlr2T39NTc?si=o26MMfYelB5tHvj5&amp;controls=0&amp;rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/0op67uvszLA?si=o26MMfYelB5tHvj5&amp;controls=0&amp;rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/bvnyHiGfCrg?si=o26MMfYelB5tHvj5&amp;controls=0&amp;rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/X8L05PZWEJg?si=o26MMfYelB5tHvj5&amp;controls=0&amp;rel=0",
+    },
+    {
+      url: "https://www.youtube.com/embed/gb_x-DltH_Y?si=o26MMfYelB5tHvj5&amp;controls=0&amp;rel=0",
     },
   ]
 
@@ -199,7 +214,13 @@ const Testimonials = () => {
           {selectedCategory === "Video" &&
             videos.map((video, index) => (
               <div className="w-full flex flex-col items-center justify-center  ">
-                <ReactPlayer url={video.url} width="100%" height="100%" />
+                <ReactPlayer
+                  url={video.url}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                  }}
+                />
               </div>
             ))}
         </div>
@@ -276,12 +297,12 @@ Don't just take our word for it. Here's what our customers have to say:
               If you’ve lost money to scammers, contact us now and we’ll work
               with you to get your money back!
             </p>
-            <button
-              type="submit"
-              className="bg-secondary w-full max-w-md font-semibold text-primary px-14 py-3"
+            <a
+              href="/contact-us"
+              className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>

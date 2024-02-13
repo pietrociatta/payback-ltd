@@ -139,12 +139,12 @@ const Contactus = () => {
                 <option value="ther scam">Other scam</option>
               </select>
             </div>
-            <button
-              type="submit"
-              className="bg-secondary w-full max-w-md font-semibold text-primary px-14 py-3"
+            <a
+              href="/contact-us"
+              className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>

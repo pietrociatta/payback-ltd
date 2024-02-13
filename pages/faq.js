@@ -23,18 +23,60 @@ const faq = () => {
         <Accordion type="single" collapsible className="w-full max-w-2xl">
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-semibold w-full text-[20px]">
-              Is it accessible?
+              How long does an average case take to complete?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
+              Although our experienced team will look to complete your case
+              (recover a substantial part if not all of your lost funds) as soon
+              as possible, each case is unique. On average this process takes
+              from 3 months to a year.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="font-semibold text-[20px]">
-              Is it accessible?
+              What is the cost of pursuing a case via Payback LTD?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
+              The total cost of the services is comprised of two parts: First,
+              we charge a fixed-fee of 10% (of the total amount lost) at the
+              beginning of the engagement for services rendered in the relevant
+              engagement with each customer (Minimum possible fee: $1,500).
+              Second, a further 10% is charged as a commission when the recovery
+              is successfully completed. No other hidden fees will be added at
+              any time.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger className="font-semibold text-[20px]">
+              Why don't you charge me at the end of the process only?
+            </AccordionTrigger>
+            <AccordionContent>
+              Each case requires a significant amount of man-hours to
+              investigate, process, and bring to successful completion. We
+              charge a fixed-fee to cover the general legal services rendered
+              and operational costs that we incur, hence the need to do so ahead
+              of any action we undertake on your behalf.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="font-semibold text-[20px]">
+              Where is Payback LTD based?
+            </AccordionTrigger>
+            <AccordionContent>
+              Payback LTD is located in Ramat Gan, Israel.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-5">
+            <AccordionTrigger className="font-semibold text-[20px]">
+              How do I know that Payback LTD isn’t a scam?
+            </AccordionTrigger>
+            <AccordionContent>
+              We believe that a question like that is best answered by the
+              company’s clients. We invite you to check out the hundreds of
+              great reviews by our clients to verify that we are a legitimate
+              and reputable organization. We are also registered with the
+              Israeli justice department, as well as this our staff will happily
+              forward you the relevant credentials.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

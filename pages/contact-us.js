@@ -6,13 +6,56 @@ export const CustomInput = forwardRef(({ value, onChange, ...rest }, ref) => (
   <input
     ref={ref}
     value={value}
+    onChange={(e) => onChange(e.target.value)}
     className="bg-transparent outline-none w-full px-4"
-    onChange={onChange}
+    {...rest}
   />
 ))
 
 const Contactus = () => {
   const [value, setValue] = useState()
+  const [name, setName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
+  const [email, setEmail] = useState("")
+  const [amountInvested, setAmountInvested] = useState("")
+  const [message, setMessage] = useState("")
+  const [scamtype, setScamType] = useState("")
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    const formData = {
+      name,
+      last_name: lastName,
+      phone_number: phoneNumber,
+      email,
+      amount_invested: amountInvested,
+      message,
+      scam_type: scamtype,
+    }
+
+    try {
+      const response = await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form.")
+      }
+
+      // Handle success
+      alert("Form submitted successfully.")
+      // Reset form or redirect user as needed
+    } catch (error) {
+      console.error("Failed to submit form:", error)
+      alert("Error submitting form, please try again.")
+    }
+  }
 
   return (
     <div>
@@ -28,62 +71,79 @@ const Contactus = () => {
               If you’ve been ripped off by scammers, get in touch and our team
               of experts will work to get your money back
             </p>
-            <form action="" className="grid w-full grid-cols-2 gap-5 mt-10">
+            <form
+              onSubmit={handleSubmit}
+              className="grid w-full grid-cols-2 gap-5 mt-10"
+            >
               <input
                 type="text"
                 name="name"
-                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Your Name*"
-                className="py-3 px-4 col-span-2 md:col-span-1  bg-gray-100 outline-primary outline-[1px] text-primary"
+                className="py-3 px-4 col-span-2 md:col-span-1 bg-gray-100 outline-primary outline-[1px] text-primary"
               />
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="last_name"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
                 placeholder="Last Name*"
-                className="py-3 px-4 col-span-2 md:col-span-1   bg-gray-100 outline-primary outline-[1px] text-primary"
+                className="py-3 px-4 col-span-2 md:col-span-1 bg-gray-100 outline-primary outline-[1px] text-primary"
               />
-              <div className="w-full col-span-2 flex">
-                <PhoneInput
-                  placeholder="Enter phone number"
-                  value={value}
-                  autoComplete="on"
-                  countryCallingCodeEditable={false}
-                  defaultCountry="US"
-                  international={true}
-                  onChange={() => setValue(value)}
-                  inputComponent={CustomInput} // Use the custom input component
-                  className="py-3 px-4 bg-gray-100 outline-primary outline-[1px] text-primary w-full"
-                />
-              </div>
+              <PhoneInput
+                placeholder="Enter phone number"
+                value={phoneNumber}
+                onChange={setPhoneNumber}
+                inputComponent={CustomInput} // Use the custom input component
+                className="py-3 px-4 bg-gray-100 outline-primary outline-[1px] text-primary w-full col-span-2"
+              />
               <input
                 type="email"
                 name="email"
-                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your E-mail"
-                className="py-3 px-4 col-span-2  bg-gray-100 outline-primary outline-[1px] text-primary"
+                className="py-3 px-4 col-span-2 bg-gray-100 outline-primary outline-[1px] text-primary"
               />
-              <div className="w-full col-span-2 bg-gray-100 pr-3 flex">
-                <select
-                  name="amount"
-                  id="amount"
-                  className="py-3 px-4 w-full bg-gray-100 outline-none  text-primary"
-                >
-                  <option value="" disabled selected hidden>
-                    How much did you invest ($)
-                  </option>
-                  <option value="1000">$1000</option>
-                  <option value="2000">$2000</option>
-                  <option value="3000">$3000</option>
-                  <option value="4000">$4000</option>
-                  <option value="5000">$5000</option>
-                </select>
-              </div>
+              <select
+                name="amount_invested"
+                value={scamtype}
+                onChange={(e) => setScamType(e.target.value)}
+                className="py-3 px-4 w-full bg-gray-100 outline-none text-primary col-span-1"
+              >
+                <option value="" disabled>
+                  What type of scam?
+                </option>
+                <option value="binary_options">Binary Options</option>
+                <option value="cryptocurrency">Cryptocurrency</option>
+                <option value="forex">Forex</option>
+                <option value="stock_trading">Stock Trading</option>
+                <option value="property_scam">Property Scam</option>
+                <option value="romance_scam">Romance Scam</option>
+                <option value="other">Other</option>
+              </select>
+              <select
+                name="amount_invested"
+                value={amountInvested}
+                onChange={(e) => setAmountInvested(e.target.value)}
+                className="py-3 px-4 w-full bg-gray-100 outline-none text-primary col-span-1"
+              >
+                <option value="" disabled>
+                  How much did you invest ($)
+                </option>
+                <option value="1000">$1000</option>
+                <option value="2000">$2000</option>
+                <option value="3000">$3000</option>
+                <option value="4000">$4000</option>
+                <option value="5000">$5000</option>
+              </select>
               <textarea
-                name=""
-                id=""
-                className="col-span-2 p-4 bg-gray-100 outline-primary outline-[1px] text-primary"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder="Outline your case"
+                className="col-span-2 p-4 bg-gray-100 outline-primary outline-[1px] text-primary"
                 cols="30"
                 rows="4"
               ></textarea>

@@ -85,37 +85,55 @@ export default function App({ Component, pageProps }) {
                     <span>Cryptocurrency</span>
                   </li>
                   <li
-                    onClick={() => router.push("/forex")}
+                    onClick={() => {
+                      router.push("/forex")
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Forex</span>
                   </li>
                   <li
-                    onClick={() => router.push("/stock-trading")}
+                    onClick={() => {
+                      router.push("/stock-trading")
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Stock trading</span>
                   </li>
                   <li
-                    onClick={() => router.push("/credit-card-phishing")}
+                    onClick={() => {
+                      router.push("/credit-card-phishing")
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Credit card phishing</span>
                   </li>
                   <li
-                    onClick={() => router.push("/property-scams")}
+                    onClick={() => {
+                      router.push("/property-scams")
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Property Scams</span>
                   </li>
                   <li
-                    onClick={() => router.push("/romance-scams")}
+                    onClick={() => {
+                      router.push("/romance-scams")
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Romance Scams</span>
                   </li>
                   <li
-                    onClick={() => router.push("/other-scams")}
+                    onClick={() => {
+                      router.push("/other-scams")
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Other Scams</span>
@@ -251,37 +269,61 @@ export default function App({ Component, pageProps }) {
                     <span>Cryptocurrency</span>
                   </li>
                   <li
-                    onClick={() => router.push("/forex")}
+                    onClick={() => {
+                      router.push("/forex")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Forex</span>
                   </li>
                   <li
-                    onClick={() => router.push("/stock-trading")}
+                    onClick={() => {
+                      router.push("/stock-trading")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Stock trading</span>
                   </li>
                   <li
-                    onClick={() => router.push("/credit-card-phishing")}
+                    onClick={() => {
+                      router.push("/credit-card-phishing")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Credit card phishing</span>
                   </li>
                   <li
-                    onClick={() => router.push("/property-scams")}
+                    onClick={() => {
+                      router.push("/property-scams")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Property Scams</span>
                   </li>
                   <li
-                    onClick={() => router.push("/romance-scams")}
+                    onClick={() => {
+                      router.push("/romance-scams")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Romance Scams</span>
                   </li>
                   <li
-                    onClick={() => router.push("/other-scams")}
+                    onClick={() => {
+                      router.push("/other-scams")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Other Scams</span>
@@ -336,7 +378,6 @@ export default function App({ Component, pageProps }) {
                 onClick={() => {
                   router.push("/contact-us")
                   setShowMenu(false)
-                  setShowSubMenu2(false)
                 }}
                 className="py-2"
               >
@@ -346,7 +387,6 @@ export default function App({ Component, pageProps }) {
                 onClick={() => {
                   router.push("/about-us")
                   setShowMenu(false)
-                  setShowSubMenu2(false)
                 }}
                 className="py-2"
               >
@@ -356,7 +396,6 @@ export default function App({ Component, pageProps }) {
                 onClick={() => {
                   router.push("/blogs")
                   setShowMenu(false)
-                  setShowSubMenu2(false)
                 }}
                 className="py-2"
               >

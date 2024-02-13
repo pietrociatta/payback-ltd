@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion"
 import Testimonial from "@/components/Testimonial"
 
-const BinaryOptions = () => {
+const Forex = () => {
   const [headings, setHeadings] = useState([])
 
   // Define custom components with Tailwind CSS for markdown elements
@@ -64,7 +64,7 @@ const BinaryOptions = () => {
               <span className="text-secondary ">
                 Get your money back <br className="hidden xl:flex" />
               </span>{" "}
-              from Binary options scam
+              from Forex Trading Scams
             </h1>
             <p
               className={`text-center   sm:text-[20px] text-[16px]  font-normal font-rubik`}
@@ -176,16 +176,20 @@ const BinaryOptions = () => {
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-              Binary Options Scams: Recover Your Lost Funds
+              Forex Scams: Recover Your Lost Funds
             </h1>
 
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              Thousands of fraudulent binary options brokers appear every year
-              and it’s our mission to fight back. If you’ve been scammed by your
-              Broker, please contact us as soon as possible. The sooner we
-              confront them, the sooner we will be able to get your money back.
+              The Forex industry is one of the scammer’s favorite grounds. Since
+              the industry is generally known as a legitimate investment option,
+              it is very hard for the average person to differentiate the scam
+              brokers, from the legitimate ones. Usually, most people don’t even
+              know they’ve been scammed, they just think they had “A bad trading
+              day”. If you feel that the way you lost your money trading, is
+              more than just a “bad day”, contact us now. If your Broker is a
+              fraud, we might get your money back.
             </p>
             <button
               type="submit"
@@ -229,83 +233,96 @@ const BinaryOptions = () => {
         <div className="md:w-[60%]">
           <div className=" bg-primary w-full h-[1px] flex  my-5" />
           <p className="text-left text-gray-600 font-poppins">
-            At Payback Ltd we fight hard to assist our clients who have become
-            victims of binary options scams. Our recovery experts will endeavor
-            to recover your losses and right the wrongs you've experienced at
-            the hands of nefarious individuals and companies who have acted in a
-            fraudulent fashion. In addition, our informative guides will help
-            you to avoid such scams, therefore preparing you for possible future
-            attacks.
+            Here at Payback Ltd, we want to make sure you know everything there
+            is to know in regards to forex scams and fraud. While our primary
+            job is to help recover financial loss for clients who have been
+            scammed or being involved in some kind of fraud, ideally we want to
+            help you avoid these scams in the first place. So be vigilant and
+            knowledgeable.
           </p>
           <div className=" bg-primary  w-full h-[1px] flex  mt-5 mb-10" />
           <ReactMarkdown components={markdownComponents}>
-            {`
-# What are binary options?
+            {`# What is forex trading?
+Forex is the single largest traded market globally, with up to five trillion traded each day and is considered decentralized because there is no central processor for trades– in other words, there is no entity that acts as a central exchange like the NASDAQ or the NYSE. Instead, orders are completed by millions of traders using millions of various forex brokers around the world.
 
-Binary options are a type of financial product classified as an exotic option. Binary options trading may seem like a new speculative market, but they’ve existed since 1974. They were created by one of the largest derivatives markets globally, CBOE (Chicago Board Options Exchange). It wasn’t until 2008 that binary options became primarily available to the public, and many entities copied the original CBOE asset type listing.
+Foreign currency trading is one of the most leveraged markets in the world as well. In the US, regulations limit a person to 50:1 leverage. In other countries, they have zero limits on leverage. It is not uncommon to see some non-US brokers offer 1000+:1. Due to these factors and a few others which we will discuss, this is why scams can be so prevalent within the foreign exchange market.
 
-Binary options are a type of option that allows you to guess whether the option expires in the money – that’s it. Some unregulated binary options brokers allow for guessing on out of the money outcomes. A simple yes or no bet is made, hence the name binary. Contemporary binary options have expiration times between a week to a few minutes, with the majority of modern binary options platforms specializing in under one-day expirations.
+# Is forex trading a scam?
+In the investment world, forex is the wild-west of traditional financial instruments. However, most of the participants are massive institutions like banks that help companies manage cross-currency rates for payroll or buying goods. But it is by far the most accessible and cheapest investment for anyone to make. A futures broker may require a $5,000 minimum investment; whereas many firms in the foreign exchange markets require as little as $1. Day trading stocks in the US requires a $25,000 minimum balance; forex does not require this.
 
-# Common binary option types
+The ease of access to significant leverage, and the fact it is open 24 hours a day all make it the most appealing market. But this also attracts many of the bad actors. Some countries regulate forex markets – but not always to the same degree as the US. Many countries have little to no regulation and allow anyone to open a brokerage account in their country. There are many, many bad brokers around the globe – so it’s often best to stick with brokers that are based in the US, EU, or UK.
 
-There are three primary binary call/put options:
-
-1. **High/Low Binary Option**
-   - You bet whether the price will close above a specific price or below a certain price.
-
-2. **Touch/no-Touch**
-   - You bet whether the price will reach or not reach a defined price level at least once before the option expires. It does not matter if it closes above or below the price, only that it reached that price level before expiration.
-
-3. **Boundary**
-   - You bet that price will not reach a certain level above or below the current traded price. For example, you want to make a bet that over a certain period of time, XYZ won’t trade above $2.00 and won’t trade below $1.00 – if prices stay between these two values, you win.
+**Read more:** [Is forex trading legit or a scam?](#)
 
 ## Key points
+- Using a regulated broker ensures that: your money is safe, the data and information provided by the broker are compliant with industry standards, and the broker is operating legitimately and ethically.
+- The forex trading space is rife with services and individuals bent on defrauding new traders. Avoid bad brokers, false education programs, performance history lies, and fraudulent automated trading systems.
+- If you have been the victim of a scam in the forex space – there are options available to you, provided by our specialist at Payback LTD.
 
-- Binary options are an extremely volatile and questionable speculative market with both the EU and UK banning binary options in the past three years.
-- Very few regulated binary options brokers exist, increasing risk to your money.
-- Companies like Payback can help recover money for binary options fraud victims.
-- Do your own due diligence and research each binary options trading platform as well as find reviews from various users.
-- Never risk more than you can afford to lose.
+# How to spot a forex scam
+The scams that exist in the investment world are many. One of the hardest things for new and aspiring traders to overcome is the vast amount of wrong information, bad actors and blacklisted scam brokers trying to take advantage of you.
 
-# Are binary options a scam or legit?
+Here are some of the different types of forex trading scams:
 
-Binary options are overwhelmingly a scam and an illegitimate market. When you consider the various legal differences between the US, UK, and EU financial regulations, you may be surprised to find out that binary options markets are legal in the US but are now illegal in the EU and UK. In fact, the bans imposed on binary options markets in the EU and UK are very recent – 2018 for the former and 2019 for the latter.
+### Broker’s Leverage
+- The US and EU (more recently) have limits of around 50:1.
+- If you see a broker offering 500:1, 1000:1, or anything beyond a conservative amount, stay away. This is a predatory action.
+- Avoid any broker that is not clear about margin requirements.
 
-A large reason for the banning of binary options in the EU was due to the dubious nature of CySEC (Cyprus Securities and Exchange Commission) broad granting of national regulatory approval to a large number of unethical binary options brokers.
+### Broker’s undisclosed parameters
+- Avoid requirements for a minimum Stop Loss or Profit Target
+- Avoid requirements where you must have a trade open for a certain amount of time before you can exit.
+- Avoid anyone that doesn’t allow you to create your own risk management profile.
 
-The US’s high regulatory environment makes participation in binary options marginally safer from a compliance standpoint, but it does not remove the inherent too high-risk nature of binary options. There is perhaps no market in the realm of financial markets that professional speculators and investors more deride than the binary options market. Know that binary options are more akin to gambling than speculation and that it is a true zero-sum instrument.
+### Broker withdrawal rules
+- You should be able to withdraw your money from your brokerage account at will – but some don’t allow this.
+- Avoid minimum requirements for volume traded before you can withdraw.
+- Avoid anyone that doesn’t disclose their withdrawal rules.
+- If a broker advertises a bonus on deposits, make sure that you can withdraw the bonus within a reasonable amount of time – it should be clear what the requirements are for you to withdraw the bonus.
 
-## Binary options robot scams
+### Broker’s spread
+- The spread is the difference between the Bid (buying) and the Ask (selling) – This should be clearly defined or be avoided.
+- Avoid brokers that don’t warn you of regular increases in the spreads, such as at the end of the day or during certain holidays.
 
-If you are a day trader or an aspiring day trader, familiar with some of the largest speculative and high-frequency trading markets in the world like forex or futures, you are probably familiar with the prevalence of robots (commonly known as ‘bots’). Binary options robots are often sold as a way to manage your account. This involves sharing your account information or an API to allow an individual or automated system to execute trades on your behalf. Binary option robot scams include many high-pressure sales tactics, false statements on the return on investment and success rates, along with graphics depicting a wealthy lifestyle as a result of using their system.
+### Signal Sellers
+- Forex signal sellers are individuals who want to sell you signals or advice – they want to tell you what pairs to buy or short, when to exit for profit, where to put your stops, etc.
+- Avoid people or companies that promise or allude to a guarantee of profit. Avoid entities that promise unbelievable returns like: “90% win rate!” or “188 winning trades, 12 losing trades!” or “MASSIVE GAINS.”
 
-## Binary options software scams
+### Broker spam
+- Avoid sites that have side advertisements and banners promoting a single broker.
+- Avoid anyone or anything that recommends a single broker
+- People who promote a single broker generally have some agreement with them. Many non-US brokers offer various incentives for people to find new customers. They may offer the seller a cut of your deposit or a rebate on any trade you make.
+- If someone tells you about a broker or if a site is promoting a broker – ask if they have an IB (introducing broker) agreement with them– this must be disclosed in the US when asked.
 
-Software scams in the binary options space are common and fall right into the same realm as robots. Depending on the software used for binary options (most are often done via web browser), some software is touted as ‘advanced artificial intelligence (AI)’ or ‘machine learning software,’ leading you to believe that it is an extremely sophisticated algorithm that will generate substantial gains. Many software providers report high returns - the returns the software provider is making is from selling his/her software to others, not on the success of the software in the binary options market. As with robot scams, be wary of the sales tactics and false lifestyle imagery.
+### Educational services
+- Be wary of the myriad of free or paid trading education opportunities
+- Many sites look incredibly professional and may even link certification organizations without their permission.
+- Check for quality educational providers from the CMT Association (Certified Market Technicians Association), IFTA (International Fellowship of Technical Analysts), or STA (Society of Technical Analysts).
+- Even by professional US brokers, a significant amount of the education provided is decades out of date.
 
-## Binary options trading scams
+### Automated Trading or Artificial Intelligence (Bots or Robots)
+- It is best to avoid anyone selling forex robot trading systems
+- AI systems have existed since the 1990s for retail investors– but nearly 100% of them fail.
+- The current buzzword for investment scams is ‘AI.’ Avoid anyone that claims they use Artificial Intelligence. There are only two known private hedge funds that have anything close to authentic self-learning AI. They are not selling their bots to anyone.
+- Think about this logically: If you created a profitable AI (virtually a money printing machine), would you ever tell anyone about it? Would you sell it? Probably not – your advantage disappears when others have access to that kind of a tool.
+- Automated Trading systems are a common way fraud is committed by forex scammers.
 
-The number of trading scams in the binary options space is substantial. Because some of the largest regulatory agencies around the world have banned binary options, many former (and new) brokers have had to reestablish their businesses in nations where there is little to no real regulation. The broad bans of binary options have resulted in thousands of unregistered brokers all around the globe. Brokers within the binary options space have questionable to outright fraudulent data feeds. It’s not uncommon to see bids and ask fluctuate violently within the final micro-seconds resulting in significant losses, sometimes on both sides of the trade! You can avoid some of the trading scams by using only regulated brokers, although very few are legitimate.
+### Flashy advertising or false lifestyles
+- Avoid any service or individual who has ‘high lifestyle’ imagery, such as girls in bikinis on a yacht, Lamborghini or Ferrari in the background, massive mansion or house, or a private jet.
+- A good rule to follow for any investment or speculative endeavor: if it looks or sounds too good to be true, it probably is.
 
-## Binary options signal scams
+**Learn more:** [How to avoid forex trading scams](#)
 
-Signal scams are hands down the most prevalent form of financial fraud and scams in today’s markets. For the binary options market, signal scams involve an individual or company that offers to sell you trade ideas (signals) in exchange for a monthly fee. The signals are provided via text, email, or via their website. The most popular version of providing signals in most markets is through the chat platform Telegram. As with any financial instrument, it is best to avoid signal providers – they are only interested in making money from you as a subscriber.
+# How do I recover funds from a forex scam?
+Recovering funds in the forex trading market is difficult. The difficulty increases when you use an unregulated broker. Adding to the problem is the near impossibility of recompense from the scammers who defrauded you.
 
-# Scammed and lost money in Binary Options? Here’s what you can do next!
+But we at Payback LTD have a proven track record of success in helping investors who have been the victims of a scam or fraud. We are a regulated fund recovery company that focuses on some of the more complicated financial investments: forex, binary options, cryptocurrency, and stocks.
 
-If you’ve found yourself to be the unfortunate victim of a binary options scam, it may seem like you have no recourse except to just take the loss and move on. Don’t let bad actors get away with stealing your money! There are ways to go after individuals and entities that have taken your money. We at Payback are experienced in the recovery of funds from bad actors like binary options fraudsters.
+In addition to our professional forex recovery services, our team
 
-Some of the methods we utilize and have success with are chargebacks – working with you and your card company to make an authentic and valid report of fraud. Payback works closely with you, and you will work with the same caseworker throughout the process. Fill out our Success Calculator to get started and check the testimonial and reviews for yourself!
+ of experts focuses on customer outreach and we attempt to mitigate the damage that fraudulent actors have caused to our clients.
 
-## How to avoid Binary Options trading scams
-
-- Only use regulated brokers – for the US, the regulatory agency(s) for binary options fall under the CFTC (Commodity Futures Trading Commission) and the SEC (Securities and Exchange Commission). Legitimate brokers will openly disclose their license number and cite the national regulatory agency and website.
-- Do your due diligence – read user reviews across various sources. Be wary of sites that are specific to reviewing only binary options brokers – they are more than likely just shell sites meant to push you to a particular broker or a few select brokers.
-- If the broker is unregulated, check where the broker is based – it’s good to know what nation the business is headquartered in.
-- If you do want to risk your capital in the binary options markets, test the broker’s data yourself. Vet the broker and ensure that data feeds are authentic and that there are no
-
- abnormal price changes near expiry.
-`}
+Contact us today for a free consultation and our professionals will work with you throughout the entire process to get you maximum returns!`}
           </ReactMarkdown>{" "}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
@@ -410,4 +427,4 @@ Some of the methods we utilize and have success with are chargebacks – working
   )
 }
 
-export default BinaryOptions
+export default Forex

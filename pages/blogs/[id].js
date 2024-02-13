@@ -55,12 +55,12 @@ const BlogPost = () => {
               If you’ve lost money to scammers, contact us now and we’ll work
               with you to get your money back!
             </p>
-            <button
-              type="submit"
-              className="bg-secondary w-full max-w-md font-semibold text-primary px-14 py-3"
+            <a
+              href="/contact-us"
+              className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
-            </button>
+            </a>
           </div>
           <div className="bg-[#f4f4f4]   text-primary flex items-center justify-center font-bold text-lg py-3 gap-2 w-full">
             <img src="/logos/8.svg" alt="" className="" />

@@ -1,4 +1,3 @@
-// pages/api/submit-form.js
 import { z } from "zod"
 import { google } from "googleapis"
 
@@ -95,7 +94,7 @@ export default async function handler(req, res) {
       console.log(req.body)
       const formData = formSchema.parse(req.body)
 
-      await writeToSheet(formData) // Make sure to handle or await this promise properly
+      await writeToSheet(formData)
       res.status(200).send("Form data received.")
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -106,7 +105,6 @@ export default async function handler(req, res) {
       res.status(500).send("An error occurred on the server.")
     }
   } else {
-    res.setHeader("Allow", ["POST"])
     res.status(405).end(`Method ${req.method} Not Allowed`)
   }
 }

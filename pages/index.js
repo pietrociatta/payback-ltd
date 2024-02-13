@@ -308,12 +308,12 @@ export default function Home() {
               and we are always here to help you in your fight for what is
               rightfully yours.
             </p>
-            <button
-              type="submit"
+            <Link
+              href="/contact-us"
               className="bg-secondary font-semibold text-primary px-14 xl:w-max w-full mt-4 py-3"
             >
               Get a free consultation
-            </button>
+            </Link>
           </div>
           <div className="items-end w-full hidden    font-raleway text-opacity-0  xl:flex flex-col xl:w-[50%] p-5 ">
             <p className="font-black text-[72px] text-secondary font-poppins">
@@ -342,12 +342,12 @@ export default function Home() {
               a chance for full or partial recovery, then we'll get to work
               right away.
             </p>
-            <button
-              type="submit"
+            <Link
+              href="/about-us"
               className="bg-transparent border border-primary font-semibold text-primary px-20 mt-4 py-3"
             >
               About Us
-            </button>
+            </Link>
           </div>
         </div>
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full  gap-2 xl:py-16 py-5 flex xl:flex-row flex-col-reverse">
@@ -365,12 +365,12 @@ export default function Home() {
               are doubtful, you can ask for a full refund within the first 14
               business days of the process.*
             </p>
-            <button
-              type="submit"
+            <Link
+              href="/"
               className="bg-transparent border border-primary font-semibold text-primary px-20 mt-4 py-3"
             >
               *Read Terms and Conditions
-            </button>
+            </Link>
           </div>
           <div className="items-end w-full     font-raleway text-opacity-0  xl:flex flex-col xl:w-[45%] p-5 ">
             <img src="/logos/19.svg" alt="" className="w-[50%] mx-auto" />
@@ -395,12 +395,12 @@ export default function Home() {
               <br />
               b. We would NEVER ask you to send us money via Crypto.
             </p>
-            <button
-              type="submit"
+            <Link
+              href="/imposters-copycats"
               className="bg-transparent border border-primary font-semibold text-primary px-20 mt-4 py-3"
             >
               Browse the full list
-            </button>
+            </Link>
           </div>
         </div>
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full  gap-2 xl:py-16 py-5 flex xl:flex-row flex-col-reverse">
@@ -417,12 +417,12 @@ export default function Home() {
               moment, we list more than 11,000 companies that were flagged as a
               scam/fraud by us and different regulatory bodies.
             </p>
-            <button
-              type="submit"
+            <Link
+              href="/scams"
               className="bg-transparent border border-primary font-semibold text-primary px-20 mt-4 py-3"
             >
               Browse the full list
-            </button>
+            </Link>
           </div>
           <div className="items-end w-full     font-raleway text-opacity-0  xl:flex flex-col xl:w-[45%] p-5 ">
             <img src="/logos/21.svg" alt="" className="w-[50%] mx-auto" />
@@ -459,12 +459,12 @@ export default function Home() {
                 <option value="ther scam">Other scam</option>
               </select>
             </div>
-            <a
+            <Link
               href="/contact-us"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -494,12 +494,12 @@ export default function Home() {
               conversation away from starting the process to secure your stolen
               assets.
             </p>
-            <button
-              type="submit"
+            <Link
+              href="/contact-us"
               className="bg-secondary font-semibold text-primary px-14 mt-4 py-3"
             >
               Get a free consultation
-            </button>
+            </Link>
           </div>
           <div className="items-center w-full hidden    font-raleway text-opacity-0  xl:flex flex-col xl:w-[50%] p-5 ">
             <img src="/logos/22.svg" alt="" className="w-[50%]" />

@@ -13,7 +13,6 @@ export const CustomInput = forwardRef(({ value, onChange, ...rest }, ref) => (
 ))
 
 const Contactus = () => {
-  const [value, setValue] = useState()
   const [name, setName] = useState("")
   const [lastName, setLastName] = useState("")
   const [phoneNumber, setPhoneNumber] = useState("")
@@ -21,9 +20,11 @@ const Contactus = () => {
   const [amountInvested, setAmountInvested] = useState("")
   const [message, setMessage] = useState("")
   const [scamtype, setScamType] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setIsLoading(true)
 
     const formData = {
       name,
@@ -54,6 +55,8 @@ const Contactus = () => {
     } catch (error) {
       console.error("Failed to submit form:", error)
       alert("Error submitting form, please try again.")
+    } finally {
+      setIsLoading(false)
     }
   }
 
@@ -78,6 +81,7 @@ const Contactus = () => {
               <input
                 type="text"
                 name="name"
+                required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your Name*"
@@ -86,6 +90,7 @@ const Contactus = () => {
               <input
                 type="text"
                 name="last_name"
+                required
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 placeholder="Last Name*"
@@ -94,12 +99,15 @@ const Contactus = () => {
               <PhoneInput
                 placeholder="Enter phone number"
                 value={phoneNumber}
+                required
+                defaultCountry="US"
                 onChange={setPhoneNumber}
                 inputComponent={CustomInput} // Use the custom input component
                 className="py-3 px-4 bg-gray-100 outline-primary outline-[1px] text-primary w-full col-span-2"
               />
               <input
                 type="email"
+                required
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -109,6 +117,7 @@ const Contactus = () => {
               <select
                 name="amount_invested"
                 value={scamtype}
+                required
                 onChange={(e) => setScamType(e.target.value)}
                 className="py-3 px-4 w-full bg-gray-100 outline-none text-primary col-span-1"
               >
@@ -126,6 +135,7 @@ const Contactus = () => {
               <select
                 name="amount_invested"
                 value={amountInvested}
+                required
                 onChange={(e) => setAmountInvested(e.target.value)}
                 className="py-3 px-4 w-full bg-gray-100 outline-none text-primary col-span-1"
               >
@@ -141,6 +151,7 @@ const Contactus = () => {
               <textarea
                 name="message"
                 value={message}
+                required
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Outline your case"
                 className="col-span-2 p-4 bg-gray-100 outline-primary outline-[1px] text-primary"
@@ -151,7 +162,7 @@ const Contactus = () => {
                 type="submit"
                 className="bg-secondary text-primary col-span-2 py-3"
               >
-                Get a free consultation
+                {isLoading ? "Submitting..." : "Get a free consultation"}
               </button>
             </form>
           </div>

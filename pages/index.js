@@ -28,14 +28,59 @@ export const CustomInput = forwardRef(({ value, onChange, ...rest }, ref) => (
   <input
     ref={ref}
     value={value}
+    onChange={(e) => onChange(e.target.value)}
     className="bg-transparent outline-none w-full px-4"
-    onChange={onChange}
   />
 ))
 
 export default function Home() {
-  const [value, setValue] = useState()
   const router = useRouter()
+  const [name, setName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
+  const [email, setEmail] = useState("")
+  const [amountInvested, setAmountInvested] = useState("")
+  const [message, setMessage] = useState("")
+  const [scamtype, setScamType] = useState("other")
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsLoading(true)
+
+    const formData = {
+      name,
+      last_name: lastName,
+      phone_number: phoneNumber,
+      email,
+      amount_invested: amountInvested,
+      message,
+      scam_type: scamtype,
+    }
+
+    try {
+      const response = await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form.")
+      }
+
+      // Handle success
+      alert("Form submitted successfully.")
+      // Reset form or redirect user as needed
+    } catch (error) {
+      console.error("Failed to submit form:", error)
+      alert("Error submitting form, please try again.")
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
     <main
@@ -80,30 +125,40 @@ export default function Home() {
               Start Here
             </h1>
             <p className="text-gray-400">Secure a free consultation</p>
-            <form action="" className="grid w-full grid-cols-2 gap-5 mt-5">
+            <form
+              onSubmit={handleSubmit}
+              className="grid w-full grid-cols-2 gap-5 mt-5"
+            >
               <input
                 type="text"
                 name="name"
                 id="name"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Your Name*"
                 className="py-3 px-4 col-span-2 md:col-span-1  bg-gray-100 outline-primary outline-[1px] text-primary"
               />
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="lastname"
+                required
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                id="lastname"
                 placeholder="Last Name*"
                 className="py-3 px-4 col-span-2 md:col-span-1   bg-gray-100 outline-primary outline-[1px] text-primary"
               />
               <div className="w-full col-span-2 flex">
                 <PhoneInput
                   placeholder="Enter phone number"
-                  value={value}
                   autoComplete="on"
                   countryCallingCodeEditable={false}
-                  defaultCountry="US"
                   international={true}
-                  onChange={() => setValue(value)}
+                  value={phoneNumber}
+                  required
+                  defaultCountry="US"
+                  onChange={setPhoneNumber}
                   inputComponent={CustomInput} // Use the custom input component
                   className="py-3 px-4 bg-gray-100 outline-primary outline-[1px] text-primary w-full"
                 />
@@ -111,6 +166,8 @@ export default function Home() {
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 id="email"
                 placeholder="Enter your E-mail"
                 className="py-3 px-4 col-span-2  bg-gray-100 outline-primary outline-[1px] text-primary"
@@ -119,6 +176,9 @@ export default function Home() {
                 <select
                   name="amount"
                   id="amount"
+                  value={amountInvested}
+                  required
+                  onChange={(e) => setAmountInvested(e.target.value)}
                   className="py-3 px-4 w-full bg-gray-100 outline-none  text-primary"
                 >
                   <option value="" disabled selected hidden>
@@ -137,13 +197,16 @@ export default function Home() {
                 className="col-span-2 p-4 bg-gray-100 outline-primary outline-[1px] text-primary"
                 placeholder="Outline your case"
                 cols="30"
+                value={message}
+                required
+                onChange={(e) => setMessage(e.target.value)}
                 rows="4"
               ></textarea>
               <button
                 type="submit"
                 className="bg-secondary text-primary col-span-2 py-3"
               >
-                Get a free consultation
+                {isLoading ? "Submitting..." : "Get a free consultation"}
               </button>
             </form>
           </div>

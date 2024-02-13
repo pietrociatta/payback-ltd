@@ -1,4 +1,5 @@
 import {
+  Check,
   ChevronDown,
   File,
   Mail,
@@ -43,6 +44,7 @@ export default function Home() {
   const [message, setMessage] = useState("")
   const [scamtype, setScamType] = useState("other")
   const [isLoading, setIsLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -77,10 +79,11 @@ export default function Home() {
 
       const data = await response.json() // If response is ok, process it.
       console.log(data)
-      alert("Form submitted successfully.")
+      setSuccess(true)
     } catch (error) {
       console.error("Failed to submit form:", error)
       alert(`Error submitting form: ${error.message}`) // Display the error message from the catch block.
+      setSuccess(false)
     } finally {
       setIsLoading(false) // Ensure loading state is reset regardless of the outcome.
     }
@@ -208,9 +211,16 @@ export default function Home() {
               ></textarea>
               <button
                 type="submit"
-                className="bg-secondary text-primary col-span-2 py-3"
+                className="bg-secondary flex items-center justify-center text-primary col-span-2 py-3"
               >
-                {isLoading ? "Submitting..." : "Get a free consultation"}
+                {!isLoading && success && (
+                  <span className="flex items-center gap-2">
+                    Success
+                    <Check size={20} />
+                  </span>
+                )}
+                {!isLoading && !success && <span>Get a free consultation</span>}
+                {isLoading && <span>Submitting...</span>}
               </button>
             </form>
           </div>

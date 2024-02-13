@@ -44,7 +44,7 @@ export default function Home() {
   const [scamtype, setScamType] = useState("other")
   const [isLoading, setIsLoading] = useState(false)
 
-  const handleSubmit = async (e) => {
+  async function handleSubmit(e) {
     e.preventDefault()
     setIsLoading(true)
 
@@ -68,17 +68,21 @@ export default function Home() {
       })
 
       if (!response.ok) {
-        throw new Error("Failed to submit form.")
+        // If the server response is not ok, handle errors.
+        const errorData = await response.json() // Assuming error details are in the response body.
+        throw new Error(
+          errorData.message || "An error occurred while submitting the form."
+        ) // Create a new error with the server's message or a default one.
       }
 
-      // Handle success
+      const data = await response.json() // If response is ok, process it.
+      console.log(data)
       alert("Form submitted successfully.")
-      // Reset form or redirect user as needed
     } catch (error) {
       console.error("Failed to submit form:", error)
-      alert("Error submitting form, please try again.")
+      alert(`Error submitting form: ${error.message}`) // Display the error message from the catch block.
     } finally {
-      setIsLoading(false)
+      setIsLoading(false) // Ensure loading state is reset regardless of the outcome.
     }
   }
 

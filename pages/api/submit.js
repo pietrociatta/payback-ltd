@@ -1,9 +1,10 @@
 import { z } from "zod"
 import { google } from "googleapis"
 
-//const { SPREADSHEET_ID } = require('./config');
-
 export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: `Method ${req.method} Not Allowed` })
+  }
   const credentials = {
     type: "service_account",
     project_id: "zendata-412709",
@@ -51,7 +52,10 @@ export default async function handler(req, res) {
         },
       })
 
-      console.log(response)
+      await response.then((res) => {
+        console.log(res)
+        return res
+      })
     } catch (err) {
       console.error(err)
     }
@@ -90,22 +94,24 @@ export default async function handler(req, res) {
       .trim()
       .max(256, "Message must not exceed 256 characters"),
   })
-  if (req.method === "POST") {
-    try {
-      console.log(req.body)
-      const formData = formSchema.parse(req.body)
 
-      await writeToSheet(formData)
-      res.status(200).send("Form data received.")
-    } catch (error) {
-      if (error instanceof z.ZodError) {
-        return res.status(400).json({ errors: error.errors })
-      }
-      // Handle other errors
-      console.error(error)
-      res.status(500).send("An error occurred on the server.")
+  try {
+    // Parse and validate the incoming request data
+    const formData = formSchema.parse(req.body)
+
+    // Assuming writeToSheet is an asynchronous function that writes data to a Google Sheet
+    const respon = await writeToSheet(formData)
+
+    console.log(respon)
+    // Respond with success message
+    res.status(200).json({ message: "Form data received." })
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      // Return a 400 status code for validation errors
+      return res.status(400).json({ errors: error.errors })
     }
-  } else {
-    res.status(405).end(`Method ${req.method} Not Allowed`)
+    // For other types of errors, return a 500 status code and a generic error message
+    console.error(error)
+    res.status(500).json({ message: "Internal server error" })
   }
 }

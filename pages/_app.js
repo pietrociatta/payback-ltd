@@ -66,13 +66,22 @@ export default function App({ Component, pageProps }) {
                 >
                   {/* Submenu items */}
                   <li
-                    onClick={() => router.push("/binary-options")}
+                    onClick={() => {
+                      router.push("/binary-options")
+                      setShowSubMenu(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Binary Options</span>
                   </li>
 
-                  <li className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary">
+                  <li
+                    onClick={() => {
+                      router.push("/cryptocurrency")
+                      setShowSubMenu(false)
+                    }}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
                     <span>Cryptocurrency</span>
                   </li>
                   <li
@@ -135,14 +144,20 @@ export default function App({ Component, pageProps }) {
                 >
                   {/* Submenu items */}
                   <li
-                    onClick={() => router.push("/scams")}
+                    onClick={() => {
+                      router.push("/scams")
+                      setShowSubMenu2(false)
+                    }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Scams</span>
                   </li>
 
                   <li
-                    onClick={() => router.push("/imposters-copycats")}
+                    onClick={() => {
+                      router.push("/imposters-copycats")
+                      setShowSubMenu2(false)
+                    }}
                     className="py-2.5 px-5 w-full cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
                   >
                     <span>Imposters & Copycats </span>
@@ -159,7 +174,7 @@ export default function App({ Component, pageProps }) {
                 <Link href="/blogs">Blog </Link>
               </li>
               <li className="py-2">
-                <a href="/contact-us">Faq</a>
+                <Link href="/faq">Faq</Link>
               </li>
             </ul>
           </div>
@@ -225,7 +240,14 @@ export default function App({ Component, pageProps }) {
                     <span>Binary Options</span>
                   </li>
 
-                  <li className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary">
+                  <li
+                    onClick={() => {
+                      router.push("/cryptocurrency")
+                      setShowMenu(false)
+                      setShowSubMenu(false)
+                    }}
+                    className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
+                  >
                     <span>Cryptocurrency</span>
                   </li>
                   <li
@@ -340,8 +362,14 @@ export default function App({ Component, pageProps }) {
               >
                 <span>Blog </span>
               </li>
-              <li className="py-2">
-                <a href="/contact-us">Faq</a>
+              <li
+                onClick={() => {
+                  router.push("/faq")
+                  setShowMenu(false)
+                }}
+                className="py-2"
+              >
+                Faq
               </li>
             </ul>
           </div>

@@ -53,6 +53,9 @@ const Blog = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-10 mt-20 mb-20">
+      <h1 className="text-primary xl:text-[56px] mb-10 text-[45px] leading-none text-center font-raleway font-bold">
+        Articles by Topic
+      </h1>
       <div className="md:hidden bg-primary w-[93%]  px-5">
         <select
           value={selectedCategory}

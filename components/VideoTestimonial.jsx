@@ -6,7 +6,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import ReactPlayer from "react-player"
+// dynamic import
+import dynamic from "next/dynamic"
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false })
 
 const VideoTestimonial = () => {
   const videos = [

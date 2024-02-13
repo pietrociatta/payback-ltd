@@ -327,18 +327,32 @@ Contact us today for a free consultation and our professionals will work with yo
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                Is Forex a pyramid scheme?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                No – but there are scams and fraudsters that create pyramid
+                schemes. This kind of behavior exists everywhere and is endemic
+                to all traded financial markets. If you are looking for a broker
+                and they’re offering to put you into a ‘team’ to build a
+                network, odds are it’s a pyramid scheme. Read our related
+                article: What is a pyramid scheme and how to avoid them
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                Who regulates the forex markets?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Several major regulatory bodies/agencies around the globe
+                regulate forex markets. In the US, brokers are regulated by the
+                NFA (National Futures Association) and the CFTC (Commodities
+                Futures Trade Commission) – but not FINRA (Financial Industry
+                Regulatory Authority). In the UK, the main regulatory body is
+                the FCA (Financial Conduct Authority). In the EU, all nations
+                that make up the EU have their respective regulatory agency– but
+                the standards that each member State must maintain are
+                established in the MiFID (Markets in Financial Instruments
+                Directive).
               </AccordionContent>
             </AccordionItem>
           </Accordion>

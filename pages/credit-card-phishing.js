@@ -305,18 +305,31 @@ If you've fallen victim to a credit card phishing scam, don't despair; recovery 
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                How do I spot a credit card phishing scam?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Credit card phishing scams operate in different ways, but the
+                scammers almost always try to get you to panic by telling you
+                that there is suspicious activity on your card or that your card
+                is locked and that you need to verify your information to
+                continue using it. Be wary of any notifications that claim there
+                is some type of issue with your card and always verify the
+                information independently by contacting your credit card company
+                directly.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                What are the most common types of credit card phishing scam
+                methods?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                The most common credit card phishing attacks target their
+                victims via fraudulent emails, websites, phone calls, and texts.
+                No matter what the method used is, the scammers try to make
+                their communications to you look as legit as possible, often by
+                including logos, addresses, and other easily recognizable
+                information from your bank or card provider.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

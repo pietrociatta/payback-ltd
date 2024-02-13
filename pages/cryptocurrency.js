@@ -305,18 +305,25 @@ Learn how to get bitcoin back from a scammer`}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                Can you get scammed on Bitcoin?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Scammers and fraudsters exist everywhere, and this is especially
+                true when it comes to Bitcoin. As a brand new asset class, be
+                very careful when it comes to opportunities in this investment
+                space.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                How can you spot a Bitcoin scammer?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Bitcoin scammers are just like any other scammer. They will use
+                high-pressure tactics, make you feel like you are missing out on
+                a once in a lifetime opportunity, and show you false promises of
+                riches and results. They will make it all seem too good to be
+                true.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

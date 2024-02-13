@@ -310,18 +310,34 @@ Some of the methods we utilize and have success with are chargebacks – working
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                Are Binary Options Legal in the US?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Binary options are legal in the US and have overlapping
+                regulatory agencies, chiefly the CFTC (Commodities Futures Trade
+                Commission) and the SEC (Securities and Exchange Commission).
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                How do binary options robots work?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                There are several mediums that binary options robots use – the
+                primary is an executable piece of software, the other requires
+                you to share account information for the robot to trade on your
+                behalf
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="font-bold text-[22px]">
+                What is binary options trade copying?
+              </AccordionTrigger>
+              <AccordionContent>
+                Binary options trade copying is a service offered in the same
+                vein as robots and signals. Trade copying essentially connects
+                your brokerage account to a ‘master’ account, and it will
+                automatically trade your account for you.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

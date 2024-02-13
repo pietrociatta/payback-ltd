@@ -304,18 +304,31 @@ At Payback, we specialize in the recovery of funds due to fraudulent activity an
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                What is SEC Rule 10b-5?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                SEC Rule 10b-5 simply states that it is unlawful to commit fraud
+                or deceit on anyone. This involves practices listed above, but
+                it also includes untrue information and even information that is
+                omitted
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                Is it illegal to manipulate stocks?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                When it comes to the stock market’s regulatory and legal side,
+                few words are as broad in their definition and meaning as
+                manipulation. Stocks are always manipulated by large and small
+                entities in (mostly) legal and ethical ways – that is the stock
+                market’s nature. But some forms of stock manipulation are
+                illegal, like front running and naked short selling. Naked short
+                selling is the shorting of a stock without borrowing the
+                underlying stock to short. A recent example of this is the
+                percentage of short interest in GameStop by hedge funds in early
+                2021 – hedge funds were short 130% of GameStop’s float. In other
+                words, hedge funds had 30% more shares short than are available.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

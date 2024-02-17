@@ -49,7 +49,10 @@ export default function App({ Component, pageProps }) {
                 <a
                   href="#why"
                   className="flex gap-2 items-center"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
+                  onClick={() => {
+                    setShowSubMenu(!showSubMenu)
+                    setShowSubMenu2(false)
+                  }}
                 >
                   Recovery Services
                   <ChevronDown
@@ -145,7 +148,10 @@ export default function App({ Component, pageProps }) {
                 <a
                   href="#why"
                   className="flex gap-2 items-center"
-                  onClick={() => setShowSubMenu2(!showSubMenu2)}
+                  onClick={() => {
+                    setShowSubMenu2(!showSubMenu2)
+                    setShowSubMenu(false)
+                  }}
                 >
                   Blacklist
                   <ChevronDown
@@ -439,10 +445,10 @@ export default function App({ Component, pageProps }) {
           <div className="flex flex-col gap-4 items-start">
             <h1 className="text-xl font-bold">Contact Us</h1>
             <ul className="flex flex-col items-start text-gray-300 gap-2">
-              <li>IT 222 345 5677</li>
-              <li>IT 222 345 5677</li>
-              <li>IT 222 345 5677</li>
-              <li>IT 222 345 5677</li>
+              <li>IL +972-77-7408749</li>
+              <li>US +1-718-473-3943</li>
+              <li>AU +61-283-185-343</li>
+              <li>SE +46-812-410-614</li>
             </ul>
           </div>
           <div className="flex flex-col gap-4 items-start">
@@ -487,10 +493,10 @@ export default function App({ Component, pageProps }) {
               </AccordionTrigger>
               <AccordionContent>
                 <ul className="flex flex-col items-start text-gray-300 gap-2">
-                  <li>IT 222 345 5677</li>
-                  <li>IT 222 345 5677</li>
-                  <li>IT 222 345 5677</li>
-                  <li>IT 222 345 5677</li>
+                  <li>IL +972-77-7408749</li>
+                  <li>US +1-718-473-3943</li>
+                  <li>AU +61-283-185-343</li>
+                  <li>SE +46-812-410-614</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>

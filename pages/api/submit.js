@@ -29,7 +29,7 @@ export default async function handler(req, res) {
       ["https://www.googleapis.com/auth/spreadsheets"]
     )
     const sheets = google.sheets({ version: "v4", auth: client })
-    const range = "Sheet1!A:B" // Adjust based on your needs
+    const range = "A:B" // Adjust based on your needs
 
     try {
       await client.authorize()
@@ -57,7 +57,8 @@ export default async function handler(req, res) {
         return res
       })
     } catch (err) {
-      console.error(err)
+      console.log(err)
+      res.status(500).json({ message: "Internal server error" })
     }
   }
 

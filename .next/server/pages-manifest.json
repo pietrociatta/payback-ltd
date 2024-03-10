@@ -1,6 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
-}
+{"/api/submit":"pages/api/submit.js","/binary-options":"pages/binary-options.html","/blogs/[id]":"pages/blogs/[id].html","/blogs":"pages/blogs.html","/credit-card-phishing":"pages/credit-card-phishing.html","/cryptocurrency":"pages/cryptocurrency.html","/faq":"pages/faq.html","/forex":"pages/forex.html","/imposters-copycats":"pages/imposters-copycats.html","/property-scams":"pages/property-scams.html","/other-scams":"pages/other-scams.html","/romance-scams":"pages/romance-scams.html","/scams":"pages/scams.html","/stock-trading":"pages/stock-trading.html","/testimonials":"pages/testimonials.html","/_document":"pages/_document.js","/_app":"pages/_app.js","/_error":"pages/_error.js","/contact-us":"pages/contact-us.html","/about-us":"pages/about-us.html","/":"pages/index.html","/404":"pages/404.html"}

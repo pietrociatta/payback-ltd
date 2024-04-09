@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion"
 import Testimonial from "@/components/Testimonial"
 
-const Forex = () => {
+const Stock = () => {
   const [headings, setHeadings] = useState([])
 
   // Define custom components with Tailwind CSS for markdown elements
@@ -64,7 +64,7 @@ const Forex = () => {
               <span className="text-secondary ">
                 Get your money back <br className="hidden xl:flex" />
               </span>{" "}
-              from Forex Trading Scams
+              from Financial Scams
             </h1>
             <p
               className={`text-center   sm:text-[20px] text-[16px]  font-normal font-rubik`}
@@ -92,7 +92,7 @@ const Forex = () => {
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -176,20 +176,28 @@ const Forex = () => {
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-              Forex Scams: Recover Your Lost Funds
+              Been Scammed? Recover Your Lost Funds
             </h1>
 
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              The Forex industry is one of the scammer’s favorite grounds. Since
-              the industry is generally known as a legitimate investment option,
-              it is very hard for the average person to differentiate the scam
-              brokers, from the legitimate ones. Usually, most people don’t even
-              know they’ve been scammed, they just think they had “A bad trading
-              day”. If you feel that the way you lost your money trading, is
-              more than just a “bad day”, contact us now. If your Broker is a
-              fraud, we might get your money back.
+              If you've been a victim of a financial or online scam, you're not
+              alone. Millions of dollars are lost to scams every year, leaving
+              victims feeling helpless about recovering their funds. At Payback
+              Ltd, we're dedicated to tirelessly working on behalf of our
+              clients to track down their stolen funds and hold scammers
+              accountable. To date, we've successfully retrieved tens of
+              thousands of pounds for those who have fallen victim to online
+              financial scams.
+              <br /> <br />
+              Our team of experts possesses extensive experience dealing with
+              various types of scams, and we understand the precise processes
+              and avenues to pursue in reclaiming lost funds. Whether it's CFD
+              cons, Ponzi schemes, or social media scams, we have the expertise
+              to effectively pursue cases and deliver justice for our clients.
+              Additionally, we're pleased to offer a range of helpful resources
+              and guides to assist you in avoiding scams in the future.
             </p>
             <button
               type="submit"
@@ -233,126 +241,52 @@ const Forex = () => {
         <div className="md:w-[60%]">
           <div className=" bg-primary w-full h-[1px] flex  my-5" />
           <p className="text-left text-gray-600 font-poppins">
-            Here at Payback Ltd, we want to make sure you know everything there
-            is to know in regards to forex scams and fraud. While our primary
-            job is to help recover financial loss for clients who have been
-            scammed or being involved in some kind of fraud, ideally we want to
-            help you avoid these scams in the first place. So be vigilant and
-            knowledgeable.
+            At Payback Ltd, our commitment extends beyond just recovering
+            financial losses from scams and fraud. We strive to ensure that you
+            are fully informed about all aspects of financial scams and fraud.
+            While our primary focus is on assisting clients who have been
+            scammed or defrauded, our ultimate goal is to empower you to avoid
+            falling victim to these scams altogether.
           </p>
           <div className=" bg-primary  w-full h-[1px] flex  mt-5 mb-10" />
           <ReactMarkdown components={markdownComponents}>
-            {`# What is forex trading?
-Forex is the single largest traded market globally, with up to five trillion traded each day and is considered decentralized because there is no central processor for trades– in other words, there is no entity that acts as a central exchange like the NASDAQ or the NYSE. Instead, orders are completed by millions of traders using millions of various forex brokers around the world.
+            {`# Common Types of Financial and Online Scams
 
-Foreign currency trading is one of the most leveraged markets in the world as well. In the US, regulations limit a person to 50:1 leverage. In other countries, they have zero limits on leverage. It is not uncommon to see some non-US brokers offer 1000+:1. Due to these factors and a few others which we will discuss, this is why scams can be so prevalent within the foreign exchange market.
+With the rise of digital technology, various scams have proliferated in the online world. Here are some common cons and scams to watch out for:
 
-# Is forex trading a scam?
-In the investment world, forex is the wild-west of traditional financial instruments. However, most of the participants are massive institutions like banks that help companies manage cross-currency rates for payroll or buying goods. But it is by far the most accessible and cheapest investment for anyone to make. A futures broker may require a $5,000 minimum investment; whereas many firms in the foreign exchange markets require as little as $1. Day trading stocks in the US requires a $25,000 minimum balance; forex does not require this.
+- CFD Scams:Scammers exploit newcomers to CFD (Contract for Difference) trading by pressuring them into leveraged positions, resulting in significant financial losses.
+- Ponzi Schemes: Disguised as crypto investment opportunities, Ponzi schemes attract investors with initial payouts before collapsing once new investments cease, leaving victims with substantial losses.
+- Social Media Scams: From fake prize notifications to malware-laden gossip links, social media scams exploit users' trust, harvesting personal information for identity theft or financial fraud.
+- Charity Scams: These scams impersonate legitimate charities, preying on goodwill by soliciting donations through unsolicited calls or emails, particularly prevalent during holiday seasons.
 
-The ease of access to significant leverage, and the fact it is open 24 hours a day all make it the most appealing market. But this also attracts many of the bad actors. Some countries regulate forex markets – but not always to the same degree as the US. Many countries have little to no regulation and allow anyone to open a brokerage account in their country. There are many, many bad brokers around the globe – so it’s often best to stick with brokers that are based in the US, EU, or UK.
+### Key Points
 
-**Read more:** [Is forex trading legit or a scam?](#)
+- Financial and online scams are diverse and constantly evolving, often involving wire transfers as a common method of payment.
+- Millennials are frequently targeted, with victims typically losing an average of $500 to imposter scams.
+- Staying vigilant is crucial in detecting new scams as they emerge, especially during peak holiday seasons.
+- Recovery services like Payback Ltd specialize in assisting victims in reclaiming lost funds and pursuing justice.
 
-## Key points
-- Using a regulated broker ensures that: your money is safe, the data and information provided by the broker are compliant with industry standards, and the broker is operating legitimately and ethically.
-- The forex trading space is rife with services and individuals bent on defrauding new traders. Avoid bad brokers, false education programs, performance history lies, and fraudulent automated trading systems.
-- If you have been the victim of a scam in the forex space – there are options available to you, provided by our specialist at Payback LTD.
+# Lost Money as Part of a Scam?
 
-# How to spot a forex scam
-The scams that exist in the investment world are many. One of the hardest things for new and aspiring traders to overcome is the vast amount of wrong information, bad actors and blacklisted scam brokers trying to take advantage of you.
+If you've been a victim of a financial or online scam, remember that you're not alone. Despite feeling vulnerable or ashamed, seeking help is essential. Payback Ltd specializes in recovering lost funds and provides support throughout the process.
 
-Here are some of the different types of forex trading scams:
+# How to Avoid Financial and Online Scams
 
-### Broker’s Leverage
-- The US and EU (more recently) have limits of around 50:1.
-- If you see a broker offering 500:1, 1000:1, or anything beyond a conservative amount, stay away. This is a predatory action.
-- Avoid any broker that is not clear about margin requirements.
+- Stay informed about emerging scams and avoid clicking on suspicious links.
+- Safeguard your personal information online and refrain from sharing sensitive data.
+- Exercise caution when donating to charities, verifying their legitimacy before contributing.
+- Maintain strong, unique passwords for online accounts and avoid downloading software from untrustworthy sources.
 
-### Broker’s undisclosed parameters
-- Avoid requirements for a minimum Stop Loss or Profit Target
-- Avoid requirements where you must have a trade open for a certain amount of time before you can exit.
-- Avoid anyone that doesn’t allow you to create your own risk management profile.
 
-### Broker withdrawal rules
-- You should be able to withdraw your money from your brokerage account at will – but some don’t allow this.
-- Avoid minimum requirements for volume traded before you can withdraw.
-- Avoid anyone that doesn’t disclose their withdrawal rules.
-- If a broker advertises a bonus on deposits, make sure that you can withdraw the bonus within a reasonable amount of time – it should be clear what the requirements are for you to withdraw the bonus.
-
-### Broker’s spread
-- The spread is the difference between the Bid (buying) and the Ask (selling) – This should be clearly defined or be avoided.
-- Avoid brokers that don’t warn you of regular increases in the spreads, such as at the end of the day or during certain holidays.
-
-### Signal Sellers
-- Forex signal sellers are individuals who want to sell you signals or advice – they want to tell you what pairs to buy or short, when to exit for profit, where to put your stops, etc.
-- Avoid people or companies that promise or allude to a guarantee of profit. Avoid entities that promise unbelievable returns like: “90% win rate!” or “188 winning trades, 12 losing trades!” or “MASSIVE GAINS.”
-
-### Broker spam
-- Avoid sites that have side advertisements and banners promoting a single broker.
-- Avoid anyone or anything that recommends a single broker
-- People who promote a single broker generally have some agreement with them. Many non-US brokers offer various incentives for people to find new customers. They may offer the seller a cut of your deposit or a rebate on any trade you make.
-- If someone tells you about a broker or if a site is promoting a broker – ask if they have an IB (introducing broker) agreement with them– this must be disclosed in the US when asked.
-
-### Educational services
-- Be wary of the myriad of free or paid trading education opportunities
-- Many sites look incredibly professional and may even link certification organizations without their permission.
-- Check for quality educational providers from the CMT Association (Certified Market Technicians Association), IFTA (International Fellowship of Technical Analysts), or STA (Society of Technical Analysts).
-- Even by professional US brokers, a significant amount of the education provided is decades out of date.
-
-### Automated Trading or Artificial Intelligence (Bots or Robots)
-- It is best to avoid anyone selling forex robot trading systems
-- AI systems have existed since the 1990s for retail investors– but nearly 100% of them fail.
-- The current buzzword for investment scams is ‘AI.’ Avoid anyone that claims they use Artificial Intelligence. There are only two known private hedge funds that have anything close to authentic self-learning AI. They are not selling their bots to anyone.
-- Think about this logically: If you created a profitable AI (virtually a money printing machine), would you ever tell anyone about it? Would you sell it? Probably not – your advantage disappears when others have access to that kind of a tool.
-- Automated Trading systems are a common way fraud is committed by forex scammers.
-
-### Flashy advertising or false lifestyles
-- Avoid any service or individual who has ‘high lifestyle’ imagery, such as girls in bikinis on a yacht, Lamborghini or Ferrari in the background, massive mansion or house, or a private jet.
-- A good rule to follow for any investment or speculative endeavor: if it looks or sounds too good to be true, it probably is.
-
-**Learn more:** [How to avoid forex trading scams](#)
-
-# How do I recover funds from a forex scam?
-Recovering funds in the forex trading market is difficult. The difficulty increases when you use an unregulated broker. Adding to the problem is the near impossibility of recompense from the scammers who defrauded you.
-
-But we at Payback LTD have a proven track record of success in helping investors who have been the victims of a scam or fraud. We are a regulated fund recovery company that focuses on some of the more complicated financial investments: forex, binary options, cryptocurrency, and stocks.
-
-In addition to our professional forex recovery services, our team
-
- of experts focuses on customer outreach and we attempt to mitigate the damage that fraudulent actors have caused to our clients.
-
-Contact us today for a free consultation and our professionals will work with you throughout the entire process to get you maximum returns!`}
+Don't hesitate to reach out to Payback Ltd if you've been scammed and lost money. Together, we can work towards reclaiming your funds and seeking justice.`}
           </ReactMarkdown>{" "}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is Forex a pyramid scheme?
+                Is it accessible?
               </AccordionTrigger>
               <AccordionContent>
-                No – but there are scams and fraudsters that create pyramid
-                schemes. This kind of behavior exists everywhere and is endemic
-                to all traded financial markets. If you are looking for a broker
-                and they’re offering to put you into a ‘team’ to build a
-                network, odds are it’s a pyramid scheme. Read our related
-                article: What is a pyramid scheme and how to avoid them
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="font-bold text-[22px]">
-                Who regulates the forex markets?
-              </AccordionTrigger>
-              <AccordionContent>
-                Several major regulatory bodies/agencies around the globe
-                regulate forex markets. In the US, brokers are regulated by the
-                NFA (National Futures Association) and the CFTC (Commodities
-                Futures Trade Commission) – but not FINRA (Financial Industry
-                Regulatory Authority). In the UK, the main regulatory body is
-                the FCA (Financial Conduct Authority). In the EU, all nations
-                that make up the EU have their respective regulatory agency– but
-                the standards that each member State must maintain are
-                established in the MiFID (Markets in Financial Instruments
-                Directive).
+                Yes. It adheres to the WAI-ARIA design pattern.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -382,7 +316,7 @@ Contact us today for a free consultation and our professionals will work with yo
               with you to get your money back!
             </p>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -421,7 +355,7 @@ Contact us today for a free consultation and our professionals will work with yo
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -441,4 +375,4 @@ Contact us today for a free consultation and our professionals will work with yo
   )
 }
 
-export default Forex
+export default Stock

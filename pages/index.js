@@ -98,16 +98,16 @@ export default function Home() {
           <div className="items-center xl:items-start w-full gap-4 pt-10 pb-5 xl:pt-0 xl:pb-0 px-5 xl:px-0 flex flex-col xl:w-[70%] ">
             <h1 className="text-center xl:text-left xl:text-[72px] md:text-[64px] text-[52px]   font-extrabold font-raleway xl:leading-[80px] leading-tight">
               <span className="text-secondary ">
-                Get your money <br className="hidden xl:flex" /> back
+                Recover Your Funds <br className="hidden xl:flex" />
               </span>{" "}
-              from a scam
+              from Fraud
             </h1>
             <p
               className={`text-center xl:text-left  sm:text-[20px] text-[16px]  font-normal font-rubik`}
             >
-              If you’ve been ripped off by scammers, get in touch and{" "}
-              <br className="hidden xl:flex" /> our team of experts will work to
-              get your money back
+              Have you fallen victim to a fraudulent scheme? Reach out to us,{" "}
+              <br className="hidden xl:flex" /> and our specialized team will
+              dedicate their efforts to retrieve your lost funds.
             </p>
           </div>
           <div className="items-center w-full  font-poppins text-opacity-0  flex flex-col xl:w-[30%] p-5 ">
@@ -242,36 +242,38 @@ export default function Home() {
               <h1 className="flex gap-2 items-center">
                 <TextSearch size={30} />
                 <span className="font-raleway text-[20px] font-bold">
-                  Review your case
+                  Evaluating Your Situation
                 </span>
               </h1>
               <p className="text-[16px] text-gray-600">
-                Performing preliminary checks to assess whether the case can
-                result in a substantial recovery, based on our experience.
+                We begin by conducting initial assessments to determine the
+                viability of your claim for a significant fund recovery,
+                leveraging our extensive experience in similar cases.
               </p>
             </div>
             <div className="flex flex-col gap-3 items-start justify-center p-6 shadow-lg">
               <h1 className="flex gap-2 items-center">
                 <File size={30} />
                 <span className="font-raleway text-[20px] font-bold">
-                  Gather the evidence
+                  Compiling Necessary Documentation
                 </span>
               </h1>
               <p className="text-[16px] text-gray-600">
-                Collecting all the information and documentation required to
-                successfully pursue your case[*]
+                We will assemble all pertinent details and paperwork needed to
+                effectively advance your claim.
               </p>
             </div>
             <div className="flex flex-col gap-3 items-start justify-center p-6 shadow-lg">
               <h1 className="flex gap-2 items-center">
                 <Shield size={30} />
                 <span className="font-raleway text-[20px] font-bold">
-                  Confront the entities
+                  Addressing the Responsible Parties
                 </span>
               </h1>
               <p className="text-[16px] text-gray-600">
-                Systematically confronting the relevant entities that have
-                facilitated the illicit transfer of your wealth.
+                We take a strategic approach to engage with the entities
+                involved in the unauthorized movement of your funds, aiming for
+                resolution and recovery.
               </p>
             </div>
             <div className="flex flex-col gap-3 items-start justify-center p-6 shadow-lg">
@@ -293,7 +295,7 @@ export default function Home() {
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-              Money retrieved in 2023
+              Securing Your Refund
               <p className="text-[18px]">(1-3 quarters)</p>
             </h1>
             <p className="font-black xl:hidden flex text-center xl:text-[72px] text-[48px] text-secondary font-poppins">
@@ -302,14 +304,18 @@ export default function Home() {
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              Our team of experts secures refunds on a daily basis. We assist
-              businesses as well as individuals in their pursuit of funds lost
-              to scammers. Our goal is to continually improve in our endeavors
-              and we are always here to help you in your fight for what is
-              rightfully yours.
+              Our dedication to recovering your funds is unwavering, and our
+              successful track record gives us confidence. Rest assured, we will
+              exhaust all avenues to reclaim your money. In 2023, covering the
+              first three quarters, our experienced team has consistently
+              achieved daily successes in securing refunds for both individuals
+              and businesses wronged by fraudulent activities. Our commitment
+              lies in not only retrieving what is rightfully yours but also in
+              enhancing our strategies to assist you effectively in your quest
+              for justice.
             </p>
             <Link
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary font-semibold text-primary px-14 xl:w-max w-full mt-4 py-3"
             >
               Get a free consultation
@@ -335,12 +341,13 @@ export default function Home() {
             <p
               className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
             >
-              The short answer: We only take on cases we believe can result in a
-              substantial recovery. Your time is as valuable as ours, and that’s
-              why we are completely transparent in our evaluation of every case.
-              If it can’t be done, we will tell you so. But, if we feel there is
-              a chance for full or partial recovery, then we'll get to work
-              right away.
+              Choosing to collaborate with us means partnering with a team
+              committed to cases with strong potential for financial recovery.
+              We prioritize transparency and efficiency, focusing only on
+              situations where we see a viable path to significant restitution.
+              Our approach ensures that we engage with cases where our efforts
+              can truly make a difference, aligning our success with your best
+              interest.
             </p>
             <Link
               href="/about-us"
@@ -359,11 +366,11 @@ export default function Home() {
             <p
               className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
             >
-              The fund recovery process can be a lengthy one and requires
-              perseverance. Therefore it is vital that our clients are ready for
-              it and trust us every step of the way. So if for any reason you
-              are doubtful, you can ask for a full refund within the first 14
-              business days of the process.*
+              We offer a confidence-inspiring guarantee: if the fund recovery
+              journey feels daunting or if you harbor any doubts, you're
+              entitled to a complete refund within the first 14 business days.
+              This policy underscores our dedication to your satisfaction and
+              trust throughout the recovery process.
             </p>
             <Link
               href="/"
@@ -387,16 +394,13 @@ export default function Home() {
             <p
               className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
             >
-              Scammers go as far as posing as legitimate scam recovery companies
-              and even present themselves as Payback Ltd. So it's important to
-              remember:
-              <br />
-              a. Our emails end with @payback-ltd.com.
-              <br />
-              b. We would NEVER ask you to send us money via Crypto.
+              Stay vigilant against fraudulent entities masquerading as
+              legitimate recovery services. Ensure communication is through
+              official channels, with a specific domain in emails, and remember,
+              legitimate services will not request payments via cryptocurrency.
             </p>
             <Link
-              href="/imposters-copycats"
+              href="/copy"
               className="bg-transparent border border-primary font-semibold text-primary px-20 mt-4 py-3"
             >
               Browse the full list
@@ -412,10 +416,10 @@ export default function Home() {
             <p
               className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
             >
-              Use our Blacklist of known scams and frauds to check if one of the
-              service providers you are currently using is a scam/fraud. At the
-              moment, we list more than 11,000 companies that were flagged as a
-              scam/fraud by us and different regulatory bodies.
+              To verify if a service provider is fraudulent, consult our
+              comprehensive blacklist, which includes over 11,000 companies
+              identified as scams by both our team and various regulatory
+              authorities.
             </p>
             <Link
               href="/scams"
@@ -438,8 +442,9 @@ export default function Home() {
             <p
               className={`text-center max-w-lg   text-[16px]  font-normal font-poppins`}
             >
-              If you've been ripped off by scammers, get in touch and our team
-              of experts will work to get your money back
+              If you've suffered losses due to scammers, contact us. Our team,
+              comprised of seasoned experts, is committed to assisting you in
+              the recovery of your funds.
             </p>
             <div className="w-full max-w-md col-span-2 bg-gray-100 pr-3 flex">
               <select
@@ -460,7 +465,7 @@ export default function Home() {
               </select>
             </div>
             <Link
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -481,21 +486,20 @@ export default function Home() {
         <div className="xl:max-w-5xl max-w-4xl px-5 xl:px-0  mx-auto items-center w-full  gap-2 xl:py-16 py-20 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px] leading-tight   font-extrabold font-raleway  ">
-              How we work to get our clients money back{" "}
+              How we get your funds back
             </h1>
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              First, our team of financial experts secures the relevant
-              information from you, the victim of the scam. Then our recovery
-              specialists, and legal department, track down and confront the
-              scammers. <br /> Our years of knowledge of the field make us
-              ideally placed to fight, and win your case. You are only a short
-              conversation away from starting the process to secure your stolen
-              assets.
+              Our process begins by gathering vital information from you. With a
+              team encompassing financial experts, recovery specialists, and
+              legal professionals, we adeptly trace and confront the scammers.
+              Our extensive experience equips us to successfully navigate and
+              resolve your case, bringing you closer to reclaiming your assets
+              with just a brief conversation to initiate the process.
             </p>
             <Link
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary font-semibold text-primary px-14 mt-4 py-3"
             >
               Get a free consultation
@@ -515,7 +519,7 @@ export default function Home() {
           </h1>
           <div className="w-full grid xl:grid-cols-4 mt-5  grid-cols-2 ">
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex group hover:bg-primary hover:text-white  flex-col border border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -528,7 +532,7 @@ export default function Home() {
               </p>
             </div>{" "}
             <div
-              onClick={() => router.push("/cryptocurrency")}
+              onClick={() => router.push("/crypto")}
               className="flex flex-col group hover:bg-primary hover:text-white border border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -541,7 +545,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              onClick={() => router.push("/forex")}
+              onClick={() => router.push("/fx")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -567,7 +571,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -580,7 +584,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -593,7 +597,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -606,7 +610,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -624,7 +628,7 @@ export default function Home() {
       <div className="w-full bg-cover bg-white text-primary   overflow-hidden ">
         <div className="xl:max-w-6xl px-5 xl:px-0 flex-col gap-6 max-w-4xl  mx-auto items-center w-full   xl:pb-20 py-10 flex ">
           <h1 className="font-raleway max-w-lg font-bold text-[40px] leading-tight text-center">
-            More about Payback and the chargeback industry
+            the chargeback industry
           </h1>
           <Accordion type="single" collapsible className="w-full max-w-2xl">
             <AccordionItem value="item-1">
@@ -670,86 +674,51 @@ export default function Home() {
                 The chargeback industry
               </AccordionTrigger>
               <AccordionContent>
-                First and foremost, a chargeback is characterized as the action
-                or process of filing a request for retrieval of funds by the
-                customer either with a bank. <br /> <br /> Naturally, when a
-                consumer buys something, he/she will provide the monetary price
-                of the item or service that is required for the business
-                transaction. However, on rare occasions, any consumer can file
-                for a return of funds from the shop or merchant, either due to
-                error in processing, disagreements, or possible fraud. <br />{" "}
-                <br />
-                The chargeback method is created in consideration of the
-                customer’s safety and protection from scams or any fraudulent
-                scams in the marketplace. There are consumer protection codes in
-                some parts of the world that make sure of the return of products
-                in the case of detection of a scam. <br /> <br /> Some shops
-                require a tedious refund process to prevent consumers from
-                asking for a refund since they would have to go through a lot of
-                trouble just for repayment. Hence, the chargeback industry is
-                useful in this account. <br /> <br /> Rather than the
-                conventional means of asking for the money back, the chargeback
-                method asks the bank directly for a refund rather than the shop
-                or merchant itself. Chargebacks are designed to provide
-                consumers with security when shopping online and ensure that
-                sellers remain transparent and prevent them from selling bogus
-                products or services.
+                In the chargeback industry, chargebacks serve as a mechanism for
+                consumers to initiate a funds retrieval request with their bank,
+                primarily for transactions that are disputed or fraudulent. This
+                process is in place to safeguard consumer rights by allowing for
+                the return of funds in cases of merchant errors, disagreements,
+                or scams. It is a critical consumer protection tool, especially
+                in online shopping, ensuring transaction integrity and
+                preventing fraud. Chargebacks bypass traditional refund requests
+                from merchants, offering a direct path to financial redress
+                through the customer's bank, enhancing safety and transparency
+                in digital commerce.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-semibold text-[20px]">
-                Funds recovery with Payback
+                Recovering money losses with Payback
               </AccordionTrigger>
               <AccordionContent>
-                PayBack offers this kind of service with wealth recovery experts
-                and fund recovery specialists – ensuring that you get your
-                investments back from scammers. However, what really is funds
-                recovery? <br /> <br /> In a nutshell, funds recovery is a
-                service that is both consultative and investigative in its
-                approach. This is a service employed by victims that have been
-                duped by online fraudulent crimes to retrieve their money from
-                bogus merchants and trader scams. <br /> <br /> Funds recovery
-                services like PayBack specialize in handling internet scams
-                online and lend a hand in providing refunds and reimbursements
-                to the targets through the use of arguments and disputes, along
-                with digital fingerprints track downs, analysis of cyber
-                transactions, and an in-depth investigation. <br /> <br />{" "}
-                Companies that provide funds recovery services have a high
-                chance of a successful crypto scam recovery, Bitcoin scam
-                recovery, scam money recovery, and wealth recovery. <br />{" "}
-                <br />
-                When PayBack receives a complaint from victims, they immediately
-                work and review the details of the situation. For a successful
-                recovery, funds recovery review or scam recovery review of the
-                claims must be done, and pieces of evidence must be gathered.{" "}
-                <br /> <br />
-                The complaint must be valid, and the terms and conditions of the
-                company must be followed.
+                Payback leverages expertise in wealth and fund recovery to
+                assist victims of online scams in reclaiming their investments.
+                Fund recovery is a consultative and investigative service aimed
+                at retrieving money lost to internet fraud. Through thorough
+                investigations, digital tracking, and strategic disputes,
+                Payback specializes in combating various online scams, offering
+                a significant success rate in crypto and Bitcoin scam
+                recoveries. Upon receiving a victim's complaint, Payback
+                promptly reviews the case details, ensuring adherence to its
+                terms for a successful recovery process.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-semibold text-[20px]">
-                Recover from online trading scams
+                Helping victims of online trading scams
               </AccordionTrigger>
               <AccordionContent>
-                How can I recover my lost money from Forex? <br /> How to
-                recover trading loss? <br /> <br />
-                These questions linger among those who have fallen target to
-                online trading scams victims. Forex and Cryptocurrencies have
-                shaped the trading markets quite differently. Nowadays, more and
-                more people have been susceptible to these scams. <br /> <br />{" "}
-                However, with PayBack, getting your money back quickly is not a
-                problem. <br /> <br /> Scams in online trading are connected to
-                investment scams that are prevalent in the trading markets. They
-                are often posted and advanced on social media sites, with fraud
-                traders promising high returns along with popular endorsements
-                from prominent people to encourage and attract people to trade
-                and invest with them. <br /> <br />
-                They pose as professionals with legitimate-looking websites to
-                trick people into their scams. <br /> <br />
-                PayBack provides solace for any online trading scams. The
-                company helps people from trade platform scams and lets victims
-                recover money from Bitcoin scam.
+                Victims of online trading scams, particularly in Forex and
+                cryptocurrencies, often seek ways to recover their lost funds.
+                The prevalence of investment scams, especially on social media,
+                where fraudulent traders promise high returns, has made many
+                vulnerable. PayBack specializes in assisting victims by
+                navigating through these scams, offering solutions to recover
+                investments from trade platform scams and Bitcoin fraud. Their
+                approach is geared towards quick recovery, leveraging their
+                expertise to combat scams that often appear professional and
+                legitimate to unsuspecting investors.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
@@ -757,37 +726,17 @@ export default function Home() {
                 About Payback
               </AccordionTrigger>
               <AccordionContent>
-                PayBack LTD only has one mission: to protect people from frauds
-                and scams online worldwide, whatever it takes. We help victims
-                of fraud online to recover what is rightfully theirs with their
-                wealth recovery experts, scam money recovery professionals, and
-                fund recovery specialists. <br /> <br /> The company focuses on
-                unregulated Forex and Binary Options Brokers and has already
-                handled millions of victims around the globe with a high
-                turnover. In July alone, we have recovered more than $300,000
-                funds and money from frauds. <br /> <br /> Our team is composed
-                of skilled experts and professionals with magnificent long-time
-                experience. We help you avoid recovery scams, as we are
-                legitimate field specialists with a great deal of knowledge and
-                experience in dealing with the forex industry, banking
-                internationally, and the law of cybercrime enforced on the
-                internet. <br /> <br /> As a fund recovery agency, PayBack helps
-                people conduct safe online transactions and provide services in
-                the area of refunds and cancellations, forex and binary options
-                scams, and other types of online frauds. <br /> <br />
-                Where recovery scams are prevalent, PayBack is the safer choice.
-                We specialize in recovery funds in the UK and extends our
-                services on: <br /> <br />
-                Online trading scams <br /> Funds recovery <br /> Trade platform
-                scams <br /> Wealth recovery expert <br /> Crypto scam recovery{" "}
-                <br />
-                Recover scammed bitcoin <br /> Scam money recovery <br /> <br />
-                Funds recovery reviews, as well as scam recovery reviews, are
-                available on Our website and other review sites. Furthermore, we
-                are a certified company of TrustPilot as a funds recovery dome.{" "}
-                <br /> <br /> If you have been victimized, you have the right to
-                recover what you have lost. With the chargeback industry in
-                effect and the professionals of PayBack, get back what is yours.
+                PayBack LTD is dedicated to protecting individuals from online
+                frauds and scams globally. With a team of wealth recovery
+                experts, scam money recovery professionals, and fund recovery
+                specialists, they focus on assisting victims of unregulated
+                Forex and Binary Options Brokers. PayBack has a significant
+                global impact, boasting a high recovery turnover, including a
+                substantial amount recovered in July alone. Their experienced
+                team aids in avoiding recovery scams, offering expertise in the
+                forex industry, international banking, and cybercrime law,
+                ensuring safe online transactions and specializing in various
+                scam recoveries.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -824,7 +773,7 @@ export default function Home() {
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation

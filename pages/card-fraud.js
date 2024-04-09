@@ -64,7 +64,7 @@ const Stock = () => {
               <span className="text-secondary ">
                 Get your money back <br className="hidden xl:flex" />
               </span>{" "}
-              from Financial Scams
+              from Credit Card Fraud & Phishing Scams
             </h1>
             <p
               className={`text-center   sm:text-[20px] text-[16px]  font-normal font-rubik`}
@@ -92,7 +92,7 @@ const Stock = () => {
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -176,29 +176,19 @@ const Stock = () => {
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-              Been Scammed? Recover Your Lost Funds
+              Combat Credit Card Fraud: Reclaim Your Lost Funds
             </h1>
 
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              If you’ve been caught out by a financial or online scam, then
-              you’re not alone. Millions of dollars are lost every year to scams
-              of all kinds, and often, the victims believe there’s nothing they
-              can do to get their money back. Here at Payback Ltd, we work
-              tirelessly on behalf of our clients to track down their stolen
-              funds and the scammers themselves. To date, we have retrieved tens
-              of thousands of pounds for those who have fallen foul of an online
-              financial scam.
-              <br /> <br />
-              Our team of experts has in-depth experience with many different
-              types of scams and know precisely the process and avenues to
-              follow to reclaim money that’s been lost to them. From CFD cons to
-              Ponzi schemes to social media scams, we have the know-how to
-              successfully pursue the cases we take on to deliver justice for
-              our clients. We are also pleased to provide a range of helpful
-              resources and guides to help you avoid getting entangled in a scam
-              in the future.
+              Every year, thousands of new credit card phishing scams surface,
+              preying on unsuspecting individuals. At our firm, we're dedicated
+              to standing up against these scammers on behalf of our clients. If
+              you've been ensnared by one of these credit card phishing scams,
+              don't hesitate to reach out to us immediately. The sooner we
+              assess your case and compile evidence, the greater your likelihood
+              of recovering your funds.
             </p>
             <button
               type="submit"
@@ -242,70 +232,90 @@ const Stock = () => {
         <div className="md:w-[60%]">
           <div className=" bg-primary w-full h-[1px] flex  my-5" />
           <p className="text-left text-gray-600 font-poppins">
-            Here at Payback Ltd, we want to make sure you know everything there
-            is to know in regards to financial scams and fraud. While our
-            primary job is to help recover financial loss for clients who have
-            been scammed or being involved in some kind of fraud, ideally we
-            want to help you avoid these scams in the first place. So be
-            vigilant and knowledgeable.
+            At Payback LTD we fight hard to assist our clients who have become
+            victims of credit card phishing attacks. Our fund recovery
+            specialists will do everything in their power to recover your stolen
+            funds and right the wrongs that were done to you by the scammers. We
+            also strive to provide our clients with up-to-date information and
+            guides about the latest credit card phishing scams to help them
+            avoid future fraud attempts.
           </p>
           <div className=" bg-primary  w-full h-[1px] flex  mt-5 mb-10" />
           <ReactMarkdown components={markdownComponents}>
-            {`# Commons Types of Financial and Online Scams
+            {`# What Is Phishing?
 
-With the proliferation of scams in the digital age, it's crucial to remain vigilant and cautious while navigating the online world. Here are some prevalent cons and scams to watch out for:
+Phishing is the term used to describe various online scams and cyber attacks wherein fraudsters impersonate individuals or organizations to trick victims into divulging sensitive personal information. Traditionally, phishing attacks occur through email, but cybercriminals also utilize malicious websites, texts, and phone calls to obtain such data.
 
-### CFD Scams
 
-As CFD (Contract for Difference) trading becomes more accessible, scammers exploit newcomers by pressuring them into leveraged positions, leading to substantial financial losses.
+# How do credit card phishing scams operate, and what strategies do scammers use to deceive victims?
 
-### Ponzi Schemes
+Credit card phishing scams typically involve fraudsters posing as banks or credit card companies, reaching out to victims via email and soliciting credit card information. By creating a sense of urgency, scammers claim there's a security issue with the victim's credit card, prompting them to provide personal and card details to resolve the purported problem and safeguard their funds.
 
-Ponzi schemes, often disguised as crypto investment opportunities, lure investors with initial payouts before collapsing once new investments cease, leaving victims with significant losses.
+To mitigate the risk of falling victim to phishing attacks, individuals should be cautious with emails purporting to be from their credit card provider. They should carefully scrutinize URLs, email addresses, and message content for any discrepancies. It's also advisable to contact the credit card issuer directly if a suspicious communication is suspected. Additionally, individuals should refrain from clicking on unknown links or attachments and avoid entering sensitive data on unfamiliar websites. Regular monitoring of credit card accounts for unauthorized activity is also recommended to help mitigate potential scams.
 
-### Social Media Scams
+### Common Credit Card Phishing Scam Methods
 
-From fake prize notifications to malware-laden gossip links, social media scams exploit users' trust, harvesting personal information for identity theft or financial fraud.
+- Credit Card Phishing Websites:
+Cybercriminals craft counterfeit websites mirroring legitimate credit card provider sites. These deceptive pages lure users into sharing personal and financial data, such as login credentials and card details, leading to theft and identity fraud.
 
-### Charity Scams
+- Credit Card Phishing Email:
+Scammers initiate contact through phishing emails posing as official communications from financial institutions. These emails urge recipients to address purported issues with their credit card accounts, often resulting in inadvertent disclosure of sensitive information or malware installation.
 
-Impersonating legitimate charities, these scams prey on goodwill, soliciting donations through unsolicited calls or emails, particularly prevalent during holiday seasons.
+- Credit Card Phishing Texts:
+Fraudsters dispatch fraudulent credit card notifications via SMS text messages, alleging urgent matters related to the victim's card. These texts coerce recipients into divulging account details or clicking on malicious links redirecting to fraudulent websites.
 
-### Key Points
+- Credit Card Phishing Phone Calls:
+Phishing phone calls, whether automated or human-operated, falsely purport to originate from the victim's credit card company. These calls deceive recipients into sharing card information under the guise of resolving security issues, emphasizing the importance of validating authenticity before divulging sensitive data.
 
-- Financial and online scams are diverse and evolving, with wire transfers being a common method of payment.
-- Millennials are frequent targets, and victims often lose an average of $500 to imposter scams.
-- Vigilance is essential in spotting new scams as they emerge, especially during peak holiday seasons.
-- Recovery services like Payback Ltd assist victims in reclaiming lost funds and seeking justice.
+# How To Spot a Credit Card Phishing Scam
 
-# Lost Money as Part of a Scam?
+- Verify website URLs to ensure they match your credit card provider's official site.
+- Scrutinize sender email addresses for authenticity, noting spelling errors or suspicious domains.
+- Remember that legitimate financial institutions won't request sensitive information via text or call.
+- Exercise caution with urgent requests for action on credit card accounts.
+- Verify any suspicious notifications directly with your credit card issuer.
+- Victim of a Credit Card Phishing Scam? Want to Know How to Chase Your Credit Card Phishing Scammer? Follow These Steps:
 
-If you've fallen victim to a financial or online scam, you're not alone. Despite feeling vulnerable or ashamed, seeking help is crucial. Payback Ltd specializes in recovering lost funds and providing support throughout the process.
+If you've fallen victim to a credit card phishing scam, don't despair; recovery is possible. Contact a fund recovery specialist, like Payback LTD, who can assist in recovering stolen funds through various methods.
 
-# How to Avoid Financial and Online Scams
+# How To Avoid a Credit Card Phishing Scam
 
-- Stay informed about emerging scams and avoid clicking on suspicious links.
-- Safeguard personal information online and refrain from sharing sensitive data.
-- Exercise caution when donating to charities, verifying their legitimacy before contributing.
-- Maintain strong, unique passwords for online accounts and avoid downloading software from untrustworthy sources.
-
-Don't hesitate to reach out to Payback Ltd if you've been scammed and lost money. Together, we can work towards reclaiming your funds and seeking justice.`}
+- Never disclose credit card details via email, text, or phone.
+- Avoid clicking on links or attachments from unknown senders.
+- Verify URLs and email addresses of purported financial institutions.
+- Contact your card issuer directly to validate suspicious notifications.
+- Mark fake emails as junk and block senders.
+- Install ad blocking and antivirus software to prevent malware attacks.
+- Monitor credit card activity regularly to detect unauthorized transactions.
+- Exercise skepticism toward unsolicited claims of credit card issues.
+`}
           </ReactMarkdown>{" "}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                How do I spot a credit card phishing scam?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Credit card phishing scams employ various tactics, but they
+                typically aim to induce panic by alleging suspicious activity on
+                your card or falsely claiming that your card is locked,
+                requiring you to verify your information to restore access. Be
+                cautious of any notifications suggesting issues with your card
+                and always independently verify the information by directly
+                contacting your credit card company.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                What are the most common types of credit card phishing scam
+                methods?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                The most prevalent credit card phishing scam methods include
+                fraudulent emails, websites, phone calls, and texts. In these
+                schemes, scammers strive to make their communications appear
+                authentic by incorporating logos, addresses, and other
+                recognizable information from your bank or card provider.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -335,7 +345,7 @@ Don't hesitate to reach out to Payback Ltd if you've been scammed and lost money
               with you to get your money back!
             </p>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -374,7 +384,7 @@ Don't hesitate to reach out to Payback Ltd if you've been scammed and lost money
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation

@@ -229,10 +229,11 @@ const Testimonials = () => {
         <div className="md:w-[60%]">
           <div className=" bg-primary w-full h-[1px] flex  my-5" />
           <p className="text-left text-gray-600 font-poppins">
-            Payback LTD was founded to protect traders from unregulated Binary
-            Option and Forex brokers. The company comprises of professionals
-            with vast experience in the Forex industry and cybercrimes. For over
-            a decade we have claimed funds for hundreds of victims worldwide.
+            Payback LTD was established with the mission of safeguarding traders
+            from unregulated Binary Option and Forex brokers. Our team consists
+            of seasoned professionals with extensive experience in the Forex
+            industry and cybercrimes. Over the past decade, we have successfully
+            recovered funds for hundreds of victims worldwide.
           </p>
           <div className=" bg-primary  w-full h-[1px] flex  mt-5 mb-10" />
           <ReactMarkdown components={markdownComponents}>
@@ -241,35 +242,35 @@ const Testimonials = () => {
 
 We follow a structured process to trace misplaced or lost funds. Here's how we do it:
 
-1. **Review Complaint Details**: We start by reviewing the details provided by the complainant. We gather all necessary information, including correspondence with the merchant/broker, confirmation of the transaction, and access to the broker’s platform/web page.
+1. **Review Complaint Details**: We begin by thoroughly reviewing the details provided by the complainant, including correspondence with the merchant/broker, transaction confirmations, and access to relevant platforms or web pages.
 
-2. **Privacy Assurance**: We prioritize privacy and ensure that your details are never shared with third parties.
+2. **Privacy Assurance**: nsuring confidentiality and privacy, we guarantee that your information remains secure and is never shared with third parties.
 
-3. **Compilation of Necessary Information**: Once we have all the required information, we compile it to form a comprehensive overview of the situation.
+3. **Compilation of Necessary Information**: We gather all necessary information and compile it into a comprehensive overview of the situation to facilitate our investigation.
 
-4. **Confrontation**: We confront the owners of the bank or company in question with the gathered evidence.
+4. **Confrontation**: Armed with the gathered evidence, we confront the owners of the bank or company in question to address the discrepancy.
 
-5. **Funds Reclamation**: Finally, we initiate the process of claiming back your funds using a quick and secure payment method.
+5. **Funds Reclamation**: Lastly, we initiate the process of reclaiming your funds using a swift and secure payment method, ensuring a prompt resolution to the issue.
 
 # Payback LTD Services
 
-At Payback LTD, we understand the challenges that come with the internet and its usage in daily life. While most websites offer genuine products and services and safeguard your information, some companies have ulterior motives. Here's how we can help:
+At Payback LTD, we recognize the complexities associated with online interactions and transactions. While most online platforms operate with integrity, there are instances where fraudulent activities occur. Here's how we can support you:
 
-- **Funds Retrieval**: We specialize in retrieving funds from unregulated brokers and any other company engaging in online fraud.
+- **Funds Retrieval**: Our expertise lies in recovering funds from unregulated brokers and other entities involved in online fraud
 
-- **Free Consultation**: We offer a free consultation at any time to discuss your situation and explore how we can assist you.
+- **Free Consultation**: We offer complimentary consultations to discuss your circumstances and determine how we can best assist you.
 
 # Customer Testimonials
 
-Don't just take our word for it. Here's what our customers have to say:
+Don't just take our word for it. Here's what our customers have experienced:
 
-- **Genuine Reviews**: Many genuine Payback LTD Reviews on our website showcase customer satisfaction.
+- **Genuine Reviews**: Authentic Payback LTD Reviews on our platform attest to customer satisfaction and successful outcomes.
 
-- **Success Stories**: Our clients, who had lost hope in ever retrieving their money, have had their funds secured with our assistance.
+- **Success Stories**: Clients who had lost hope in recovering their funds have achieved success with our assistance.
 
-- **High Satisfaction Rate**: Currently, our site boasts a score of 4.4/5, reflecting not only our professionalism but also our high success rate.
+- **High Satisfaction Rate**: With a current rating of 4.4/5 on our site, we maintain a reputation for professionalism and a high success rate.
 
-- **Commitment**: We are committed to resolving your case and will never give up until a solution is found.
+- **Commitment**: We are dedicated to resolving your case diligently and persistently until a resolution is achieved.
 `}
           </ReactMarkdown>{" "}
         </div>
@@ -298,7 +299,7 @@ Don't just take our word for it. Here's what our customers have to say:
               with you to get your money back!
             </p>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation

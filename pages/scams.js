@@ -68,10 +68,10 @@ const Scams = () => {
             <p
               className={`text-center  sm:text-[20px] text-[16px] max-w-xl  font-normal font-rubik`}
             >
-              In front of you is a list of companies & websites that have been
-              flagged as a scam/fraud by us or official regulatory bodies of
-              various countries. Search this database and check if you were
-              exposed to one of these scammers.
+              Below is a list of companies & websites that have been flagged as
+              scams or fraudulent by us or official regulatory bodies of various
+              countries. Feel free to search this database to determine if you
+              have encountered any of these dubious entities.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ const Scams = () => {
               <p className="md:mt-0 mt-2">{article.short_description}</p>
             </div>
             <Link
-              href={"/contact-us"}
+              href={"/contact"}
               className="bg-primary md:w-[20%] md:min-w-[20%] w-full p-8 md:p-0 text-white font-bold font-raleway items-center justify-center flex text-center"
             >
               Get you money back

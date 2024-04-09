@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion"
 import Testimonial from "@/components/Testimonial"
 
-const Stock = () => {
+const Cryptocurrency = () => {
   const [headings, setHeadings] = useState([])
 
   // Define custom components with Tailwind CSS for markdown elements
@@ -64,7 +64,7 @@ const Stock = () => {
               <span className="text-secondary ">
                 Get your money back <br className="hidden xl:flex" />
               </span>{" "}
-              from Romance Scams
+              from Cryptocurrency scams
             </h1>
             <p
               className={`text-center   sm:text-[20px] text-[16px]  font-normal font-rubik`}
@@ -92,7 +92,7 @@ const Stock = () => {
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -176,25 +176,16 @@ const Stock = () => {
         <div className="xl:max-w-5xl max-w-4xl  mx-auto items-center w-full px-5 xl:px-0  gap-2 xl:py-16 py-14 flex xl:flex-row flex-col">
           <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[50%] ">
             <h1 className="text-center flex flex-col xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-              Romance Scams: Recover Your Lost Funds
+              Retrieve Your Funds from Cryptocurrency Scams
             </h1>
 
             <p
               className={`text-center xl:text-left  text-[16px]  font-normal font-poppins`}
             >
-              Romance scammers con thousands of people out of their money every
-              year, and their techniques are becoming ever more sophisticated.
-              We believe that romance scam victims deserve justice, and we fight
-              hard on their behalf to reunite them with their lost funds. If
-              you’ve fallen foul of a romance scam, contact us so that we begin
-              working to retrieve your money.
-              <br /> <br />
-              At Payback Ltd, we work tirelessly to assist our clients who have
-              been victims of various types of romance scams. Our team of
-              recovery experts will leave no stone unturned to track down the
-              scammers and the funds that have been lost. We also provide a
-              range of informative guides to help you avoid romance scams in the
-              future.
+              If you've been victimized by a cryptocurrency scam, our
+              experienced team is here to assist you in recovering your
+              investments. When scammers have deceived you, reaching out to us
+              is the first step toward reclaiming your funds.
             </p>
             <button
               type="submit"
@@ -211,17 +202,17 @@ const Stock = () => {
       <div className="xl:max-w-5xl max-w-4xl px-5 xl:px-0  mx-auto items-center w-full  gap-2 xl:py-28 py-10 flex xl:flex-row flex-col-reverse">
         <div className="items-center justify-center xl:items-start w-full gap-4 flex flex-col xl:w-[55%] ">
           <h1 className="text-center text-primary flex flex-col leading-tight xl:text-left xl:text-[40px] text-[30px]   font-extrabold font-raleway  ">
-            Your money back guarantee
+            Assurance of Money Back
           </h1>
 
           <p
             className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
           >
-            The fund recovery process can be a lengthy one and requires
-            perseverance. Therefore it is vital that our clients are ready for
-            it and trust us every step of the way. So if for any reason you are
-            doubtful, you can ask for a full refund within the first 14 business
-            days of the process.*
+            The path to retrieving scammed funds can be intricate and demands
+            persistence. It's essential that our clients are prepared for this
+            journey and trust us at every step. Should you harbor any doubts, we
+            offer the option for a complete refund within the first 14 business
+            days of the recovery process.
           </p>
           <button
             type="submit"
@@ -238,74 +229,87 @@ const Stock = () => {
         <div className="md:w-[60%]">
           <div className=" bg-primary w-full h-[1px] flex  my-5" />
           <p className="text-left text-gray-600 font-poppins">
-            Here at Payback Ltd, we want to make sure you know everything there
-            is to know in regards to romance scams and fraud. While our primary
-            job is to help recover financial loss for clients who have been
-            scammed or being involved in some kind of fraud, ideally we want to
-            help you avoid these scams in the first place. So be vigilant and
-            knowledgeable.
+            The first step to protecting yourself from frauds or scams is to be
+            knowledge of the threats. But hope is not lost, if you have been
+            scammed. Read on to learn about the most common cryptocurrency scams
+            and how we can help.
           </p>
           <div className=" bg-primary  w-full h-[1px] flex  mt-5 mb-10" />
           <ReactMarkdown components={markdownComponents}>
-            {`# What are Romance Scams?
+            {`# Cryptocurrency Scams: An Avenue for Recovery
+Despite regulatory efforts to tame it, the cryptocurrency industry thrives, presenting both legitimate opportunities and fertile ground for scams. These scams often masquerade as genuine investment chances due to the public's limited understanding of digital currencies. If you've been caught in a cryptocurrency scam, reaching out to us is critical. Though recovering funds from cryptocurrency scams poses significant challenges, we promise an honest evaluation of your case and will exert our utmost efforts to recuperate your money.
 
-Romance scams encompass a range of deceptive tactics where scammers feign romantic interest in their targets to extract money or gifts. Typically originating on dating platforms like Tinder, these cons often leave victims emotionally shattered and financially drained.
+# Understanding Cryptocurrency: A New Asset Class
+Cryptocurrency has rapidly ascended as an intriguing and unpredictable financial asset class, offering unprecedented investment opportunities but accompanied by considerable risks. With its roots in the aftermath of the Great Recession, Bitcoin emerged as a decentralized digital currency designed to offer a stable value and serve as a medium of exchange, independent of central bank manipulations.
 
-# Common Types of Romance Scams
+# Prominent Cryptocurrencies
+## Ethereum: A leading blockchain platform that introduced smart contracts, creating a foundation for countless cryptocurrencies.
 
-#### The ‘Classic’ Romance Scam
+## Ripple: Known for its ambition to overhaul the SWIFT system, Ripple's journey offers a cautionary tale about the potential for cryptocurrency fraud.
 
-Scammers initiate relationships on dating sites, rapidly escalating emotional connections to solicit funds or gifts. Victims, ensnared by the illusion of love, willingly comply until they realize the deception.
 
-#### The ‘Pig Butchering’ Scam
+## Cryptocurrency Scams: A Detailed Look
 
-Originating in China, this scam merges romance with investment fraud. After establishing rapport, scammers coax victims into investing in fictitious ventures, resulting in substantial financial losses.
+The advent of cryptocurrency has revolutionized the financial industry, but with innovation comes vulnerability to fraud. Here are the common cryptocurrency scams you should be aware of:
 
-#### The ‘Military’ Romance Scam
+## Bitcoin mining scams
+Cryptocurrencies like Bitcoin are produced through mining, which requires substantial computational power to solve complex algorithms and validate transactions on the blockchain. Mining scams typically promise participants a stake in mining operations in exchange for an investment. However, these schemes often lack the necessary infrastructure, leading to losses for investors when promised returns fail to materialize.
 
-Scammers masquerade as military personnel on dating platforms, exploiting victims’ admiration for the armed forces to solicit money or gifts under false pretenses of deployment.
+## Bitcoin wallet scams
+A digital wallet is essential for storing, sending, and receiving cryptocurrencies. Wallet scams often trick users into revealing their private keys, granting scammers access to steal funds directly from their wallets. Other variations include the promotion of fraudulent wallet apps designed to siphon funds from unsuspecting users.
 
-#### Identity Theft
+## Pump and Dump scams
+This type of scam involves artificially inflating the price of a cryptocurrency through false and misleading positive statements to sell off the cheaply purchased currency at a higher price. Once the scammers have dumped their overvalued currency, the price crashes, leaving investors with significant losses.
 
-Scammers use dating sites to bait victims into clicking malicious links, facilitating identity theft and financial fraud by accessing personal information stored on victims' devices.
+## Pyramid Schemes
+Cryptocurrency has given a new platform for these age-old investment scams, where returns for older investors are paid through the contributions of new investors. Eventually, when new investments stop, the scheme collapses, leaving most participants at a loss.
 
-#### Money Muling
+## ICO Scams/Exit Scams
+An ICO is a fundraising method that trades future crypto coins in exchange for cryptocurrencies of immediate, liquid value. Exit scams occur when the creators of an ICO collect the funds and disappear without distributing the coin or developing the promised blockchain project.
 
-Scammers manipulate victims into laundering illicit funds by sending them valuables or money to transfer elsewhere, implicating victims in criminal activities.
+## High-Interest Return Scams
+These scams lure investors with the promise of high returns on their cryptocurrency investments through staking or other means. While some high-yield investment programs are legitimate, many are not, and distinguishing between the two can be challenging.
 
-### Key Points
+## Cryptocurrency Exchange Scams
+With the proliferation of cryptocurrencies, numerous new exchanges have been established. Some of these exchanges are fraudulent, designed to disappear with users' funds. Others lack proper security measures, leading to hacks and the theft of cryptocurrency holdings.
 
-- Romance scams cost victims millions annually, with an average loss of $2,500 per victim.
-- Scammers target vulnerable individuals on dating platforms, often preying on women.
-- Recovery services like Payback specialize in retrieving funds lost to romance scams, providing support and guidance throughout the process.
+Each type of scam preys on the excitement around the rapidly evolving cryptocurrency market, exploiting gaps in knowledge and due diligence. Being aware of these scams is the first step in protecting yourself and your investments.
 
-# How to Avoid Romance Scams
+# Fall prey to a cryptocurrency scam? how you can get your money back
+If you've fallen victim to a cryptocurrency scam, hope is not lost. Global regulators are increasingly vigilant about crypto fraud. Many have successfully reclaimed Bitcoin and other cryptocurrencies. Starting with a fund recovery service like Payback, which specializes in this field, can be an effective first step. They'll work closely with you, employing every strategy to recover your funds.
 
-- Exercise caution online, limiting personal information visible to the public.
-- Beware of requests to communicate outside dating platforms.
-- Proceed slowly in relationships, verifying information and images.
-- Refrain from sending money or gifts to online acquaintances.
-- Recognize red flags, such as avoidance of in-person meetings despite expressed interest.
+# How to avoid cryptocurrency scams
+To safeguard against cryptocurrency scams, scrutinize the credentials and backgrounds of entities involved, use regulated exchanges, and seek advice from financial experts before investing. Don't be swayed by the allure of quick riches; genuine opportunities are built on transparency, not grand promises. Opt for exchanges that offer insured deposits and cold storage for digital wallets to enhance security. Lastly, for long-term investments, consider using a cold-storage hardware wallet to minimize the risk of theft.
 
-# Victim of a Romance Scam?
+## Crypto Scam FAQ
+In the realm of Bitcoin and cryptocurrencies, vigilance is paramount due to the presence of scammers looking to exploit the burgeoning investment space. As Bitcoin introduces a new class of assets, it's essential to navigate these opportunities with caution to safeguard against potential fraud.
 
-If you've been victimized by a romance scam, don't hesitate to seek help. Payback offers expert assistance in recovering lost funds, guiding you through the process with compassion and expertise. Contact us to initiate the recovery process and reclaim what's rightfully yours.`}
+Learn how to get bitcoin back from a scammer`}
           </ReactMarkdown>{" "}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                Can you get scammed on Bitcoin?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Bitcoin, as an emerging asset class, presents unique
+                opportunities but also risks, with scammers aiming to exploit
+                the enthusiasm surrounding cryptocurrencies. It's crucial to
+                approach Bitcoin investments with caution, recognizing the
+                potential for scams in this innovative yet volatile space.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-bold text-[22px]">
-                Is it accessible?
+                How can you spot a Bitcoin scammer?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Identifying a Bitcoin scammer involves recognizing certain red
+                flags. These include the use of high-pressure sales tactics,
+                creating a sense of urgency for a "once-in-a-lifetime"
+                opportunity, and presenting unrealistic promises of high
+                returns. Scammers often create scenarios that seem too good to
+                be true to lure potential victims.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -335,7 +339,7 @@ If you've been victimized by a romance scam, don't hesitate to seek help. Paybac
               with you to get your money back!
             </p>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -374,7 +378,7 @@ If you've been victimized by a romance scam, don't hesitate to seek help. Paybac
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -394,4 +398,4 @@ If you've been victimized by a romance scam, don't hesitate to seek help. Paybac
   )
 }
 
-export default Stock
+export default Cryptocurrency

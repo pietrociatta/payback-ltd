@@ -56,7 +56,7 @@ const BlogPost = () => {
               with you to get your money back!
             </p>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation

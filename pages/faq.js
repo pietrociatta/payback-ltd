@@ -15,9 +15,9 @@ const faq = () => {
             Payback - How Does It Work?
           </h1>
           <p className="text-gray-400 text-center  max-w-lg">
-            In order to better understand how Payback Ltd works, and the systems
-            we have in place for the recovery of your funds, you’ll find below a
-            series of frequently asked questions.
+            To gain insight into the operations and fund recovery procedures at
+            Payback Ltd, we've compiled a list of commonly asked questions
+            below.
           </p>
         </div>
         <Accordion type="single" collapsible className="w-full max-w-2xl">
@@ -26,10 +26,10 @@ const faq = () => {
               How long does an average case take to complete?
             </AccordionTrigger>
             <AccordionContent>
-              Although our experienced team will look to complete your case
-              (recover a substantial part if not all of your lost funds) as soon
-              as possible, each case is unique. On average this process takes
-              from 3 months to a year.
+              While our dedicated team strives to resolve your case efficiently,
+              the duration can vary depending on its complexity. Typically, this
+              process spans from 3 months to a year on average due to the unique
+              nature of each case.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -37,13 +37,12 @@ const faq = () => {
               What is the cost of pursuing a case via Payback LTD?
             </AccordionTrigger>
             <AccordionContent>
-              The total cost of the services is comprised of two parts: First,
-              we charge a fixed-fee of 10% (of the total amount lost) at the
-              beginning of the engagement for services rendered in the relevant
-              engagement with each customer (Minimum possible fee: $1,500).
-              Second, a further 10% is charged as a commission when the recovery
-              is successfully completed. No other hidden fees will be added at
-              any time.
+              Our pricing structure consists of two components. Firstly, there
+              is a fixed fee of 10% of the total amount lost, payable upfront at
+              the commencement of our engagement. The minimum fee for our
+              services is $1,500. Secondly, upon successful recovery, an
+              additional commission of 10% is charged. Rest assured, there are
+              no hidden fees added at any stage of the process.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -51,11 +50,11 @@ const faq = () => {
               Why don't you charge me at the end of the process only?
             </AccordionTrigger>
             <AccordionContent>
-              Each case requires a significant amount of man-hours to
-              investigate, process, and bring to successful completion. We
-              charge a fixed-fee to cover the general legal services rendered
-              and operational costs that we incur, hence the need to do so ahead
-              of any action we undertake on your behalf.
+              Due to the extensive investigative work, processing, and
+              successful resolution involved in each case, we charge a fixed fee
+              to cover the legal services provided and operational costs
+              incurred. This fee is necessary to initiate any action on your
+              behalf and ensures our ability to deliver results.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -71,12 +70,10 @@ const faq = () => {
               How do I know that Payback LTD isn’t a scam?
             </AccordionTrigger>
             <AccordionContent>
-              We believe that a question like that is best answered by the
-              company’s clients. We invite you to check out the hundreds of
-              great reviews by our clients to verify that we are a legitimate
-              and reputable organization. We are also registered with the
-              Israeli justice department, as well as this our staff will happily
-              forward you the relevant credentials.
+              We encourage you to review testimonials from our clients to
+              ascertain our legitimacy and reputation. Additionally, we are
+              registered with the Israeli justice department, and our staff can
+              provide you with the necessary credentials upon request.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
           <div className="font-poppins hidden xl:block col-span-3 text-[16px] font-normal">
             <ul className="flex justify-center gap-4">
               <li className="py-2">
-                <Link href="/testimonials">Testimonials</Link>
+                <Link href="/reviews">Testimonials</Link>
               </li>
               <li className="relative group py-2">
                 <a
@@ -71,7 +71,7 @@ export default function App({ Component, pageProps }) {
                   {/* Submenu items */}
                   <li
                     onClick={() => {
-                      router.push("/binary-options")
+                      router.push("/binary")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -81,7 +81,7 @@ export default function App({ Component, pageProps }) {
 
                   <li
                     onClick={() => {
-                      router.push("/cryptocurrency")
+                      router.push("/crypto")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -90,7 +90,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/forex")
+                      router.push("/fx")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -99,7 +99,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/stock-trading")
+                      router.push("/trading")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -108,7 +108,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/credit-card-phishing")
+                      router.push("/card-fraud")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -117,7 +117,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/property-scams")
+                      router.push("/property-fraud")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -126,7 +126,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/romance-scams")
+                      router.push("/relationships")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -135,7 +135,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/other-scams")
+                      router.push("/other")
                       setShowSubMenu(false)
                     }}
                     className="py-2.5 px-5 cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -180,7 +180,7 @@ export default function App({ Component, pageProps }) {
 
                   <li
                     onClick={() => {
-                      router.push("/imposters-copycats")
+                      router.push("/copy")
                       setShowSubMenu2(false)
                     }}
                     className="py-2.5 px-5 w-full cursor-pointer hover:border-l-4 border-l-4 border-transparent hover:border-secondary relative text-gray-600 hover:text-primary"
@@ -189,10 +189,10 @@ export default function App({ Component, pageProps }) {
                   </li>
                 </ul>
               </li>
-              <Link href="/contact-us" className="py-2">
+              <Link href="/contact" className="py-2">
                 Contact Us
               </Link>
-              <Link href="/about-us" className="py-2">
+              <Link href="/who-we-are" className="py-2">
                 About Us
               </Link>
               <li className="py-2">
@@ -205,7 +205,7 @@ export default function App({ Component, pageProps }) {
           </div>
           <div className="flex justify-end items-center">
             <Link
-              href="/contact-us"
+              href="/contact"
               className="bg-transparent border hidden xl:flex border-white text-white hover:bg-white hover:text-primary font-medium transition-all   font-rubik py-2.5 px-8 "
             >
               Get your money back
@@ -227,7 +227,7 @@ export default function App({ Component, pageProps }) {
             <ul className="flex flex-col justify-center gap-4">
               <li
                 onClick={() => {
-                  router.push("/testimonials")
+                  router.push("/reviews")
                   setShowMenu(false)
                   setShowSubMenu2(false)
                 }}
@@ -256,7 +256,7 @@ export default function App({ Component, pageProps }) {
                 >
                   <li
                     onClick={() => {
-                      router.push("/binary-options")
+                      router.push("/binary")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -267,7 +267,7 @@ export default function App({ Component, pageProps }) {
 
                   <li
                     onClick={() => {
-                      router.push("/cryptocurrency")
+                      router.push("/crypto")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -277,7 +277,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/forex")
+                      router.push("/fx")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -287,7 +287,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/stock-trading")
+                      router.push("/trading")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -297,7 +297,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/credit-card-phishing")
+                      router.push("/card-fraud")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -307,7 +307,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/property-scams")
+                      router.push("/property-fraud")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -317,7 +317,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/romance-scams")
+                      router.push("/relationships")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -327,7 +327,7 @@ export default function App({ Component, pageProps }) {
                   </li>
                   <li
                     onClick={() => {
-                      router.push("/other-scams")
+                      router.push("/other")
                       setShowMenu(false)
                       setShowSubMenu(false)
                     }}
@@ -371,7 +371,7 @@ export default function App({ Component, pageProps }) {
 
                   <li
                     onClick={() => {
-                      router.push("/imposters-copycats")
+                      router.push("/copy")
                       setShowMenu(false)
                       setShowSubMenu2(false)
                     }}
@@ -383,7 +383,7 @@ export default function App({ Component, pageProps }) {
               </li>
               <li
                 onClick={() => {
-                  router.push("/contact-us")
+                  router.push("/contact")
                   setShowMenu(false)
                 }}
                 className="py-2"
@@ -392,7 +392,7 @@ export default function App({ Component, pageProps }) {
               </li>
               <li
                 onClick={() => {
-                  router.push("/about-us")
+                  router.push("/who-we-are")
                   setShowMenu(false)
                 }}
                 className="py-2"

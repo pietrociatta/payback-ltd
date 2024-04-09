@@ -70,9 +70,10 @@ const Imposters = () => {
             <p
               className={`text-center  sm:text-[20px] text-[16px] max-w-xl  font-normal font-rubik`}
             >
-              Beware. In front of you is a list of companies & websites that are
-              Payback Ltd imposters or copycats. Search this database and check
-              if you were exposed to one of these.
+              Caution: Presented before you is a list of companies & websites
+              that impersonate or mimic Payback Ltd. Please search this database
+              to verify if you have encountered any of these fraudulent
+              entities.
             </p>
           </div>
         </div>
@@ -107,7 +108,7 @@ const Imposters = () => {
               <p className="md:mt-0 mt-2">{article.short_description}</p>
             </div>
             <Link
-              href={"/contact-us"}
+              href={"/contact"}
               className="bg-primary md:w-[20%] md:min-w-[20%] w-full p-8 md:p-0 text-white font-bold font-raleway items-center justify-center flex text-center"
             >
               Get you money back

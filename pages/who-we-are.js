@@ -25,11 +25,12 @@ const Contactus = () => {
           <p
             className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
           >
-            Payback Ltd is one of the leading chargeback firms worldwide.
-            Specializing in online trading scams (Forex, Binary Options, Crypto,
-            etc), we pride ourselves on having one of the highest success rates
-            in the industry. We are also known for our no-nonsense approach to
-            confronting scammers in the effort to bring our clients’ money back.
+            Payback Ltd stands as a premier chargeback firm on a global scale.
+            With a focus on online trading scams including Forex, Binary
+            Options, Crypto, and more, we boast one of the highest success rates
+            in the industry. Renowned for our straightforward approach to
+            confronting scammers, we tirelessly strive to reclaim our clients'
+            funds.
           </p>
         </div>
         <div className="items-end w-full     font-raleway text-opacity-0  xl:flex flex-col xl:w-[45%] p-5 ">
@@ -47,10 +48,11 @@ const Contactus = () => {
           <p
             className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
           >
-            Amir Geva co-founded Payback in 2017. With over 10 years of
-            experience in the Risk-Management & Chargeback industries, Amir
-            leads our team in the battle against fraudulent entities and
-            individuals.
+            Amir Geva co-founded Payback in 2017, leveraging over a decade of
+            experience in the Risk-Management & Chargeback sectors. With his
+            expertise, Amir spearheads our team in combatting fraudulent
+            entities and individuals, ensuring the protection of our clients'
+            interests.
           </p>
         </div>
       </div>
@@ -63,25 +65,25 @@ const Contactus = () => {
           <p
             className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
           >
-            Being a hugely successful operator in the scam debt recovery field
-            has led us to have a great many enemies in the criminal world of
-            financial scams. To protect our team, we cannot disclose the names
-            and identities of those who provide invaluable assistance in our
-            effort to get your stolen money and assets back.
+            Being a prominent player in the realm of scam debt recovery has
+            earned us numerous adversaries within the criminal landscape of
+            financial scams. To safeguard our team, we maintain discretion
+            regarding the identities of those invaluable contributors aiding our
+            mission to retrieve your stolen assets.
             <br />
             <br />
-            Among our team, we have a selection of key personnel who ensure the
-            running of our operation is highly efficient and customer
-            orientated. All our employees at Payback Ltd have a grounding and
-            experience in the world in which we inhabit, this makes them
-            incredibly effective at their jobs.
+            Within our ranks, we boast a cadre of key personnel dedicated to
+            ensuring the efficiency and client-centricity of our operations.
+            Every member of the Payback Ltd team possesses a deep understanding
+            and experience within our domain, rendering them highly adept at
+            their respective roles.
             <br />
             <br />
-            From Customer Support to Lawyers & Forensic Accountants, anyone you
-            reach within our company is ideally placed to assist you. Starting
-            with the initial process of gathering the evidence, all the way to
-            confronting the scammers and getting your money back, our team will
-            be on your side every step of the way.
+            From Customer Support to our legal and forensic accounting experts,
+            every individual you encounter within our organization is equipped
+            to assist you. Whether it's initiating the evidence-gathering
+            process or confronting the perpetrators to secure your funds, our
+            team stands ready to support you at every stage of the journey.
           </p>
         </div>
         <div className="items-end w-full     font-raleway text-opacity-0  xl:flex flex-col xl:w-[45%] p-5 ">
@@ -99,12 +101,13 @@ const Contactus = () => {
           <p
             className={`text-center xl:text-left  text-[16px] text-gray-600  font-normal font-poppins`}
           >
-            We are the largest recovery company worldwide and have been in
-            operation since 2010. Starting as a risk management firm before
-            operating as a scam recovery service since 2017. We have recovered
-            tens of millions of dollars for thousands of clients, helping them
-            get back money stolen by scammers. Furthermore, Payback is one of
-            the few debt recovery services that successfully recover money from
+            We are a globally renowned recovery company with a history dating
+            back to 2010. Initially established as a risk management firm, we
+            transitioned into a scam recovery service in 2017. Over the years,
+            we have successfully retrieved tens of millions of dollars for
+            thousands of clients, assisting them in reclaiming funds pilfered by
+            scammers. Additionally, Payback stands out as one of the rare debt
+            recovery services proficient in recuperating funds from
             cryptocurrency scams.
           </p>
         </div>
@@ -140,7 +143,7 @@ const Contactus = () => {
               </select>
             </div>
             <a
-              href="/contact-us"
+              href="/contact"
               className="bg-secondary text-center w-full max-w-md font-semibold text-primary px-14 py-3"
             >
               Get a free consultation
@@ -155,7 +158,7 @@ const Contactus = () => {
           </h1>
           <div className="w-full grid xl:grid-cols-4 mt-5  grid-cols-2 ">
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex group hover:bg-primary hover:text-white  flex-col border border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -168,7 +171,7 @@ const Contactus = () => {
               </p>
             </div>{" "}
             <div
-              onClick={() => router.push("/cryptocurrency")}
+              onClick={() => router.push("/crypto")}
               className="flex flex-col group hover:bg-primary hover:text-white border border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -181,7 +184,7 @@ const Contactus = () => {
               </p>
             </div>
             <div
-              onClick={() => router.push("/forex")}
+              onClick={() => router.push("/fx")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -203,7 +206,7 @@ const Contactus = () => {
               <p className="font-raleway text-[22px] font-bold">Romance</p>
             </div>
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -216,7 +219,7 @@ const Contactus = () => {
               </p>
             </div>
             <di
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -229,7 +232,7 @@ const Contactus = () => {
               </p>
             </di>
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img
@@ -242,7 +245,7 @@ const Contactus = () => {
               </p>
             </div>
             <div
-              onClick={() => router.push("/binary-options")}
+              onClick={() => router.push("/binary")}
               className="flex flex-col border  group hover:bg-primary hover:text-white   border-primary gap-2 items-center justify-center py-6"
             >
               <img

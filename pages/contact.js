@@ -1,6 +1,7 @@
 import React, { forwardRef, useState } from "react"
 import "react-phone-number-input/style.css"
 import PhoneInput from "react-phone-number-input"
+import { Building, Mail, MapPin } from "lucide-react"
 
 export const CustomInput = forwardRef(({ value, onChange, ...rest }, ref) => (
   <input
@@ -69,7 +70,7 @@ const Contactus = () => {
   return (
     <div>
       <div className="w-full bg-white  xl:py-20 py-10">
-        <div className="xl:max-w-7xl max-w-2xl relative  mx-auto items-center w-full  gap-2    flex xl:flex-row flex-col">
+        <div className="xl:max-w-7xl max-w-2xl relative   mx-auto items-center w-full  gap-2    flex xl:flex-row flex-col">
           <div className="items-center  w-full max-w-4xl mx-auto bg-[#fff] font-poppins  flex flex-col  p-5 ">
             <h1 className="text-primary xl:text-[56px] text-[45px] leading-none text-center font-raleway font-bold">
               Contact us now to get
@@ -180,6 +181,26 @@ const Contactus = () => {
                 {isLoading && <span>Submitting...</span>}
               </button>
             </form>
+            <div className="flex flex-col mt-14 w-full items-center justify-center">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-5 w-full">
+                <p className="flex items-center gap-2">
+                  <Mail size={20} />
+                  PayBack.recovery@outlook.com
+                </p>
+                <p className="flex items-center gap-2">
+                  <Mail size={20} />
+                  HarveyClarke_payback@outlook.com
+                </p>
+                <p className="flex items-center  gap-2">
+                  <MapPin size={20} />
+                  85 Great Portland Street, London, W1W 7LT
+                </p>
+                <p className="flex items-center gap-2">
+                  <Building size={20} />
+                  RECOVERY LTD | 04686624
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

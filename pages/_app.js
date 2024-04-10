@@ -434,11 +434,10 @@ export default function App({ Component, pageProps }) {
       <footer className="bg-[#030e31]  text-white py-10">
         <div className="max-w-7xl mx-auto">
           <p className="text-center">
-            Money Back Ltd (which trades as Payback) Israeli company #515711653,
-            is authorised and regulated in Israel and operates globally. In the
-            UK, the company operates through a legal exclusion, which removes
-            the need for Money Back Ltd to be authorised and regulated by the
-            FCA.
+            Money Back Ltd (which trades as Payback) i company #515711653, is
+            authorised and regulated in and operates globally. In the UK, the
+            company operates through a legal exclusion, which removes the need
+            for Money Back Ltd to be authorised and regulated by the FCA.
           </p>
         </div>
         <div className="w-full lg:grid hidden max-w-7xl border-b border-white gap-10 pb-10 mx-auto mt-16  lg:grid-cols-4 grid-cols-1  ">
@@ -452,19 +451,11 @@ export default function App({ Component, pageProps }) {
               <li>Sitemap</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4 items-start">
-            <h1 className="text-xl font-bold">Contact Us</h1>
-            <ul className="flex flex-col items-start text-gray-300 gap-2">
-              <li>IL +972-77-7408749</li>
-              <li>US +1-718-473-3943</li>
-              <li>AU +61-283-185-343</li>
-              <li>SE +46-812-410-614</li>
-            </ul>
-          </div>
+
           <div className="flex flex-col gap-4 items-start">
             <h1 className="text-xl font-bold">Location</h1>
             <ul className="flex flex-col items-start text-gray-300 gap-2">
-              <li>Hilazon 5, Ramat Gan, Israel, 5252269</li>
+              <li> 85 Great Portland Street, London, W1W 7LT</li>
             </ul>
             <h1 className="text-xl font-bold">Our office hours</h1>
             <ul className="flex flex-col items-start text-gray-300 gap-2">

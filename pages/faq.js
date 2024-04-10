@@ -62,7 +62,7 @@ const faq = () => {
               Where is Payback LTD based?
             </AccordionTrigger>
             <AccordionContent>
-              Payback LTD is located in Ramat Gan, Israel.
+              Payback LTD is located in Ramat Gan, .
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
@@ -72,7 +72,7 @@ const faq = () => {
             <AccordionContent>
               We encourage you to review testimonials from our clients to
               ascertain our legitimacy and reputation. Additionally, we are
-              registered with the Israeli justice department, and our staff can
+              registered with the i justice department, and our staff can
               provide you with the necessary credentials upon request.
             </AccordionContent>
           </AccordionItem>

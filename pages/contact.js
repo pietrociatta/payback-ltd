@@ -197,7 +197,7 @@ const Contactus = () => {
                 </p>
                 <p className="flex items-center gap-2">
                   <Building size={20} />
-                  RECOVERY LTD | 04686624
+                  RECOVERY LTD
                 </p>
               </div>
             </div>

@@ -183,14 +183,20 @@ const Contactus = () => {
             </form>
             <div className="flex flex-col mt-14 w-full items-center justify-center">
               <div className="grid md:grid-cols-2 grid-cols-1 gap-5 w-full">
-                <p className="flex items-center gap-2">
+                <a
+                  href="mailto:PayBack.recovery@outlook.com"
+                  className="flex items-center gap-2"
+                >
                   <Mail size={20} />
                   PayBack.recovery@outlook.com
-                </p>
-                <p className="flex items-center gap-2">
+                </a>
+                <a
+                  href="mailto:HarveyClarke_payback@outlook.com"
+                  className="flex items-center gap-2"
+                >
                   <Mail size={20} />
                   HarveyClarke_payback@outlook.com
-                </p>
+                </a>
                 <p className="flex items-center  gap-2">
                   <MapPin size={20} />
                   85 Great Portland Street, London, W1W 7LT

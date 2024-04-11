@@ -471,6 +471,22 @@ export default function App({ Component, pageProps }) {
               <li>Youtube </li>
             </ul>
           </div>
+          <div className="flex flex-col gap-4 items-start">
+            <h1 className="text-xl font-bold">Email</h1>
+            <ul className="flex flex-col items-start text-gray-300 gap-2">
+              <li>
+                <a href="mailto:PayBack.recovery@outlook.com">
+                  {" "}
+                  PayBack.recovery@outlook.com
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mailto:PayBack.recovery@outlook.com">
+                  HarveyClarke_payback@outlook.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="w-full flex flex-col px-5 lg:hidden justify-center items-center">
           <Accordion type="single" collapsible className="w-full">
@@ -494,10 +510,8 @@ export default function App({ Component, pageProps }) {
               </AccordionTrigger>
               <AccordionContent>
                 <ul className="flex flex-col items-start text-gray-300 gap-2">
-                  <li>IL +972-77-7408749</li>
-                  <li>US +1-718-473-3943</li>
-                  <li>AU +61-283-185-343</li>
-                  <li>SE +46-812-410-614</li>
+                  <li> PayBack.recovery@outlook.com</li>
+                  <li>HarveyClarke_payback@outlook.com</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>

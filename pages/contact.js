@@ -2,6 +2,7 @@ import React, { forwardRef, useState } from "react"
 import "react-phone-number-input/style.css"
 import PhoneInput from "react-phone-number-input"
 import { Building, Mail, MapPin } from "lucide-react"
+import { useRouter } from "next/router"
 
 export const CustomInput = forwardRef(({ value, onChange, ...rest }, ref) => (
   <input
@@ -23,6 +24,7 @@ const Contactus = () => {
   const [scamtype, setScamType] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [success, setSuccess] = useState(false)
+  const router = useRouter()
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -56,8 +58,8 @@ const Contactus = () => {
       }
 
       const data = await response.json() // If response is ok, process it.
-      console.log(data)
       setSuccess(true)
+      router.push("/ty-page")
     } catch (error) {
       console.error("Failed to submit form:", error)
       alert(`Error submitting form: ${error.message}`) // Display the error message from the catch block.

@@ -80,6 +80,7 @@ export default function Home() {
       const data = await response.json() // If response is ok, process it.
       console.log(data)
       setSuccess(true)
+      router.push("/ty-page")
     } catch (error) {
       console.error("Failed to submit form:", error)
       alert(`Error submitting form: ${error.message}`) // Display the error message from the catch block.

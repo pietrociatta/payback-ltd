@@ -434,10 +434,10 @@ export default function App({ Component, pageProps }) {
       <footer className="bg-[#030e31]  text-white py-10">
         <div className="max-w-7xl mx-auto">
           <p className="text-center">
-            Money Back Ltd (which trades as Payback) i company #515711653, is
-            authorised and regulated in and operates globally. In the UK, the
-            company operates through a legal exclusion, which removes the need
-            for Money Back Ltd to be authorised and regulated by the FCA.
+            Money Back Ltd (which trades as Payback) i company, is authorised
+            and regulated in and operates globally. In the UK, the company
+            operates through a legal exclusion, which removes the need for Money
+            Back Ltd to be authorised and regulated by the FCA.
           </p>
         </div>
         <div className="w-full lg:grid hidden max-w-7xl border-b border-white gap-10 pb-10 mx-auto mt-16  lg:grid-cols-4 grid-cols-1  ">

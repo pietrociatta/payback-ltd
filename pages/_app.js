@@ -434,10 +434,10 @@ export default function App({ Component, pageProps }) {
       <footer className="bg-[#030e31]  text-white py-10">
         <div className="max-w-7xl mx-auto">
           <p className="text-center">
-            Money Back Ltd (which trades as Payback) i company, is authorised
-            and regulated in and operates globally. In the UK, the company
-            operates through a legal exclusion, which removes the need for Money
-            Back Ltd to be authorised and regulated by the FCA.
+            Money Back Ltd (which trades as Payback) #04686624 company, is
+            authorised and regulated in and operates globally. In the UK, the
+            company operates through a legal exclusion, which removes the need
+            for Money Back Ltd to be authorised and regulated by the FCA.
           </p>
         </div>
         <div className="w-full lg:grid hidden max-w-7xl border-b border-white gap-10 pb-10 mx-auto mt-16  lg:grid-cols-4 grid-cols-1  ">
@@ -453,10 +453,6 @@ export default function App({ Component, pageProps }) {
           </div>
 
           <div className="flex flex-col gap-4 items-start">
-            <h1 className="text-xl font-bold">Location</h1>
-            <ul className="flex flex-col items-start text-gray-300 gap-2">
-              <li> 85 Great Portland Street, London, W1W 7LT</li>
-            </ul>
             <h1 className="text-xl font-bold">Our office hours</h1>
             <ul className="flex flex-col items-start text-gray-300 gap-2">
               <li>Mon-Fr: 8:00-19:00 GMT</li>
@@ -520,9 +516,21 @@ export default function App({ Component, pageProps }) {
         <div className="w-full max-w-7xl px-5 lg:px-0   gap-10  mx-auto mt-10 grid lg:grid-cols-2 grid-cols-1  ">
           <div>
             <ul className="flex gap-4 items-center justify-center lg:justify-start">
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Legal</li>
+              <li>
+                <Link href="/terms">
+                  <p>Terms & Conditions</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy">
+                  <p>Privacy Policy</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/legal">
+                  <p>Legal</p>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="flex lg:justify-end justify-center">

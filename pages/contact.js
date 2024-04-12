@@ -199,10 +199,7 @@ const Contactus = () => {
                   <Mail size={20} />
                   HarveyClarke_payback@outlook.com
                 </a>
-                <p className="flex items-center  gap-2">
-                  <MapPin size={20} />
-                  85 Great Portland Street, London, W1W 7LT
-                </p>
+
                 <p className="flex items-center gap-2">
                   <Building size={20} />
                   RECOVERY LTD

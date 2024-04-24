@@ -192,11 +192,10 @@ export default function Home() {
                   <option value="" disabled selected hidden>
                     How much did you invest ($)
                   </option>
-                  <option value="1000">$1000</option>
-                  <option value="2000">$2000</option>
-                  <option value="3000">$3000</option>
-                  <option value="4000">$4000</option>
                   <option value="5000">$5000</option>
+                  <option value="10000">$10000</option>
+                  <option value="20000">$20000</option>
+                  <option value="50000">$50000</option>
                 </select>
               </div>
               <textarea

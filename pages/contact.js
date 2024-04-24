@@ -153,11 +153,10 @@ const Contactus = () => {
                 <option value="" disabled>
                   How much did you invest ($)
                 </option>
-                <option value="1000">$1000</option>
-                <option value="2000">$2000</option>
-                <option value="3000">$3000</option>
-                <option value="4000">$4000</option>
                 <option value="5000">$5000</option>
+                <option value="10000">$10000</option>
+                <option value="20000">$20000</option>
+                <option value="50000">$50000</option>
               </select>
               <textarea
                 name="message"
@@ -186,18 +185,18 @@ const Contactus = () => {
             <div className="flex flex-col mt-14 w-full items-center justify-center">
               <div className="grid md:grid-cols-2 grid-cols-1 gap-5 w-full">
                 <a
-                  href="mailto:PayBack.recovery@outlook.com"
+                  href="mailto:recovery@payback-lmtd.com"
                   className="flex items-center gap-2"
                 >
                   <Mail size={20} />
-                  PayBack.recovery@outlook.com
+                  recovery@payback-lmtd.com
                 </a>
                 <a
-                  href="mailto:HarveyClarke_payback@outlook.com"
+                  href="mailto:HarveyClarke@payback-lmtd.com"
                   className="flex items-center gap-2"
                 >
                   <Mail size={20} />
-                  HarveyClarke_payback@outlook.com
+                  HarveyClarke@payback-lmtd.com
                 </a>
 
                 <p className="flex items-center gap-2">

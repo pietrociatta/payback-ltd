@@ -489,14 +489,14 @@ fbq('track', 'PageView');
             <h1 className="text-xl font-bold">Email</h1>
             <ul className="flex flex-col items-start text-gray-300 gap-2">
               <li>
-                <a href="mailto:PayBack.recovery@outlook.com">
+                <a href="mailto:recovery@payback-lmtd.com">
                   {" "}
-                  PayBack.recovery@outlook.com
+                  recovery@payback-lmtd.com
                 </a>
               </li>
               <li>
-                <a href="mailto:mailto:PayBack.recovery@outlook.com">
-                  HarveyClarke_payback@outlook.com
+                <a href="mailto:HarveyClarke@payback-lmtd.com">
+                  HarveyClarke@payback-lmtd.com
                 </a>
               </li>
             </ul>
@@ -524,8 +524,8 @@ fbq('track', 'PageView');
               </AccordionTrigger>
               <AccordionContent>
                 <ul className="flex flex-col items-start text-gray-300 gap-2">
-                  <li> PayBack.recovery@outlook.com</li>
-                  <li>HarveyClarke_payback@outlook.com</li>
+                  <li> recovery@payback-lmtd.com</li>
+                  <li>HarveyClarke@payback-lmtd.com</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>

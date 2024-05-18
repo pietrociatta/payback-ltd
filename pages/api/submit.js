@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
     client_x509_cert_url:
       "https://www.googleapis.com/robot/v1/metadata/x509/servizio%40fraud-recovery.iam.gserviceaccount.com",
-    universe_domain: "googleapis.com",
+    universe_domain: "googleapis.com"
   }
   const writeToSheet = async (data) => {
     const SPREADSHEET_ID = "1ewNAOfML7IyRxEb2p4nh41oQXTPuUWPWU8ySmJ630FA"
@@ -47,9 +47,10 @@ export default async function handler(req, res) {
               data.scam_type,
               data.amount_invested,
               data.message,
-            ],
-          ],
-        },
+              data.timestamp
+            ]
+          ]
+        }
       })
 
       await response.then((res) => {
@@ -85,7 +86,7 @@ export default async function handler(req, res) {
         "stock_trading",
         "property_scam",
         "romance_scam",
-        "other",
+        "other"
       ],
       "Invalid scam type"
     ),
@@ -93,12 +94,27 @@ export default async function handler(req, res) {
     message: z
       .string()
       .trim()
-      .max(256, "Message must not exceed 256 characters"),
+      .max(256, "Message must not exceed 256 characters")
   })
 
   try {
     // Parse and validate the incoming request data
     const formData = formSchema.parse(req.body)
+
+    const italyTimeZone = "Europe/Rome"
+    const now = new Date()
+    const options = {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      timeZone: italyTimeZone,
+      timeZoneName: "short"
+    }
+    const formatter = new Intl.DateTimeFormat("en-GB", options)
+    formData.timestamp = formatter.format(now)
 
     // Assuming writeToSheet is an asynchronous function that writes data to a Google Sheet
     const respon = await writeToSheet(formData)
